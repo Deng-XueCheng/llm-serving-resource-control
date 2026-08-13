@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "description": "Stage 18 heterogeneous sustained-arrival routing diagnostic.",
+  "time_unit": "seconds",
+  "requests": [
+    {"request_id":"r00","request_class":"long","arrival_time":0.00,"prompt_length":512,"max_output_tokens":48,"seed":1800,"prefix_group":"docs-a","shared_prefix_length":256},
+    {"request_id":"r01","request_class":"interactive","arrival_time":0.02,"prompt_length":32,"max_output_tokens":8,"seed":1801,"prefix_group":null,"shared_prefix_length":0},
+    {"request_id":"r02","request_class":"long","arrival_time":0.04,"prompt_length":768,"max_output_tokens":48,"seed":1802,"prefix_group":"docs-b","shared_prefix_length":256},
+    {"request_id":"r03","request_class":"interactive","arrival_time":0.06,"prompt_length":32,"max_output_tokens":8,"seed":1803,"prefix_group":null,"shared_prefix_length":0},
+    {"request_id":"r04","request_class":"interactive","arrival_time":0.08,"prompt_length":96,"max_output_tokens":12,"seed":1804,"prefix_group":"docs-a","shared_prefix_length":64},
+    {"request_id":"r05","request_class":"long","arrival_time":0.10,"prompt_length":512,"max_output_tokens":40,"seed":1805,"prefix_group":"docs-b","shared_prefix_length":256},
+    {"request_id":"r06","request_class":"interactive","arrival_time":0.12,"prompt_length":32,"max_output_tokens":8,"seed":1806,"prefix_group":null,"shared_prefix_length":0},
+    {"request_id":"r07","request_class":"long","arrival_time":0.14,"prompt_length":768,"max_output_tokens":48,"seed":1807,"prefix_group":"docs-a","shared_prefix_length":256},
+    {"request_id":"r08","request_class":"interactive","arrival_time":0.16,"prompt_length":96,"max_output_tokens":12,"seed":1808,"prefix_group":"docs-b","shared_prefix_length":64},
+    {"request_id":"r09","request_class":"interactive","arrival_time":0.18,"prompt_length":32,"max_output_tokens":8,"seed":1809,"prefix_group":null,"shared_prefix_length":0},
+    {"request_id":"r10","request_class":"long","arrival_time":0.20,"prompt_length":512,"max_output_tokens":40,"seed":1810,"prefix_group":"docs-a","shared_prefix_length":256},
+    {"request_id":"r11","request_class":"interactive","arrival_time":0.22,"prompt_length":32,"max_output_tokens":8,"seed":1811,"prefix_group":null,"shared_prefix_length":0}
+  ]
+}

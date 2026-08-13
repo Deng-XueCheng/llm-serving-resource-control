@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "description": "Prefill-first mixed workload calibration; planning data until repeated runs complete. load=overload seed=2",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 0.22620547090723475,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 32000
+    },
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.3394879806356865,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32001
+    },
+    {
+      "request_id": "interactive-001",
+      "request_class": "interactive",
+      "arrival_time": 0.6335314810192223,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32002
+    },
+    {
+      "request_id": "long-001",
+      "request_class": "long",
+      "arrival_time": 1.0729629665973124,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 32003
+    },
+    {
+      "request_id": "interactive-002",
+      "request_class": "interactive",
+      "arrival_time": 1.2325458303565768,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32004
+    },
+    {
+      "request_id": "interactive-003",
+      "request_class": "interactive",
+      "arrival_time": 1.5741272808214855,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32005
+    },
+    {
+      "request_id": "long-002",
+      "request_class": "long",
+      "arrival_time": 1.7226785611650746,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 32006
+    },
+    {
+      "request_id": "interactive-004",
+      "request_class": "interactive",
+      "arrival_time": 1.7794167549034143,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32007
+    },
+    {
+      "request_id": "interactive-005",
+      "request_class": "interactive",
+      "arrival_time": 2.1767081897172833,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32008
+    },
+    {
+      "request_id": "interactive-006",
+      "request_class": "interactive",
+      "arrival_time": 2.3248160684480124,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32009
+    },
+    {
+      "request_id": "interactive-007",
+      "request_class": "interactive",
+      "arrival_time": 2.4237766627138497,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32010
+    },
+    {
+      "request_id": "interactive-008",
+      "request_class": "interactive",
+      "arrival_time": 2.4272069345633516,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32011
+    },
+    {
+      "request_id": "interactive-009",
+      "request_class": "interactive",
+      "arrival_time": 2.6789216057608836,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32012
+    },
+    {
+      "request_id": "interactive-010",
+      "request_class": "interactive",
+      "arrival_time": 2.8920483249498634,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32013
+    },
+    {
+      "request_id": "interactive-011",
+      "request_class": "interactive",
+      "arrival_time": 2.943879956274093,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32014
+    },
+    {
+      "request_id": "interactive-012",
+      "request_class": "interactive",
+      "arrival_time": 3.3419955125177983,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32015
+    },
+    {
+      "request_id": "long-003",
+      "request_class": "long",
+      "arrival_time": 3.7913099482373975,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 32016
+    },
+    {
+      "request_id": "interactive-013",
+      "request_class": "interactive",
+      "arrival_time": 3.7975818923729743,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32017
+    },
+    {
+      "request_id": "interactive-014",
+      "request_class": "interactive",
+      "arrival_time": 3.8241370875569975,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32018
+    },
+    {
+      "request_id": "interactive-015",
+      "request_class": "interactive",
+      "arrival_time": 3.979278251798971,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 32019
+    }
+  ]
+}

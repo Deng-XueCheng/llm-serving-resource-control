@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "description": "Prefill-first mixed workload calibration; planning data until repeated runs complete. load=low seed=1",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.5374569764496049,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 31000
+    },
+    {
+      "request_id": "interactive-001",
+      "request_class": "interactive",
+      "arrival_time": 1.0202761029576868,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 31001
+    },
+    {
+      "request_id": "interactive-002",
+      "request_class": "interactive",
+      "arrival_time": 1.9817403483677638,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 31002
+    },
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 3.055098475906456,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 31003
+    },
+    {
+      "request_id": "interactive-003",
+      "request_class": "interactive",
+      "arrival_time": 3.3897349477489307,
+      "prompt_length": 32,
+      "max_output_tokens": 32,
+      "seed": 31004
+    }
+  ]
+}

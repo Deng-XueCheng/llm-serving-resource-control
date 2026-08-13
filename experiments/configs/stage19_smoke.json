@@ -1,0 +1,10 @@
+{
+  "model_path":"/absolute/path/to/Qwen3-0.6B",
+  "trace_path":"experiments/data/stage19_smoke_trace.json",
+  "token_id_upper_bound":10000,
+  "distributed_init_port_base":24500,
+  "engine":{"enforce_eager":true,"tensor_parallel_size":1,"max_model_len":1024,"max_num_batched_tokens":512,"max_num_seqs":8,"gpu_memory_utilization":0.35,"kvcache_block_size":256,"num_kvcache_blocks":8,"scheduler_policy":"prefill_first","decode_token_budget":0},
+  "sampling":{"temperature":0.6,"ignore_eos":true,"seed":1900},
+  "measurement_start":0.0,"measurement_end":10.0,"max_run_seconds":30.0,
+  "ttft_slo_ms":10000.0,"itl_slo_ms":1000.0,"require_itl":true
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "description": "Stage 11 matched mixed workload: one long prefix owner and 50% shared-prefix interactive requests (seed 3).",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 0.0,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 110003,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.05,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111300,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-001",
+      "request_class": "interactive",
+      "arrival_time": 0.060000000000000005,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111301,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-002",
+      "request_class": "interactive",
+      "arrival_time": 0.07,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111302,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-003",
+      "request_class": "interactive",
+      "arrival_time": 0.08,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111303,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-004",
+      "request_class": "interactive",
+      "arrival_time": 0.09,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111304,
+      "prefix_group": "stage11-system-prefix-seed3",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-005",
+      "request_class": "interactive",
+      "arrival_time": 0.1,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111305,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "interactive-006",
+      "request_class": "interactive",
+      "arrival_time": 0.11,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111306,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "interactive-007",
+      "request_class": "interactive",
+      "arrival_time": 0.12000000000000001,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111307,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "interactive-008",
+      "request_class": "interactive",
+      "arrival_time": 0.13,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111308,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "interactive-009",
+      "request_class": "interactive",
+      "arrival_time": 0.14,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 111309,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    }
+  ]
+}

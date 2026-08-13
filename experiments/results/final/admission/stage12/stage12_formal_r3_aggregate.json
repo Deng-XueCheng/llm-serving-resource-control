@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "stage": "stage12",
+  "revision": "r3",
+  "required_cells": 6,
+  "validated_cells": 6,
+  "formal_manifest_sha256": "ec37c959db99297c9e7ac5699fb2394c72c896adda9dfb14fb184f647989c1d3",
+  "execution_code": {
+    "runner_sha256": "454c3641e685ee152176296ec74aac9ef6a8faac43fa2a504506054db5faaa8a",
+    "open_loop_sha256": "fb3f2e2e8d4e3d8875216eac79cb5d9fc487b68ee2b3e14211dbfbf525b6f503",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "1882a34e2df3431e79fa97921af43637be08850fdcb0c766b158f2c255d92525",
+    "scheduler_sha256": "2650d9655d42cacb8cc5f54b568cf74bcb3a6b6d957e3d0432c42a0d83ce842f",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "e7579e39077bdcadc03dacf82a449abe557a93b47f47f0d312d62101223f1daa"
+  },
+  "aggregation_code": {
+    "aggregate_stage12_formal_sha256": "0fd9bacedb0f881a1f06d6474c08550c7d59cdf811849c4db053b419d97c7330",
+    "aggregate_stage12_sha256": "0fcb855e20e180d5b27a60b82261d6824fb07fa5a7b117a25d13edeee42e68df",
+    "aggregate_stage11_sha256": "e18dde02cddb119521886ae20c4f880d799b2b578105a4701c263427e97d6513"
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "policy": "prefix_aware_fifo",
+      "run_id": "stage12_formal_r3_prefix_seed1",
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 2,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 1,
+        "rejected_requests": 2,
+        "max_observed_queue_wait_ms": 212.2684950000007,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 16.0,
+        "elapsed_seconds": 1.3292923169999824
+      },
+      "early_rejections": 0
+    },
+    {
+      "seed": 1,
+      "policy": "slack_aware_prefix_fifo",
+      "run_id": "stage12_formal_r3_slack_seed1",
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 1,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 3,
+        "policy": "slack_aware_prefix_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 2,
+        "rejected_requests": 1,
+        "max_observed_queue_wait_ms": 8.927791000002113,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true,
+        "eta_prefill_seconds": 0.03455158233642578,
+        "eta_decode_seconds_per_token": 0.020791135787963867,
+        "eta_safety_margin_seconds": 8.553770812125094e-05
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": 41.344820000003324,
+        "interactive_itl_p99_ms": 26.73458293999687,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 20.0,
+        "elapsed_seconds": 1.2618798550000037
+      },
+      "early_rejections": 1
+    },
+    {
+      "seed": 2,
+      "policy": "prefix_aware_fifo",
+      "run_id": "stage12_formal_r3_prefix_seed2",
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 2,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 1,
+        "rejected_requests": 2,
+        "max_observed_queue_wait_ms": 218.6822849999828,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 16.0,
+        "elapsed_seconds": 1.2215237199999933
+      },
+      "early_rejections": 0
+    },
+    {
+      "seed": 2,
+      "policy": "slack_aware_prefix_fifo",
+      "run_id": "stage12_formal_r3_slack_seed2",
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 1,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 3,
+        "policy": "slack_aware_prefix_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 2,
+        "rejected_requests": 1,
+        "max_observed_queue_wait_ms": 4.093624999978826,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true,
+        "eta_prefill_seconds": 0.03455158233642578,
+        "eta_decode_seconds_per_token": 0.020791135787963867,
+        "eta_safety_margin_seconds": 8.553770812125094e-05
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": 33.70015999997804,
+        "interactive_itl_p99_ms": 30.211781720001333,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 20.0,
+        "elapsed_seconds": 1.3277896929999997
+      },
+      "early_rejections": 1
+    },
+    {
+      "seed": 3,
+      "policy": "prefix_aware_fifo",
+      "run_id": "stage12_formal_r3_prefix_seed3",
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 2,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 1,
+        "rejected_requests": 2,
+        "max_observed_queue_wait_ms": 213.50123600002462,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 16.0,
+        "elapsed_seconds": 1.1713949450000314
+      },
+      "early_rejections": 0
+    },
+    {
+      "seed": 3,
+      "policy": "slack_aware_prefix_fifo",
+      "run_id": "stage12_formal_r3_slack_seed3",
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 1,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 3,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 3,
+        "policy": "slack_aware_prefix_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 0.2,
+        "admitted_requests": 2,
+        "rejected_requests": 1,
+        "max_observed_queue_wait_ms": 19.392353000012005,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true,
+        "eta_prefill_seconds": 0.03455158233642578,
+        "eta_decode_seconds_per_token": 0.020791135787963867,
+        "eta_safety_margin_seconds": 8.553770812125094e-05
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": 50.81511200002069,
+        "interactive_itl_p99_ms": 29.578714719998512,
+        "long_window_token_goodput_tps": 16.0,
+        "output_throughput_tps": 20.0,
+        "elapsed_seconds": 1.314902853000035
+      },
+      "early_rejections": 1
+    }
+  ],
+  "by_policy": {
+    "prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": null,
+        "sample_std": null
+      },
+      "interactive_itl_p99_ms": {
+        "mean": null,
+        "sample_std": null
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 16.0,
+        "sample_std": 0.0
+      },
+      "output_throughput_tps": {
+        "mean": 16.0,
+        "sample_std": 0.0
+      },
+      "elapsed_seconds": {
+        "mean": 1.2407369940000024,
+        "sample_std": 0.08068306789204471
+      },
+      "mean_rejected_requests": 2,
+      "mean_early_rejections": 0
+    },
+    "slack_aware_prefix_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.25,
+        "sample_std": 0.0
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 41.95336400000068,
+        "sample_std": 8.573688811759531
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 28.84169312666557,
+        "sample_std": 1.8520605985483853
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 16.0,
+        "sample_std": 0.0
+      },
+      "output_throughput_tps": {
+        "mean": 20.0,
+        "sample_std": 0.0
+      },
+      "elapsed_seconds": {
+        "mean": 1.3015241336666794,
+        "sample_std": 0.03493235297753299
+      },
+      "mean_rejected_requests": 1,
+      "mean_early_rejections": 1
+    }
+  },
+  "matched_pairs": [
+    {
+      "seed": 1,
+      "slack_minus_prefix": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 0.0,
+        "output_throughput_tps": 4.0,
+        "elapsed_seconds": -0.06741246199997875,
+        "rejected_requests": -1,
+        "early_rejections": 1
+      }
+    },
+    {
+      "seed": 2,
+      "slack_minus_prefix": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 0.0,
+        "output_throughput_tps": 4.0,
+        "elapsed_seconds": 0.1062659730000064,
+        "rejected_requests": -1,
+        "early_rejections": 1
+      }
+    },
+    {
+      "seed": 3,
+      "slack_minus_prefix": {
+        "interactive_slo_goodput_rps": 0.25,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 0.0,
+        "output_throughput_tps": 4.0,
+        "elapsed_seconds": 0.14350790800000368,
+        "rejected_requests": -1,
+        "early_rejections": 1
+      }
+    }
+  ],
+  "matched_metric_coverage": {
+    "interactive_slo_goodput_rps": {
+      "paired_non_null": 3,
+      "total_pairs": 3,
+      "comparable": true
+    },
+    "interactive_ttft_p99_ms": {
+      "paired_non_null": 0,
+      "total_pairs": 3,
+      "comparable": false
+    },
+    "interactive_itl_p99_ms": {
+      "paired_non_null": 0,
+      "total_pairs": 3,
+      "comparable": false
+    },
+    "long_window_token_goodput_tps": {
+      "paired_non_null": 3,
+      "total_pairs": 3,
+      "comparable": true
+    },
+    "output_throughput_tps": {
+      "paired_non_null": 3,
+      "total_pairs": 3,
+      "comparable": true
+    },
+    "elapsed_seconds": {
+      "paired_non_null": 3,
+      "total_pairs": 3,
+      "comparable": true
+    }
+  },
+  "decision": "This is a matched single-GPU admission-control comparison. Early rejections are a mechanism count, not a counterfactual accuracy claim; interpret them together with terminal, SLO, latency, and rejection metrics. A matched delta is eligible for cross-policy interpretation only when matched_metric_coverage[metric].comparable is true.",
+  "aggregate_sha256": "0fd9bacedb0f881a1f06d6474c08550c7d59cdf811849c4db053b419d97c7330"
+}

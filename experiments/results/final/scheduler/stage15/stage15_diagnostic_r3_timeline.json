@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "revision": "stage15_diagnostic_r3",
+  "capacity": 8,
+  "seed": 2,
+  "bucket_seconds": 1.0,
+  "validation": {
+    "manifest_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage15_diagnostic_r3_matrix.json",
+    "full_matrix_runs": 18,
+    "full_matrix_matched_pairs": 9,
+    "execution_code_fingerprint": {
+      "runner_sha256": "7f594cdc36bc90eec08229da835234ae8b4980d081d40719181b5f1edec2957a",
+      "open_loop_sha256": "dfcac5e596eafb49dabdf2c87cb75e2b7e4e95f7d00c6c6a602621e90d6e4b34",
+      "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+      "llm_engine_sha256": "b19cc28dffabf28a39841f77a8c1b04b90d5b79cc6a17047c1e7e77f741d1d2c",
+      "scheduler_sha256": "3c1df854aa0e7b13d9c7d7d539a24612bd85f409b86d9bc0af7265599e494018",
+      "sequence_sha256": "f37109c20499967054ae2d18db79e8bbf9fc46877306269b518a2639f1941026",
+      "nanovllm_package_sha256": "5df39f99967b7fd65f2f3cc0bc6e1c3934a4eb0ee612571d5047a1879fda8bf3",
+      "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+      "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+      "config_module_sha256": "6d61a409dd066bf3925bec47b499700b375f16c830042a63917d113b04d551db"
+    }
+  },
+  "policies": {
+    "baseline": {
+      "summary_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_kv8_pressure_seed2.summary.json",
+      "steps_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_kv8_pressure_seed2.steps.jsonl",
+      "elapsed_seconds": 19.587136904999966,
+      "recompute_metrics": {
+        "initial_prefill_tokens": 3584,
+        "actual_recompute_tokens": 95317,
+        "total_prefill_tokens": 98901,
+        "preemption_count": 519,
+        "resume_count": 519,
+        "complete_recompute_lifecycle": true,
+        "pending_recompute_seq_ids": [],
+        "recompute_amplification": 27.595145089285715,
+        "extra_prefill_ratio": 26.595145089285715,
+        "recompute_tokens_per_preemption": 183.65510597302506
+      },
+      "mode_counts": {
+        "prefill": 705,
+        "decode": 156
+      },
+      "timeline": [
+        {
+          "bucket_start_s": 0.0,
+          "bucket_end_s": 1.0,
+          "steps": 40,
+          "kv_utilization_mean": 0.6125,
+          "waiting_requests_mean": 0.325,
+          "prefill_steps": 5,
+          "decode_steps": 35,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 0,
+          "kv_utilization_max": 0.75,
+          "waiting_requests_max": 1,
+          "oldest_waiting_age_max": 4,
+          "modes": {
+            "prefill": 5,
+            "decode": 35
+          }
+        },
+        {
+          "bucket_start_s": 1.0,
+          "bucket_end_s": 2.0,
+          "steps": 48,
+          "kv_utilization_mean": 0.8125,
+          "waiting_requests_mean": 2.2291666666666665,
+          "prefill_steps": 19,
+          "decode_steps": 29,
+          "preemptions": 11,
+          "recompute_tokens": 1463,
+          "finished_requests": 2,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 5,
+          "oldest_waiting_age_max": 8,
+          "modes": {
+            "decode": 29,
+            "prefill": 19
+          }
+        },
+        {
+          "bucket_start_s": 2.0,
+          "bucket_end_s": 3.0,
+          "steps": 45,
+          "kv_utilization_mean": 0.9805555555555555,
+          "waiting_requests_mean": 7.2,
+          "prefill_steps": 41,
+          "decode_steps": 4,
+          "preemptions": 29,
+          "recompute_tokens": 6744,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 12,
+          "oldest_waiting_age_max": 11,
+          "modes": {
+            "prefill": 41,
+            "decode": 4
+          }
+        },
+        {
+          "bucket_start_s": 3.0,
+          "bucket_end_s": 4.0,
+          "steps": 44,
+          "kv_utilization_mean": 0.9744318181818182,
+          "waiting_requests_mean": 11.272727272727273,
+          "prefill_steps": 44,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5102,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 15,
+          "oldest_waiting_age_max": 14,
+          "modes": {
+            "prefill": 44
+          }
+        },
+        {
+          "bucket_start_s": 4.0,
+          "bucket_end_s": 5.0,
+          "steps": 42,
+          "kv_utilization_mean": 0.9851190476190477,
+          "waiting_requests_mean": 15.095238095238095,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 4931,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 17,
+          "oldest_waiting_age_max": 19,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 5.0,
+          "bucket_end_s": 6.0,
+          "steps": 42,
+          "kv_utilization_mean": 0.9940476190476191,
+          "waiting_requests_mean": 15.19047619047619,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5863,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 17,
+          "oldest_waiting_age_max": 19,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 6.0,
+          "bucket_end_s": 7.0,
+          "steps": 42,
+          "kv_utilization_mean": 0.9851190476190477,
+          "waiting_requests_mean": 14.238095238095237,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 36,
+          "recompute_tokens": 5611,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 17,
+          "oldest_waiting_age_max": 19,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 7.0,
+          "bucket_end_s": 8.0,
+          "steps": 40,
+          "kv_utilization_mean": 1.0,
+          "waiting_requests_mean": 13.7,
+          "prefill_steps": 40,
+          "decode_steps": 0,
+          "preemptions": 32,
+          "recompute_tokens": 4603,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 16,
+          "oldest_waiting_age_max": 17,
+          "modes": {
+            "prefill": 40
+          }
+        },
+        {
+          "bucket_start_s": 8.0,
+          "bucket_end_s": 9.0,
+          "steps": 43,
+          "kv_utilization_mean": 1.0,
+          "waiting_requests_mean": 13.813953488372093,
+          "prefill_steps": 43,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5354,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 16,
+          "oldest_waiting_age_max": 17,
+          "modes": {
+            "prefill": 43
+          }
+        },
+        {
+          "bucket_start_s": 9.0,
+          "bucket_end_s": 10.0,
+          "steps": 43,
+          "kv_utilization_mean": 0.997093023255814,
+          "waiting_requests_mean": 13.023255813953488,
+          "prefill_steps": 43,
+          "decode_steps": 0,
+          "preemptions": 36,
+          "recompute_tokens": 4717,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 16,
+          "oldest_waiting_age_max": 17,
+          "modes": {
+            "prefill": 43
+          }
+        },
+        {
+          "bucket_start_s": 10.0,
+          "bucket_end_s": 11.0,
+          "steps": 45,
+          "kv_utilization_mean": 1.0,
+          "waiting_requests_mean": 12.666666666666666,
+          "prefill_steps": 45,
+          "decode_steps": 0,
+          "preemptions": 39,
+          "recompute_tokens": 5663,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 15,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "prefill": 45
+          }
+        },
+        {
+          "bucket_start_s": 11.0,
+          "bucket_end_s": 12.0,
+          "steps": 43,
+          "kv_utilization_mean": 1.0,
+          "waiting_requests_mean": 12.744186046511627,
+          "prefill_steps": 43,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5388,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 15,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "prefill": 43
+          }
+        },
+        {
+          "bucket_start_s": 12.0,
+          "bucket_end_s": 13.0,
+          "steps": 42,
+          "kv_utilization_mean": 1.0,
+          "waiting_requests_mean": 12.428571428571429,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 36,
+          "recompute_tokens": 4891,
+          "finished_requests": 0,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 15,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 13.0,
+          "bucket_end_s": 14.0,
+          "steps": 42,
+          "kv_utilization_mean": 0.9970238095238095,
+          "waiting_requests_mean": 12.642857142857142,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5944,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 15,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 14.0,
+          "bucket_end_s": 15.0,
+          "steps": 43,
+          "kv_utilization_mean": 0.997093023255814,
+          "waiting_requests_mean": 11.30232558139535,
+          "prefill_steps": 43,
+          "decode_steps": 0,
+          "preemptions": 34,
+          "recompute_tokens": 5436,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 14,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "prefill": 43
+          }
+        },
+        {
+          "bucket_start_s": 15.0,
+          "bucket_end_s": 16.0,
+          "steps": 42,
+          "kv_utilization_mean": 0.9851190476190477,
+          "waiting_requests_mean": 9.761904761904763,
+          "prefill_steps": 42,
+          "decode_steps": 0,
+          "preemptions": 28,
+          "recompute_tokens": 6417,
+          "finished_requests": 5,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 13,
+          "oldest_waiting_age_max": 14,
+          "modes": {
+            "prefill": 42
+          }
+        },
+        {
+          "bucket_start_s": 16.0,
+          "bucket_end_s": 17.0,
+          "steps": 45,
+          "kv_utilization_mean": 0.9888888888888889,
+          "waiting_requests_mean": 5.311111111111111,
+          "prefill_steps": 37,
+          "decode_steps": 8,
+          "preemptions": 23,
+          "recompute_tokens": 7298,
+          "finished_requests": 3,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 8,
+          "oldest_waiting_age_max": 10,
+          "modes": {
+            "prefill": 37,
+            "decode": 8
+          }
+        },
+        {
+          "bucket_start_s": 17.0,
+          "bucket_end_s": 18.0,
+          "steps": 51,
+          "kv_utilization_mean": 0.9901960784313726,
+          "waiting_requests_mean": 1.9803921568627452,
+          "prefill_steps": 27,
+          "decode_steps": 24,
+          "preemptions": 7,
+          "recompute_tokens": 5303,
+          "finished_requests": 3,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 5,
+          "oldest_waiting_age_max": 10,
+          "modes": {
+            "prefill": 27,
+            "decode": 24
+          }
+        },
+        {
+          "bucket_start_s": 18.0,
+          "bucket_end_s": 19.0,
+          "steps": 50,
+          "kv_utilization_mean": 0.96,
+          "waiting_requests_mean": 1.66,
+          "prefill_steps": 22,
+          "decode_steps": 28,
+          "preemptions": 4,
+          "recompute_tokens": 4552,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 2,
+          "oldest_waiting_age_max": 7,
+          "modes": {
+            "decode": 28,
+            "prefill": 22
+          }
+        },
+        {
+          "bucket_start_s": 19.0,
+          "bucket_end_s": 20.0,
+          "steps": 29,
+          "kv_utilization_mean": 0.6724137931034483,
+          "waiting_requests_mean": 0.10344827586206896,
+          "prefill_steps": 1,
+          "decode_steps": 28,
+          "preemptions": 0,
+          "recompute_tokens": 37,
+          "finished_requests": 2,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 1,
+          "oldest_waiting_age_max": 4,
+          "modes": {
+            "decode": 28,
+            "prefill": 1
+          }
+        }
+      ]
+    },
+    "candidate": {
+      "summary_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_kv8_recompute_seed2.summary.json",
+      "steps_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_kv8_recompute_seed2.steps.jsonl",
+      "elapsed_seconds": 10.611526216000016,
+      "recompute_metrics": {
+        "initial_prefill_tokens": 3584,
+        "actual_recompute_tokens": 2056,
+        "total_prefill_tokens": 5640,
+        "preemption_count": 56,
+        "resume_count": 56,
+        "complete_recompute_lifecycle": true,
+        "pending_recompute_seq_ids": [],
+        "recompute_amplification": 1.5736607142857142,
+        "extra_prefill_ratio": 0.5736607142857143,
+        "recompute_tokens_per_preemption": 36.714285714285715
+      },
+      "mode_counts": {
+        "prefill": 5,
+        "normal_decode": 62,
+        "baseline_decode": 11,
+        "starvation_prefill": 65,
+        "drain_decode": 423
+      },
+      "timeline": [
+        {
+          "bucket_start_s": 0.0,
+          "bucket_end_s": 1.0,
+          "steps": 38,
+          "kv_utilization_mean": 0.6118421052631579,
+          "waiting_requests_mean": 0.34210526315789475,
+          "prefill_steps": 5,
+          "decode_steps": 33,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 0,
+          "kv_utilization_max": 0.75,
+          "waiting_requests_max": 1,
+          "oldest_waiting_age_max": 4,
+          "modes": {
+            "prefill": 3,
+            "normal_decode": 25,
+            "baseline_decode": 8,
+            "starvation_prefill": 2
+          }
+        },
+        {
+          "bucket_start_s": 1.0,
+          "bucket_end_s": 2.0,
+          "steps": 53,
+          "kv_utilization_mean": 0.9150943396226415,
+          "waiting_requests_mean": 1.5471698113207548,
+          "prefill_steps": 9,
+          "decode_steps": 44,
+          "preemptions": 4,
+          "recompute_tokens": 53,
+          "finished_requests": 2,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 4,
+          "oldest_waiting_age_max": 16,
+          "modes": {
+            "normal_decode": 7,
+            "drain_decode": 34,
+            "baseline_decode": 3,
+            "starvation_prefill": 9
+          }
+        },
+        {
+          "bucket_start_s": 2.0,
+          "bucket_end_s": 3.0,
+          "steps": 52,
+          "kv_utilization_mean": 0.9975961538461539,
+          "waiting_requests_mean": 5.461538461538462,
+          "prefill_steps": 20,
+          "decode_steps": 32,
+          "preemptions": 19,
+          "recompute_tokens": 553,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 9,
+          "oldest_waiting_age_max": 24,
+          "modes": {
+            "drain_decode": 32,
+            "starvation_prefill": 20
+          }
+        },
+        {
+          "bucket_start_s": 3.0,
+          "bucket_end_s": 4.0,
+          "steps": 52,
+          "kv_utilization_mean": 0.9326923076923077,
+          "waiting_requests_mean": 9.846153846153847,
+          "prefill_steps": 23,
+          "decode_steps": 29,
+          "preemptions": 22,
+          "recompute_tokens": 831,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 13,
+          "oldest_waiting_age_max": 24,
+          "modes": {
+            "starvation_prefill": 23,
+            "drain_decode": 29
+          }
+        },
+        {
+          "bucket_start_s": 4.0,
+          "bucket_end_s": 5.0,
+          "steps": 54,
+          "kv_utilization_mean": 0.9513888888888888,
+          "waiting_requests_mean": 11.962962962962964,
+          "prefill_steps": 11,
+          "decode_steps": 43,
+          "preemptions": 11,
+          "recompute_tokens": 178,
+          "finished_requests": 1,
+          "kv_utilization_max": 1.0,
+          "waiting_requests_max": 13,
+          "oldest_waiting_age_max": 53,
+          "modes": {
+            "starvation_prefill": 11,
+            "drain_decode": 43
+          }
+        },
+        {
+          "bucket_start_s": 5.0,
+          "bucket_end_s": 6.0,
+          "steps": 56,
+          "kv_utilization_mean": 0.8727678571428571,
+          "waiting_requests_mean": 12.0,
+          "prefill_steps": 0,
+          "decode_steps": 56,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 1,
+          "kv_utilization_max": 0.875,
+          "waiting_requests_max": 12,
+          "oldest_waiting_age_max": 109,
+          "modes": {
+            "drain_decode": 56
+          }
+        },
+        {
+          "bucket_start_s": 6.0,
+          "bucket_end_s": 7.0,
+          "steps": 57,
+          "kv_utilization_mean": 0.6096491228070176,
+          "waiting_requests_mean": 12.0,
+          "prefill_steps": 0,
+          "decode_steps": 57,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 1,
+          "kv_utilization_max": 0.875,
+          "waiting_requests_max": 12,
+          "oldest_waiting_age_max": 166,
+          "modes": {
+            "drain_decode": 57
+          }
+        },
+        {
+          "bucket_start_s": 7.0,
+          "bucket_end_s": 8.0,
+          "steps": 56,
+          "kv_utilization_mean": 0.609375,
+          "waiting_requests_mean": 8.571428571428571,
+          "prefill_steps": 1,
+          "decode_steps": 55,
+          "preemptions": 0,
+          "recompute_tokens": 229,
+          "finished_requests": 2,
+          "kv_utilization_max": 0.75,
+          "waiting_requests_max": 12,
+          "oldest_waiting_age_max": 216,
+          "modes": {
+            "drain_decode": 55,
+            "prefill": 1
+          }
+        },
+        {
+          "bucket_start_s": 8.0,
+          "bucket_end_s": 9.0,
+          "steps": 57,
+          "kv_utilization_mean": 0.4868421052631579,
+          "waiting_requests_mean": 6.0,
+          "prefill_steps": 0,
+          "decode_steps": 57,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 2,
+          "kv_utilization_max": 0.625,
+          "waiting_requests_max": 6,
+          "oldest_waiting_age_max": 273,
+          "modes": {
+            "drain_decode": 57
+          }
+        },
+        {
+          "bucket_start_s": 9.0,
+          "bucket_end_s": 10.0,
+          "steps": 56,
+          "kv_utilization_mean": 0.20982142857142858,
+          "waiting_requests_mean": 6.0,
+          "prefill_steps": 0,
+          "decode_steps": 56,
+          "preemptions": 0,
+          "recompute_tokens": 0,
+          "finished_requests": 2,
+          "kv_utilization_max": 0.375,
+          "waiting_requests_max": 6,
+          "oldest_waiting_age_max": 329,
+          "modes": {
+            "drain_decode": 56
+          }
+        },
+        {
+          "bucket_start_s": 10.0,
+          "bucket_end_s": 11.0,
+          "steps": 35,
+          "kv_utilization_mean": 0.6071428571428571,
+          "waiting_requests_mean": 0.8571428571428571,
+          "prefill_steps": 1,
+          "decode_steps": 34,
+          "preemptions": 0,
+          "recompute_tokens": 212,
+          "finished_requests": 7,
+          "kv_utilization_max": 0.75,
+          "waiting_requests_max": 6,
+          "oldest_waiting_age_max": 334,
+          "modes": {
+            "drain_decode": 4,
+            "prefill": 1,
+            "normal_decode": 30
+          }
+        }
+      ]
+    }
+  }
+}

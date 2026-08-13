@@ -1,0 +1,1857 @@
+{
+  "schema_version": 1,
+  "review_status": "PASS",
+  "expected_cells": 24,
+  "matched_pairs": 12,
+  "saturation_knee_rps": null,
+  "cells": [
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed1_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "1c23a67b4795bf3061dce9d5a25db129fc002e910df4211a876731b8b56d060d",
+      "trace_sha256": "ace6497e2a31e80a7ccce203498970f8b0b67587e47ca7480c080a296e8c0837",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.35,
+        "ttft_p50_ms": 8465.27630276978,
+        "ttft_p99_ms": 15921.57429990669,
+        "itl_p50_ms": 35.85213702172041,
+        "itl_p99_ms": 88.56894820928574,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 13.928235294117647,
+          "p99": 26,
+          "max": 26
+        },
+        "system_queue_length": {
+          "mean": 17.034117647058824,
+          "p99": 29,
+          "max": 29
+        },
+        "queue_imbalance": {
+          "mean": 0.8305882352941176,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.8783088235294118,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11044117647058824,
+          "p99": 0.5,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 49,
+          "1": 47
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed1_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "842195c7b80f31c3eac9d4ef632502409c375d8877d48dc5cf4c9bad710e7704",
+      "trace_sha256": "ace6497e2a31e80a7ccce203498970f8b0b67587e47ca7480c080a296e8c0837",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.3,
+        "ttft_p50_ms": 15723.750822556514,
+        "ttft_p99_ms": 28175.10579486067,
+        "itl_p50_ms": 45.616839081048965,
+        "itl_p99_ms": 108.75415988266468,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.412688442211056,
+          "p99": 31,
+          "max": 32
+        },
+        "system_queue_length": {
+          "mean": 19.72927135678392,
+          "p99": 34,
+          "max": 35
+        },
+        "queue_imbalance": {
+          "mean": 1.0615577889447236,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.9308260050251256,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11385050251256282,
+          "p99": 0.5,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed2_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "958b3afebbb793685c1c28565ea545005a1078061fbcecd09e09bdc68f8be0f1",
+      "trace_sha256": "d557db379811fb260bf1f1c5c364a944a2070fcff98fcfe90d369ae408819573",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.3,
+        "ttft_p50_ms": 15250.4525349165,
+        "ttft_p99_ms": 27415.53058776383,
+        "itl_p50_ms": 47.051324509084225,
+        "itl_p99_ms": 108.03405568003654,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.490123456790123,
+          "p99": 31,
+          "max": 32
+        },
+        "system_queue_length": {
+          "mean": 19.749382716049382,
+          "p99": 34,
+          "max": 35
+        },
+        "queue_imbalance": {
+          "mean": 0.7407407407407407,
+          "p99": 2,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.9195216049382716,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.10787037037037037,
+          "p99": 0.75,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed2_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "c44f3b3b946b6f88ff5952330e2095b99fe9ed9f5a48a31309d6ce4b188e82a1",
+      "trace_sha256": "d557db379811fb260bf1f1c5c364a944a2070fcff98fcfe90d369ae408819573",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.85,
+        "ttft_p50_ms": 7947.555129726727,
+        "ttft_p99_ms": 13265.499829749264,
+        "itl_p50_ms": 30.938684940338135,
+        "itl_p99_ms": 64.74378705024719,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 11.991206030150753,
+          "p99": 21,
+          "max": 22
+        },
+        "system_queue_length": {
+          "mean": 15.307788944723619,
+          "p99": 24,
+          "max": 24
+        },
+        "queue_imbalance": {
+          "mean": 1.0628140703517588,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.9308260050251256,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11385050251256282,
+          "p99": 0.5,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed3_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "4d0ac11fd987c3861124be84a99eb283fe3c2597504ecd462b8f5b6c6b9e2664",
+      "trace_sha256": "8d5d61463c3e4684acc4cf9726be0a2124f62fd701cd70d83f18d3b308c0f24a",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.35,
+        "ttft_p50_ms": 7485.17931997776,
+        "ttft_p99_ms": 18539.11383344481,
+        "itl_p50_ms": 42.36030951142311,
+        "itl_p99_ms": 99.11436028778553,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 13.587635054021609,
+          "p99": 25,
+          "max": 25
+        },
+        "system_queue_length": {
+          "mean": 16.756902761104442,
+          "p99": 28,
+          "max": 28
+        },
+        "queue_imbalance": {
+          "mean": 1.2713085234093637,
+          "p99": 6,
+          "max": 8
+        },
+        "kv_utilization": {
+          "mean": 0.8938325330132053,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11269507803121248,
+          "p99": 0.5,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/balanced_seed3_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "balanced_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "workload_shape": "balanced",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "f9f5f9802ddb1fd575c299693ede066328c43900de2a8b20a06587d8d8392eea",
+      "trace_sha256": "8d5d61463c3e4684acc4cf9726be0a2124f62fd701cd70d83f18d3b308c0f24a",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 268.8,
+        "achieved_output_tps": 268.8,
+        "slo_goodput_rps": 0.55,
+        "ttft_p50_ms": 9083.335135442514,
+        "ttft_p99_ms": 14808.001368554927,
+        "itl_p50_ms": 31.409299932420254,
+        "itl_p99_ms": 85.15145257115364,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 12.827261306532664,
+          "p99": 23,
+          "max": 24
+        },
+        "system_queue_length": {
+          "mean": 16.143844221105528,
+          "p99": 27,
+          "max": 27
+        },
+        "queue_imbalance": {
+          "mean": 1.0439698492462313,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.9308260050251256,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11385050251256282,
+          "p99": 0.5,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 5376
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed1_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "b782950a7e8433ee3de0485976075980892eb30ae15636a2a97432b94e1ae88f",
+      "trace_sha256": "8a35981d462750b8af9e8583d750b08e048382e398d41104b347efa8a02d00e0",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 2.45,
+        "ttft_p50_ms": 4938.343288376927,
+        "ttft_p99_ms": 10134.43404594436,
+        "itl_p50_ms": 28.724102303385735,
+        "itl_p99_ms": 63.004691153764725,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 7.230019493177388,
+          "p99": 18,
+          "max": 19
+        },
+        "system_queue_length": {
+          "mean": 14.294346978557504,
+          "p99": 26,
+          "max": 27
+        },
+        "queue_imbalance": {
+          "mean": 1.1208576998050683,
+          "p99": 6,
+          "max": 7
+        },
+        "kv_utilization": {
+          "mean": 0.8830409356725146,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.03094541910331384,
+          "p99": 0.25,
+          "max": 0.375
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 51,
+          "1": 45
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed1_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "4c32b172d717fc73c320601ff6450ceabab1e23c21a47dc9cee233ed77285f18",
+      "trace_sha256": "8a35981d462750b8af9e8583d750b08e048382e398d41104b347efa8a02d00e0",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 3.35,
+        "ttft_p50_ms": 3284.0508234997587,
+        "ttft_p99_ms": 11255.470751443254,
+        "itl_p50_ms": 27.57292054593563,
+        "itl_p99_ms": 56.698933243751526,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 5.5511708586296615,
+          "p99": 17,
+          "max": 18
+        },
+        "system_queue_length": {
+          "mean": 11.837380745880312,
+          "p99": 25,
+          "max": 26
+        },
+        "queue_imbalance": {
+          "mean": 6.935819601040763,
+          "p99": 16,
+          "max": 17
+        },
+        "kv_utilization": {
+          "mean": 0.7857762359063313,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.25737207285342584,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed2_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "2782c1e19c031fa02d79df053ee939a5b9671aea489705086ea7cffca08d305b",
+      "trace_sha256": "d2f750044166e82c5114437722c6118e3ae64d2c938c17558735cacdda5080df",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 2.7,
+        "ttft_p50_ms": 4702.192206556598,
+        "ttft_p99_ms": 9572.322650098547,
+        "itl_p50_ms": 29.582079499959946,
+        "itl_p99_ms": 63.29709105193615,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 6.7353525322740815,
+          "p99": 15,
+          "max": 16
+        },
+        "system_queue_length": {
+          "mean": 13.932969215491559,
+          "p99": 23,
+          "max": 24
+        },
+        "queue_imbalance": {
+          "mean": 0.8828202581926514,
+          "p99": 5,
+          "max": 5
+        },
+        "kv_utilization": {
+          "mean": 0.8997020854021847,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.02259185700099305,
+          "p99": 0.25,
+          "max": 0.375
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 51,
+          "1": 45
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed2_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "de668155f0b4cf95c677db5fe6e03ce401062bc28156211251006fa8855d1cbd",
+      "trace_sha256": "d2f750044166e82c5114437722c6118e3ae64d2c938c17558735cacdda5080df",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 2.2,
+        "ttft_p50_ms": 5352.752362067499,
+        "ttft_p99_ms": 15432.370826074231,
+        "itl_p50_ms": 30.215565115213394,
+        "itl_p99_ms": 62.48295120894909,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 7.477450130095403,
+          "p99": 22,
+          "max": 23
+        },
+        "system_queue_length": {
+          "mean": 13.763660017346053,
+          "p99": 30,
+          "max": 31
+        },
+        "queue_imbalance": {
+          "mean": 6.954900260190807,
+          "p99": 16,
+          "max": 17
+        },
+        "kv_utilization": {
+          "mean": 0.7857762359063313,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2565047701647875,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed3_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "d99f7de83639bbdf2e9f34562b355c77c40689f335c26b022fde23c3d12126e7",
+      "trace_sha256": "85a62e5f724fecf24a354187d947418b3a65dcb7bfd2b6b7daa2dc97cfd01cfd",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 2.3,
+        "ttft_p50_ms": 5269.893856408695,
+        "ttft_p99_ms": 13020.200757930674,
+        "itl_p50_ms": 30.299091711640358,
+        "itl_p99_ms": 84.25416983664036,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 7.406432748538012,
+          "p99": 17,
+          "max": 18
+        },
+        "system_queue_length": {
+          "mean": 14.470760233918128,
+          "p99": 25,
+          "max": 25
+        },
+        "queue_imbalance": {
+          "mean": 1.1169590643274854,
+          "p99": 6,
+          "max": 6
+        },
+        "kv_utilization": {
+          "mean": 0.8830409356725146,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.03070175438596491,
+          "p99": 0.25,
+          "max": 0.375
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 51,
+          "1": 45
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/decode_heavy_seed3_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "decode_heavy_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "workload_shape": "decode_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "9c9a78dbb6a06e04877b75414cf56da856d82ee09a03ed420c016c0961d7929c",
+      "trace_sha256": "85a62e5f724fecf24a354187d947418b3a65dcb7bfd2b6b7daa2dc97cfd01cfd",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 729.6,
+        "achieved_output_tps": 729.6,
+        "slo_goodput_rps": 2.45,
+        "ttft_p50_ms": 4913.797772489486,
+        "ttft_p99_ms": 14161.274406158675,
+        "itl_p50_ms": 30.869804322719574,
+        "itl_p99_ms": 63.64993564784527,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 7.00520381613183,
+          "p99": 22,
+          "max": 23
+        },
+        "system_queue_length": {
+          "mean": 13.29141370338248,
+          "p99": 29,
+          "max": 31
+        },
+        "queue_imbalance": {
+          "mean": 6.959236773633998,
+          "p99": 16,
+          "max": 17
+        },
+        "kv_utilization": {
+          "mean": 0.7857762359063313,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2567215958369471,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 14592
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed1_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "e2c03714dd313cd356b8cf1a3a5a05aa2b901f87a5dfea34a32e7993743dc599",
+      "trace_sha256": "76a8b49cf8b5dfaafb9ea7a725bbf06c786067fb0e92afd9ae3aab4af635e1af",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.0,
+        "ttft_p50_ms": 12739.504734675089,
+        "ttft_p99_ms": 19919.713795712836,
+        "itl_p50_ms": 58.64618346095085,
+        "itl_p99_ms": 112.96005547046661,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.041,
+          "p99": 27,
+          "max": 28
+        },
+        "system_queue_length": {
+          "mean": 17.673,
+          "p99": 29,
+          "max": 29
+        },
+        "queue_imbalance": {
+          "mean": 0.606,
+          "p99": 2,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.813375,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.16925,
+          "p99": 0.625,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 47,
+          "1": 49
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed1_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "994ed64d9dd78d4520eee279c962ab0a2f299045860cefa16ce87e99ad0773d5",
+      "trace_sha256": "76a8b49cf8b5dfaafb9ea7a725bbf06c786067fb0e92afd9ae3aab4af635e1af",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.0,
+        "ttft_p50_ms": 11967.884567255775,
+        "ttft_p99_ms": 20721.79973789801,
+        "itl_p50_ms": 51.86987482011318,
+        "itl_p99_ms": 108.97123681381348,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 14.178119349005424,
+          "p99": 28,
+          "max": 29
+        },
+        "system_queue_length": {
+          "mean": 15.653707052441229,
+          "p99": 29,
+          "max": 30
+        },
+        "queue_imbalance": {
+          "mean": 3.849909584086799,
+          "p99": 8,
+          "max": 8
+        },
+        "kv_utilization": {
+          "mean": 0.7347423146473779,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2520343580470163,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed2_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "d5b10031fa4170a50784bffaf0607ab57be0b32182f1a1deae507619302e0a77",
+      "trace_sha256": "ea024ecd453b69fbd3976d37457aec67ca896a447fb286abb5e8a5bc94ce9aaf",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 6975.405255022148,
+        "ttft_p99_ms": 12201.200273757177,
+        "itl_p50_ms": 49.921441823244095,
+        "itl_p99_ms": 103.17151267081502,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 12.633980582524272,
+          "p99": 18,
+          "max": 19
+        },
+        "system_queue_length": {
+          "mean": 14.218446601941748,
+          "p99": 20,
+          "max": 20
+        },
+        "queue_imbalance": {
+          "mean": 0.883495145631068,
+          "p99": 2,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.7904126213592233,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.19781553398058252,
+          "p99": 0.625,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 49,
+          "1": 47
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed2_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "be41983d9b649a50532b9e0b7299304c3e8faf7e3707d9007423ac60104ef024",
+      "trace_sha256": "ea024ecd453b69fbd3976d37457aec67ca896a447fb286abb5e8a5bc94ce9aaf",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.0,
+        "ttft_p50_ms": 10243.67447104305,
+        "ttft_p99_ms": 18128.971906254686,
+        "itl_p50_ms": 51.563022658228874,
+        "itl_p99_ms": 103.69502194225788,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 12.85262206148282,
+          "p99": 25,
+          "max": 27
+        },
+        "system_queue_length": {
+          "mean": 14.328209764918626,
+          "p99": 27,
+          "max": 28
+        },
+        "queue_imbalance": {
+          "mean": 3.878842676311031,
+          "p99": 8,
+          "max": 8
+        },
+        "kv_utilization": {
+          "mean": 0.7347423146473779,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2520343580470163,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed3_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "334a5a7e5cd2762dfe072494740a3134cf7cea92ec86105a2f7ad3f0ff4df90d",
+      "trace_sha256": "548a9b88b6b335e5d710e65cd1473b647b4d00d3f9352c90bdef800ef25ae3e9",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.0,
+        "ttft_p50_ms": 12327.210276698072,
+        "ttft_p99_ms": 19798.29066979388,
+        "itl_p50_ms": 53.94622124731541,
+        "itl_p99_ms": 111.46179996430888,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 15.584313725490196,
+          "p99": 27,
+          "max": 27
+        },
+        "system_queue_length": {
+          "mean": 17.184313725490195,
+          "p99": 29,
+          "max": 29
+        },
+        "queue_imbalance": {
+          "mean": 0.8470588235294118,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.7966911764705882,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.17083333333333334,
+          "p99": 0.625,
+          "max": 0.75
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefill_heavy_seed3_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefill_heavy_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "workload_shape": "prefill_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "b655ee1f390d3caf87752b71a49545fba77ef056c800997813dcd693dc9cca00",
+      "trace_sha256": "548a9b88b6b335e5d710e65cd1473b647b4d00d3f9352c90bdef800ef25ae3e9",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 0.0,
+        "ttft_p50_ms": 10338.496929655472,
+        "ttft_p99_ms": 19137.555230160553,
+        "itl_p50_ms": 51.13648064434528,
+        "itl_p99_ms": 101.29348671063781,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 13.259493670886076,
+          "p99": 26,
+          "max": 27
+        },
+        "system_queue_length": {
+          "mean": 14.735081374321881,
+          "p99": 27,
+          "max": 28
+        },
+        "queue_imbalance": {
+          "mean": 3.8860759493670884,
+          "p99": 8,
+          "max": 8
+        },
+        "kv_utilization": {
+          "mean": 0.7347423146473779,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2520343580470163,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 0,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed1_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": true,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "32d188ebac6c8255e25dfc8c049fd8a9ee6391a645755071db8837a3d67a086e",
+      "trace_sha256": "71931e2aeafe150df101030cdedccc12f8c92b6aa444fcd586c46506f59ae126",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.3,
+        "ttft_p50_ms": 9057.450168145198,
+        "ttft_p99_ms": 17056.4703622212,
+        "itl_p50_ms": 42.397260665893555,
+        "itl_p99_ms": 90.54639004170895,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 14.657219973009447,
+          "p99": 25,
+          "max": 26
+        },
+        "system_queue_length": {
+          "mean": 17.18353576248313,
+          "p99": 27,
+          "max": 28
+        },
+        "queue_imbalance": {
+          "mean": 1.5033738191632928,
+          "p99": 4,
+          "max": 4
+        },
+        "kv_utilization": {
+          "mean": 0.8491902834008097,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11673414304993253,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 90,
+        "requests_by_replica": {
+          "0": 51,
+          "1": 45
+        },
+        "raw_token_count_check": 3840
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed1_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "8058295ecedc7949742437c565fec325ddc6063eee9584683b43a603d66a7a23",
+      "trace_sha256": "71931e2aeafe150df101030cdedccc12f8c92b6aa444fcd586c46506f59ae126",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 11778.402303345501,
+        "ttft_p99_ms": 28765.804761399824,
+        "itl_p50_ms": 45.81022635102272,
+        "itl_p99_ms": 108.7405327707529,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 15.415822784810127,
+          "p99": 32,
+          "max": 33
+        },
+        "system_queue_length": {
+          "mean": 17.785443037974684,
+          "p99": 35,
+          "max": 36
+        },
+        "queue_imbalance": {
+          "mean": 5.077215189873418,
+          "p99": 11,
+          "max": 12
+        },
+        "kv_utilization": {
+          "mean": 0.7815664556962025,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.247626582278481,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 93,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 3840
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed2_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": true,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "73928422001930dd933294649f0912e79339e306d15d325d273ff4d2841feefc",
+      "trace_sha256": "66c10574f1393c25ac29a872eb15a05a4ba8012edadf9f9cbc1f0f5ef428eee6",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 13551.262783507505,
+        "ttft_p99_ms": 23900.000240933146,
+        "itl_p50_ms": 43.88727992773056,
+        "itl_p99_ms": 102.00288519263268,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.515463917525775,
+          "p99": 30,
+          "max": 31
+        },
+        "system_queue_length": {
+          "mean": 18.927835051546392,
+          "p99": 33,
+          "max": 34
+        },
+        "queue_imbalance": {
+          "mean": 0.8891752577319587,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.8420586340206185,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.12838273195876287,
+          "p99": 0.5,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 87,
+        "requests_by_replica": {
+          "0": 49,
+          "1": 47
+        },
+        "raw_token_count_check": 3840
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed2_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "ea0b83e9f1aa421cf3d9588bf893459f73be3a151011dee104f486779eea6b5f",
+      "trace_sha256": "66c10574f1393c25ac29a872eb15a05a4ba8012edadf9f9cbc1f0f5ef428eee6",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 11145.718632886807,
+        "ttft_p99_ms": 25162.88758267959,
+        "itl_p50_ms": 43.791862204670906,
+        "itl_p99_ms": 102.46522165834904,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 15.305063291139241,
+          "p99": 31,
+          "max": 32
+        },
+        "system_queue_length": {
+          "mean": 17.674683544303797,
+          "p99": 34,
+          "max": 35
+        },
+        "queue_imbalance": {
+          "mean": 5.050632911392405,
+          "p99": 11,
+          "max": 11
+        },
+        "kv_utilization": {
+          "mean": 0.7825949367088607,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.24145569620253166,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 93,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 3840
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed3_resource_aware.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": true,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "3d035d446d2c087476269be4b682f2776f4eb0ef3f814ae916692c4705098afa",
+      "trace_sha256": "ee41ab704e04bab696f54c2c75b56763772d03556f45e4812deec2f7da8fe1c7",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 12298.122869183619,
+        "ttft_p99_ms": 20085.43477446462,
+        "itl_p50_ms": 43.76239888370037,
+        "itl_p99_ms": 102.30944700539114,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.330930537352554,
+          "p99": 31,
+          "max": 31
+        },
+        "system_queue_length": {
+          "mean": 18.78440366972477,
+          "p99": 33,
+          "max": 34
+        },
+        "queue_imbalance": {
+          "mean": 1.7103538663171691,
+          "p99": 4,
+          "max": 4
+        },
+        "kv_utilization": {
+          "mean": 0.8460845347313237,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.11254914809960681,
+          "p99": 0.5,
+          "max": 0.75
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 88,
+        "requests_by_replica": {
+          "0": 51,
+          "1": 45
+        },
+        "raw_token_count_check": 3840
+      }
+    },
+    {
+      "artifact": "experiments/results/post_gpu_binding_fix/p0_2/prefix_heavy_seed3_round_robin.json",
+      "checks": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "different_gpus": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true
+      },
+      "phase": "P0-2",
+      "cell_id": "prefix_heavy_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "workload_shape": "prefix_heavy",
+      "prefix_affinity": false,
+      "offered_rps": 4.8,
+      "code_commit": "bdb6bf89ce64bca946a45ecd75c4f6c718dc6213",
+      "config_sha256": "6418cd8e1ef1c2eb7af31566bd8f18c98124c1e36cba612642b66f1111da333c",
+      "trace_sha256": "ee41ab704e04bab696f54c2c75b56763772d03556f45e4812deec2f7da8fe1c7",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 192.0,
+        "achieved_output_tps": 192.0,
+        "slo_goodput_rps": 0.05,
+        "ttft_p50_ms": 12564.242999690274,
+        "ttft_p99_ms": 28079.53501207133,
+        "itl_p50_ms": 44.34411600232124,
+        "itl_p99_ms": 105.21074570715427,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 15.318987341772152,
+          "p99": 32,
+          "max": 33
+        },
+        "system_queue_length": {
+          "mean": 17.68860759493671,
+          "p99": 34,
+          "max": 36
+        },
+        "queue_imbalance": {
+          "mean": 5.4481012658227845,
+          "p99": 10,
+          "max": 10
+        },
+        "kv_utilization": {
+          "mean": 0.7850474683544304,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.23908227848101266,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 93,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 3840
+      }
+    }
+  ]
+}

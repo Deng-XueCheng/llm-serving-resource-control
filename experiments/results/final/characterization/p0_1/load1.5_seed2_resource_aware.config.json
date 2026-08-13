@@ -1,0 +1,38 @@
+{
+  "model_path": "/root/autodl-tmp/models/Qwen3-0.6B",
+  "trace_path": "experiments/data/final_characterization/saturation_load1.5_seed2.json",
+  "token_id_upper_bound": 10000,
+  "replicas": {
+    "gpu_ids": [
+      0,
+      1
+    ],
+    "distributed_init_port_base": 25422
+  },
+  "engine": {
+    "enforce_eager": true,
+    "tensor_parallel_size": 1,
+    "max_model_len": 1024,
+    "max_num_batched_tokens": 256,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.35,
+    "kvcache_block_size": 256,
+    "num_kvcache_blocks": 8,
+    "scheduler_policy": "mixed_token_budget",
+    "decode_token_budget": 8,
+    "incremental_kv_allocation": false
+  },
+  "sampling": {
+    "temperature": 0.6,
+    "ignore_eos": true,
+    "seed": 2000
+  },
+  "measurement_start": 0.0,
+  "measurement_end": 20.0,
+  "max_run_seconds": 90.0,
+  "ttft_slo_ms": 5000.0,
+  "itl_slo_ms": 1000.0,
+  "require_itl": true,
+  "router": "resource_aware",
+  "prefix_aware": false
+}

@@ -1,0 +1,19 @@
+{
+  "model_path": "/absolute/path/to/Qwen3-0.6B",
+  "audit_request_count": 4,
+  "replicas": {"gpu_ids": [0, 1], "distributed_init_port_base": 27000},
+  "engine": {
+    "enforce_eager": true,
+    "tensor_parallel_size": 1,
+    "max_model_len": 1024,
+    "max_num_batched_tokens": 256,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.35,
+    "kvcache_block_size": 256,
+    "num_kvcache_blocks": 8,
+    "scheduler_policy": "mixed_token_budget",
+    "decode_token_budget": 8,
+    "incremental_kv_allocation": false
+  },
+  "sampling": {"temperature": 0.6, "ignore_eos": true, "seed": 2700}
+}

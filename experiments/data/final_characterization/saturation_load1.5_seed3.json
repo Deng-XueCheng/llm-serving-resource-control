@@ -1,0 +1,1447 @@
+{
+  "schema_version": 2,
+  "description": "Final system characterization; generated from Stage 18 request pattern.",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "saturation-s3-000",
+      "request_class": "long",
+      "arrival_time": 0.0,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230000,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-001",
+      "request_class": "interactive",
+      "arrival_time": 0.1388888888888889,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230001,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-002",
+      "request_class": "long",
+      "arrival_time": 0.2777777777777778,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230002,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-003",
+      "request_class": "interactive",
+      "arrival_time": 0.4166666666666667,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230003,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-004",
+      "request_class": "interactive",
+      "arrival_time": 0.5555555555555556,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230004,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-005",
+      "request_class": "long",
+      "arrival_time": 0.6944444444444445,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230005,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-006",
+      "request_class": "interactive",
+      "arrival_time": 0.8333333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230006,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-007",
+      "request_class": "long",
+      "arrival_time": 0.9722222222222223,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230007,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-008",
+      "request_class": "interactive",
+      "arrival_time": 1.1111111111111112,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230008,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-009",
+      "request_class": "interactive",
+      "arrival_time": 1.2500000000000002,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230009,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-010",
+      "request_class": "long",
+      "arrival_time": 1.388888888888889,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230010,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-011",
+      "request_class": "interactive",
+      "arrival_time": 1.527777777777778,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230011,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-012",
+      "request_class": "long",
+      "arrival_time": 1.6666666666666667,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230012,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-013",
+      "request_class": "interactive",
+      "arrival_time": 1.8055555555555558,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230013,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-014",
+      "request_class": "long",
+      "arrival_time": 1.9444444444444446,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230014,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-015",
+      "request_class": "interactive",
+      "arrival_time": 2.0833333333333335,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230015,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-016",
+      "request_class": "interactive",
+      "arrival_time": 2.2222222222222223,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230016,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-017",
+      "request_class": "long",
+      "arrival_time": 2.361111111111111,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230017,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-018",
+      "request_class": "interactive",
+      "arrival_time": 2.5000000000000004,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230018,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-019",
+      "request_class": "long",
+      "arrival_time": 2.6388888888888893,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230019,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-020",
+      "request_class": "interactive",
+      "arrival_time": 2.777777777777778,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230020,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-021",
+      "request_class": "interactive",
+      "arrival_time": 2.916666666666667,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230021,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-022",
+      "request_class": "long",
+      "arrival_time": 3.055555555555556,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230022,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-023",
+      "request_class": "interactive",
+      "arrival_time": 3.1944444444444446,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230023,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-024",
+      "request_class": "long",
+      "arrival_time": 3.3333333333333335,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230024,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-025",
+      "request_class": "interactive",
+      "arrival_time": 3.4722222222222228,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230025,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-026",
+      "request_class": "long",
+      "arrival_time": 3.6111111111111116,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230026,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-027",
+      "request_class": "interactive",
+      "arrival_time": 3.7500000000000004,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230027,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-028",
+      "request_class": "interactive",
+      "arrival_time": 3.8888888888888893,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230028,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-029",
+      "request_class": "long",
+      "arrival_time": 4.027777777777779,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230029,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-030",
+      "request_class": "interactive",
+      "arrival_time": 4.166666666666667,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230030,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-031",
+      "request_class": "long",
+      "arrival_time": 4.305555555555556,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230031,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-032",
+      "request_class": "interactive",
+      "arrival_time": 4.444444444444445,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230032,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-033",
+      "request_class": "interactive",
+      "arrival_time": 4.583333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230033,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-034",
+      "request_class": "long",
+      "arrival_time": 4.722222222222222,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230034,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-035",
+      "request_class": "interactive",
+      "arrival_time": 4.861111111111112,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230035,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-036",
+      "request_class": "long",
+      "arrival_time": 5.000000000000001,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230036,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-037",
+      "request_class": "interactive",
+      "arrival_time": 5.138888888888889,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230037,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-038",
+      "request_class": "long",
+      "arrival_time": 5.277777777777779,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230038,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-039",
+      "request_class": "interactive",
+      "arrival_time": 5.416666666666667,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230039,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-040",
+      "request_class": "interactive",
+      "arrival_time": 5.555555555555556,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230040,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-041",
+      "request_class": "long",
+      "arrival_time": 5.694444444444445,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230041,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-042",
+      "request_class": "interactive",
+      "arrival_time": 5.833333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230042,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-043",
+      "request_class": "long",
+      "arrival_time": 5.972222222222223,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230043,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-044",
+      "request_class": "interactive",
+      "arrival_time": 6.111111111111112,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230044,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-045",
+      "request_class": "interactive",
+      "arrival_time": 6.250000000000001,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230045,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-046",
+      "request_class": "long",
+      "arrival_time": 6.388888888888889,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230046,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-047",
+      "request_class": "interactive",
+      "arrival_time": 6.527777777777779,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230047,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-048",
+      "request_class": "long",
+      "arrival_time": 6.666666666666667,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230048,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-049",
+      "request_class": "interactive",
+      "arrival_time": 6.805555555555556,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230049,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-050",
+      "request_class": "long",
+      "arrival_time": 6.9444444444444455,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230050,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-051",
+      "request_class": "interactive",
+      "arrival_time": 7.083333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230051,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-052",
+      "request_class": "interactive",
+      "arrival_time": 7.222222222222223,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230052,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-053",
+      "request_class": "long",
+      "arrival_time": 7.361111111111112,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230053,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-054",
+      "request_class": "interactive",
+      "arrival_time": 7.500000000000001,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230054,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-055",
+      "request_class": "long",
+      "arrival_time": 7.638888888888889,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230055,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-056",
+      "request_class": "interactive",
+      "arrival_time": 7.777777777777779,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230056,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-057",
+      "request_class": "interactive",
+      "arrival_time": 7.916666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230057,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-058",
+      "request_class": "long",
+      "arrival_time": 8.055555555555557,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230058,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-059",
+      "request_class": "interactive",
+      "arrival_time": 8.194444444444445,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230059,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-060",
+      "request_class": "long",
+      "arrival_time": 8.333333333333334,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230060,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-061",
+      "request_class": "interactive",
+      "arrival_time": 8.472222222222223,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230061,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-062",
+      "request_class": "long",
+      "arrival_time": 8.611111111111112,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230062,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-063",
+      "request_class": "interactive",
+      "arrival_time": 8.75,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230063,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-064",
+      "request_class": "interactive",
+      "arrival_time": 8.88888888888889,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230064,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-065",
+      "request_class": "long",
+      "arrival_time": 9.027777777777779,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230065,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-066",
+      "request_class": "interactive",
+      "arrival_time": 9.166666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230066,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-067",
+      "request_class": "long",
+      "arrival_time": 9.305555555555557,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230067,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-068",
+      "request_class": "interactive",
+      "arrival_time": 9.444444444444445,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230068,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-069",
+      "request_class": "interactive",
+      "arrival_time": 9.583333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230069,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-070",
+      "request_class": "long",
+      "arrival_time": 9.722222222222223,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230070,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-071",
+      "request_class": "interactive",
+      "arrival_time": 9.861111111111112,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230071,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-072",
+      "request_class": "long",
+      "arrival_time": 10.000000000000002,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230072,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-073",
+      "request_class": "interactive",
+      "arrival_time": 10.13888888888889,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230073,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-074",
+      "request_class": "long",
+      "arrival_time": 10.277777777777779,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230074,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-075",
+      "request_class": "interactive",
+      "arrival_time": 10.416666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230075,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-076",
+      "request_class": "interactive",
+      "arrival_time": 10.555555555555557,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230076,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-077",
+      "request_class": "long",
+      "arrival_time": 10.694444444444445,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230077,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-078",
+      "request_class": "interactive",
+      "arrival_time": 10.833333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230078,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-079",
+      "request_class": "long",
+      "arrival_time": 10.972222222222223,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230079,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-080",
+      "request_class": "interactive",
+      "arrival_time": 11.111111111111112,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230080,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-081",
+      "request_class": "interactive",
+      "arrival_time": 11.250000000000002,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230081,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-082",
+      "request_class": "long",
+      "arrival_time": 11.38888888888889,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230082,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-083",
+      "request_class": "interactive",
+      "arrival_time": 11.527777777777779,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230083,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-084",
+      "request_class": "long",
+      "arrival_time": 11.666666666666668,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230084,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-085",
+      "request_class": "interactive",
+      "arrival_time": 11.805555555555557,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230085,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-086",
+      "request_class": "long",
+      "arrival_time": 11.944444444444446,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230086,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-087",
+      "request_class": "interactive",
+      "arrival_time": 12.083333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230087,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-088",
+      "request_class": "interactive",
+      "arrival_time": 12.222222222222223,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230088,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-089",
+      "request_class": "long",
+      "arrival_time": 12.361111111111112,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230089,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-090",
+      "request_class": "interactive",
+      "arrival_time": 12.500000000000002,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230090,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-091",
+      "request_class": "long",
+      "arrival_time": 12.63888888888889,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230091,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-092",
+      "request_class": "interactive",
+      "arrival_time": 12.777777777777779,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230092,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-093",
+      "request_class": "interactive",
+      "arrival_time": 12.916666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230093,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-094",
+      "request_class": "long",
+      "arrival_time": 13.055555555555557,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230094,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-095",
+      "request_class": "interactive",
+      "arrival_time": 13.194444444444446,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230095,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-096",
+      "request_class": "long",
+      "arrival_time": 13.333333333333334,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230096,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-097",
+      "request_class": "interactive",
+      "arrival_time": 13.472222222222223,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230097,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-098",
+      "request_class": "long",
+      "arrival_time": 13.611111111111112,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230098,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-099",
+      "request_class": "interactive",
+      "arrival_time": 13.750000000000002,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230099,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-100",
+      "request_class": "interactive",
+      "arrival_time": 13.888888888888891,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230100,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-101",
+      "request_class": "long",
+      "arrival_time": 14.027777777777779,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230101,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-102",
+      "request_class": "interactive",
+      "arrival_time": 14.166666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230102,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-103",
+      "request_class": "long",
+      "arrival_time": 14.305555555555557,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230103,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-104",
+      "request_class": "interactive",
+      "arrival_time": 14.444444444444446,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230104,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-105",
+      "request_class": "interactive",
+      "arrival_time": 14.583333333333334,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230105,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-106",
+      "request_class": "long",
+      "arrival_time": 14.722222222222223,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230106,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-107",
+      "request_class": "interactive",
+      "arrival_time": 14.861111111111112,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230107,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-108",
+      "request_class": "long",
+      "arrival_time": 15.000000000000002,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230108,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-109",
+      "request_class": "interactive",
+      "arrival_time": 15.138888888888891,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230109,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-110",
+      "request_class": "long",
+      "arrival_time": 15.277777777777779,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230110,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-111",
+      "request_class": "interactive",
+      "arrival_time": 15.416666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230111,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-112",
+      "request_class": "interactive",
+      "arrival_time": 15.555555555555557,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230112,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-113",
+      "request_class": "long",
+      "arrival_time": 15.694444444444446,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230113,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-114",
+      "request_class": "interactive",
+      "arrival_time": 15.833333333333336,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230114,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-115",
+      "request_class": "long",
+      "arrival_time": 15.972222222222223,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230115,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-116",
+      "request_class": "interactive",
+      "arrival_time": 16.111111111111114,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230116,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-117",
+      "request_class": "interactive",
+      "arrival_time": 16.25,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230117,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-118",
+      "request_class": "long",
+      "arrival_time": 16.38888888888889,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230118,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-119",
+      "request_class": "interactive",
+      "arrival_time": 16.52777777777778,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230119,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-120",
+      "request_class": "long",
+      "arrival_time": 16.666666666666668,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230120,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-121",
+      "request_class": "interactive",
+      "arrival_time": 16.805555555555557,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230121,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-122",
+      "request_class": "long",
+      "arrival_time": 16.944444444444446,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230122,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-123",
+      "request_class": "interactive",
+      "arrival_time": 17.083333333333336,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230123,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-124",
+      "request_class": "interactive",
+      "arrival_time": 17.222222222222225,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230124,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-125",
+      "request_class": "long",
+      "arrival_time": 17.361111111111114,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230125,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-126",
+      "request_class": "interactive",
+      "arrival_time": 17.5,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230126,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-127",
+      "request_class": "long",
+      "arrival_time": 17.63888888888889,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230127,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-128",
+      "request_class": "interactive",
+      "arrival_time": 17.77777777777778,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230128,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-129",
+      "request_class": "interactive",
+      "arrival_time": 17.916666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230129,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-130",
+      "request_class": "long",
+      "arrival_time": 18.055555555555557,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230130,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-131",
+      "request_class": "interactive",
+      "arrival_time": 18.194444444444446,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230131,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-132",
+      "request_class": "long",
+      "arrival_time": 18.333333333333336,
+      "prompt_length": 512,
+      "max_output_tokens": 48,
+      "seed": 230132,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-133",
+      "request_class": "interactive",
+      "arrival_time": 18.472222222222225,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230133,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-134",
+      "request_class": "long",
+      "arrival_time": 18.611111111111114,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230134,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-135",
+      "request_class": "interactive",
+      "arrival_time": 18.750000000000004,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230135,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-136",
+      "request_class": "interactive",
+      "arrival_time": 18.88888888888889,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230136,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-137",
+      "request_class": "long",
+      "arrival_time": 19.02777777777778,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230137,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-138",
+      "request_class": "interactive",
+      "arrival_time": 19.166666666666668,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230138,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-139",
+      "request_class": "long",
+      "arrival_time": 19.305555555555557,
+      "prompt_length": 768,
+      "max_output_tokens": 48,
+      "seed": 230139,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-140",
+      "request_class": "interactive",
+      "arrival_time": 19.444444444444446,
+      "prompt_length": 96,
+      "max_output_tokens": 12,
+      "seed": 230140,
+      "prefix_group": "docs-b",
+      "shared_prefix_length": 64
+    },
+    {
+      "request_id": "saturation-s3-141",
+      "request_class": "interactive",
+      "arrival_time": 19.583333333333336,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230141,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    },
+    {
+      "request_id": "saturation-s3-142",
+      "request_class": "long",
+      "arrival_time": 19.722222222222225,
+      "prompt_length": 512,
+      "max_output_tokens": 40,
+      "seed": 230142,
+      "prefix_group": "docs-a",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "saturation-s3-143",
+      "request_class": "interactive",
+      "arrival_time": 19.861111111111114,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 230143,
+      "prefix_group": null,
+      "shared_prefix_length": 0
+    }
+  ]
+}

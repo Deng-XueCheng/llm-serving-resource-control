@@ -1,0 +1,823 @@
+{
+  "schema_version": 1,
+  "evidence_generation": "POST_GPU_BINDING_FIX",
+  "loads_selected_from": "post-fix Stage 18 calibration",
+  "cells": [
+    {
+      "cell_id": "load4.8_seed1_round_robin",
+      "offered_rps": 4.8,
+      "seed": 1,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed1_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 4132.90813503166,
+            "p95": 8616.155947869021,
+            "p99": 9257.166553288698,
+            "max": 9486.333219955364
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 50.460511818528175,
+            "p95": 102.23710164427757,
+            "p99": 4038.388525787741,
+            "max": 9258.798133581877
+          },
+          "slo_successes": 24,
+          "slo_goodput_rps": 1.2
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "matched_prefix_blocks_at_route": 27,
+        "queue_imbalance": {
+          "mean": 6.860759493670886,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_imbalance": {
+          "mean": 0.33499095840867993,
+          "p99": 0.875,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load4.8_seed1_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 1,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed1_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 5664.293747395277,
+            "p95": 7453.421571757644,
+            "p99": 7678.495199140161,
+            "max": 7854.886115218202
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 51.97588074952364,
+            "p95": 100.0509038567543,
+            "p99": 2997.55158917975,
+            "max": 8136.736428365111
+          },
+          "slo_successes": 19,
+          "slo_goodput_rps": 0.95
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 47,
+          "1": 49
+        },
+        "matched_prefix_blocks_at_route": 25,
+        "queue_imbalance": {
+          "mean": 1.6940451745379876,
+          "p99": 5,
+          "max": 5
+        },
+        "kv_imbalance": {
+          "mean": 0.2492299794661191,
+          "p99": 0.875,
+          "max": 0.875
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load4.8_seed2_round_robin",
+      "offered_rps": 4.8,
+      "seed": 2,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed2_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 4156.689081341027,
+            "p95": 8688.728262515117,
+            "p99": 9220.976695418358,
+            "max": 9450.143362085024
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 51.09766684472561,
+            "p95": 102.33227163553238,
+            "p99": 4048.494592122732,
+            "max": 9182.339476421475
+          },
+          "slo_successes": 24,
+          "slo_goodput_rps": 1.2
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "matched_prefix_blocks_at_route": 27,
+        "queue_imbalance": {
+          "mean": 6.869801084990958,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_imbalance": {
+          "mean": 0.33499095840867993,
+          "p99": 0.875,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load4.8_seed2_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 2,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed2_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 2130.1453815152245,
+            "p95": 3352.5698292069137,
+            "p99": 3576.634062516193,
+            "max": 3762.664165968696
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 38.918753154575825,
+            "p95": 68.8586626201868,
+            "p99": 1739.6474855020622,
+            "max": 2497.3142240196466
+          },
+          "slo_successes": 47,
+          "slo_goodput_rps": 2.35
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 44,
+          "1": 52
+        },
+        "matched_prefix_blocks_at_route": 23,
+        "queue_imbalance": {
+          "mean": 1.9735099337748345,
+          "p99": 6,
+          "max": 8
+        },
+        "kv_imbalance": {
+          "mean": 0.2041942604856512,
+          "p99": 1.0,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load4.8_seed3_round_robin",
+      "offered_rps": 4.8,
+      "seed": 3,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed3_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 4274.741478264331,
+            "p95": 8966.70555261274,
+            "p99": 9514.35230858624,
+            "max": 9743.518975252906
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 51.95404402911663,
+            "p95": 100.56358901783824,
+            "p99": 4095.242302119729,
+            "max": 9421.932818368077
+          },
+          "slo_successes": 24,
+          "slo_goodput_rps": 1.2
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "matched_prefix_blocks_at_route": 28,
+        "queue_imbalance": {
+          "mean": 6.807407407407408,
+          "p99": 17,
+          "max": 18
+        },
+        "kv_imbalance": {
+          "mean": 0.337037037037037,
+          "p99": 0.875,
+          "max": 0.875
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load4.8_seed3_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 3,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed3_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 96
+        },
+        "terminal_counts": {
+          "Finished": 96,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 96,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 56,
+          "ttft_ms": {
+            "count": 56,
+            "p50": 3521.4676903560758,
+            "p95": 6010.717513505369,
+            "p99": 6687.661817607779,
+            "max": 6689.092786361773
+          },
+          "itl_ms": {
+            "count": 456,
+            "p50": 59.00725908577442,
+            "p95": 87.89428323507309,
+            "p99": 207.98379182815552,
+            "max": 1675.8323553949594
+          },
+          "slo_successes": 47,
+          "slo_goodput_rps": 2.35
+        },
+        "long": {
+          "submitted": 40,
+          "finished": 40,
+          "request_goodput_rps": 2.0,
+          "token_goodput_tps": 89.6
+        },
+        "output_throughput_tps": 115.2
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 49,
+          "1": 47
+        },
+        "matched_prefix_blocks_at_route": 25,
+        "queue_imbalance": {
+          "mean": 1.3310810810810811,
+          "p99": 5,
+          "max": 6
+        },
+        "kv_imbalance": {
+          "mean": 0.18130630630630631,
+          "p99": 0.75,
+          "max": 0.75
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed1_round_robin",
+      "offered_rps": 6.0,
+      "seed": 1,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed1_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 6269.16020611922,
+            "p95": 16346.24149799347,
+            "p99": 17174.474894826613,
+            "max": 17404.47489482661
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 54.46219723671675,
+            "p95": 110.39543533697707,
+            "p99": 4881.142861656837,
+            "max": 13410.216599702835
+          },
+          "slo_successes": 22,
+          "slo_goodput_rps": 1.1
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "matched_prefix_blocks_at_route": 35,
+        "queue_imbalance": {
+          "mean": 9.831091180866965,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_imbalance": {
+          "mean": 0.31147234678624813,
+          "p99": 1.0,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed1_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 1,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed1_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 5295.3480910509825,
+            "p95": 8065.81902122125,
+            "p99": 9587.628561879197,
+            "max": 9733.004654447239
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 42.40742605179548,
+            "p95": 85.32332349568605,
+            "p99": 4144.122564345572,
+            "max": 8256.388375535607
+          },
+          "slo_successes": 27,
+          "slo_goodput_rps": 1.35
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 62,
+          "1": 58
+        },
+        "matched_prefix_blocks_at_route": 38,
+        "queue_imbalance": {
+          "mean": 2.5933098591549295,
+          "p99": 6,
+          "max": 7
+        },
+        "kv_imbalance": {
+          "mean": 0.1952024647887324,
+          "p99": 1.0,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed2_round_robin",
+      "offered_rps": 6.0,
+      "seed": 2,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed2_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 7047.9831431681905,
+            "p95": 19434.075791357704,
+            "p99": 19748.567962416757,
+            "max": 19767.06218657394
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 56.21851049363613,
+            "p95": 108.27685613185166,
+            "p99": 6912.47842306266,
+            "max": 11122.879043221474
+          },
+          "slo_successes": 14,
+          "slo_goodput_rps": 0.7
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "matched_prefix_blocks_at_route": 36,
+        "queue_imbalance": {
+          "mean": 9.85419734904271,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_imbalance": {
+          "mean": 0.34204712812960236,
+          "p99": 1.0,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed2_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 2,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed2_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 3789.499890369674,
+            "p95": 5864.2794376860065,
+            "p99": 6165.270938506972,
+            "max": 6186.0075301180295
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 37.91341558098793,
+            "p95": 70.00797009095544,
+            "p99": 4103.482165001326,
+            "max": 6071.042222902179
+          },
+          "slo_successes": 51,
+          "slo_goodput_rps": 2.55
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 62,
+          "1": 58
+        },
+        "matched_prefix_blocks_at_route": 36,
+        "queue_imbalance": {
+          "mean": 2.5098039215686274,
+          "p99": 9,
+          "max": 9
+        },
+        "kv_imbalance": {
+          "mean": 0.1412655971479501,
+          "p99": 0.625,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed3_round_robin",
+      "offered_rps": 6.0,
+      "seed": 3,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed3_round_robin.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 5890.344042020539,
+            "p95": 17072.622688425086,
+            "p99": 18411.87481612588,
+            "max": 19036.323981980484
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 55.99384568631649,
+            "p95": 104.13377359509468,
+            "p99": 5026.238535437705,
+            "max": 10990.186613053083
+          },
+          "slo_successes": 18,
+          "slo_goodput_rps": 0.9
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "matched_prefix_blocks_at_route": 34,
+        "queue_imbalance": {
+          "mean": 9.218152866242038,
+          "p99": 17,
+          "max": 17
+        },
+        "kv_imbalance": {
+          "mean": 0.31628184713375795,
+          "p99": 1.0,
+          "max": 1.0
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    },
+    {
+      "cell_id": "load6_seed3_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 3,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed3_resource_aware.json",
+      "summary": {
+        "measurement": {
+          "start": 0.0,
+          "end": 20.0,
+          "duration": 20.0,
+          "eligible_requests": 120
+        },
+        "terminal_counts": {
+          "Finished": 120,
+          "Rejected": 0,
+          "Failed": 0,
+          "Cancelled": 0,
+          "Unfinished": 0,
+          "submitted": 120,
+          "reconciled": true
+        },
+        "interactive": {
+          "submitted": 70,
+          "ttft_ms": {
+            "count": 70,
+            "p50": 2655.216797875861,
+            "p95": 5050.304556638002,
+            "p99": 5398.845082595946,
+            "max": 5628.845082595944
+          },
+          "itl_ms": {
+            "count": 570,
+            "p50": 38.95091265439987,
+            "p95": 63.80139077082275,
+            "p99": 1969.1057334281213,
+            "max": 4302.068382501602
+          },
+          "slo_successes": 56,
+          "slo_goodput_rps": 2.8
+        },
+        "long": {
+          "submitted": 50,
+          "finished": 50,
+          "request_goodput_rps": 2.5,
+          "token_goodput_tps": 112.0
+        },
+        "output_throughput_tps": 144.0
+      },
+      "routing_summary": {
+        "routed_requests_by_replica": {
+          "0": 52,
+          "1": 68
+        },
+        "matched_prefix_blocks_at_route": 32,
+        "queue_imbalance": {
+          "mean": 1.2495575221238937,
+          "p99": 4,
+          "max": 5
+        },
+        "kv_imbalance": {
+          "mean": 0.18805309734513273,
+          "p99": 0.75,
+          "max": 0.75
+        }
+      },
+      "gpu_provenance_status": "VALID_GPU_PROVENANCE"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "revision": "stage15_diagnostic_r3",
+  "matrix": {
+    "runs": 18,
+    "matched_pairs": 9
+  },
+  "completion_gates_validated": true,
+  "raw_metrics_recomputed": true,
+  "execution_code_fingerprint": {
+    "runner_sha256": "7f594cdc36bc90eec08229da835234ae8b4980d081d40719181b5f1edec2957a",
+    "open_loop_sha256": "dfcac5e596eafb49dabdf2c87cb75e2b7e4e95f7d00c6c6a602621e90d6e4b34",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "b19cc28dffabf28a39841f77a8c1b04b90d5b79cc6a17047c1e7e77f741d1d2c",
+    "scheduler_sha256": "3c1df854aa0e7b13d9c7d7d539a24612bd85f409b86d9bc0af7265599e494018",
+    "sequence_sha256": "f37109c20499967054ae2d18db79e8bbf9fc46877306269b518a2639f1941026",
+    "nanovllm_package_sha256": "5df39f99967b7fd65f2f3cc0bc6e1c3934a4eb0ee612571d5047a1879fda8bf3",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "6d61a409dd066bf3925bec47b499700b375f16c830042a63917d113b04d551db"
+  },
+  "pairs": [
+    {
+      "capacity": 4,
+      "seed": 1,
+      "baseline": {
+        "actual_recompute_tokens": 211631,
+        "recompute_amplification": 60.048828125,
+        "recompute_tokens_per_preemption": 290.7019230769231,
+        "preemption_count": 728,
+        "resume_count": 728,
+        "ttft_p99_ms": 438.4162450621978,
+        "itl_p99_ms": 524.3907780000114,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 25.35420338099999,
+        "steps": 1177
+      },
+      "candidate": {
+        "actual_recompute_tokens": 20825,
+        "recompute_amplification": 6.810546875,
+        "recompute_tokens_per_preemption": 253.96341463414635,
+        "preemption_count": 82,
+        "resume_count": 82,
+        "ttft_p99_ms": 458.7422414497421,
+        "itl_p99_ms": 6843.675468999947,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 14.96660131699997,
+        "steps": 809
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9015975920351933,
+        "recompute_amplification": -0.8865831842576029,
+        "recompute_tokens_per_preemption": -0.12637862197098473,
+        "preemption_count": -0.8873626373626373,
+        "resume_count": -0.8873626373626373,
+        "ttft_p99_ms": 0.046362324882967494,
+        "itl_p99_ms": 12.050716671832467,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.40969940596849175,
+        "steps": -0.31265930331350894
+      }
+    },
+    {
+      "capacity": 4,
+      "seed": 2,
+      "baseline": {
+        "actual_recompute_tokens": 202094,
+        "recompute_amplification": 57.38783482142857,
+        "recompute_tokens_per_preemption": 290.36494252873564,
+        "preemption_count": 696,
+        "resume_count": 696,
+        "ttft_p99_ms": 448.1638380648933,
+        "itl_p99_ms": 566.2898835000249,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 26.052465128999984,
+        "steps": 1177
+      },
+      "candidate": {
+        "actual_recompute_tokens": 18779,
+        "recompute_amplification": 6.239676339285714,
+        "recompute_tokens_per_preemption": 237.70886075949366,
+        "preemption_count": 79,
+        "resume_count": 79,
+        "ttft_p99_ms": 539.2983473494405,
+        "itl_p99_ms": 6730.715648800042,
+        "interactive_slo_goodput_rps": 0.25,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 16.201491218,
+        "steps": 800
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9070778944451592,
+        "recompute_amplification": -0.8912717937747352,
+        "recompute_tokens_per_preemption": -0.18134448777001008,
+        "preemption_count": -0.8864942528735632,
+        "resume_count": -0.8864942528735632,
+        "ttft_p99_ms": 0.203350876496535,
+        "itl_p99_ms": 10.885636393855421,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.3781206063312025,
+        "steps": -0.32030586236193714
+      }
+    },
+    {
+      "capacity": 4,
+      "seed": 3,
+      "baseline": {
+        "actual_recompute_tokens": 203478,
+        "recompute_amplification": 57.773995535714285,
+        "recompute_tokens_per_preemption": 301.89614243323444,
+        "preemption_count": 674,
+        "resume_count": 674,
+        "ttft_p99_ms": 550.9026414784524,
+        "itl_p99_ms": 793.8668336999912,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 27.86020704499998,
+        "steps": 1300
+      },
+      "candidate": {
+        "actual_recompute_tokens": 16187,
+        "recompute_amplification": 5.516462053571429,
+        "recompute_tokens_per_preemption": 188.22093023255815,
+        "preemption_count": 86,
+        "resume_count": 86,
+        "ttft_p99_ms": 613.8942669065143,
+        "itl_p99_ms": 4359.078627099987,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 15.63493204699995,
+        "steps": 792
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9204484022842764,
+        "recompute_amplification": -0.9045165216215433,
+        "recompute_tokens_per_preemption": -0.3765374783674688,
+        "preemption_count": -0.8724035608308606,
+        "resume_count": -0.8724035608308606,
+        "ttft_p99_ms": 0.11434257287097374,
+        "itl_p99_ms": 4.490944377640191,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.4388077582572768,
+        "steps": -0.39076923076923076
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 1,
+      "baseline": {
+        "actual_recompute_tokens": 204958,
+        "recompute_amplification": 58.186941964285715,
+        "recompute_tokens_per_preemption": 306.82335329341316,
+        "preemption_count": 668,
+        "resume_count": 668,
+        "ttft_p99_ms": 474.2141419885834,
+        "itl_p99_ms": 547.2414010499335,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 26.556645318999927,
+        "steps": 1184
+      },
+      "candidate": {
+        "actual_recompute_tokens": 16660,
+        "recompute_amplification": 5.6484375,
+        "recompute_tokens_per_preemption": 183.07692307692307,
+        "preemption_count": 91,
+        "resume_count": 91,
+        "ttft_p99_ms": 518.9037444498024,
+        "itl_p99_ms": 7805.539769350036,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 15.288604275000012,
+        "steps": 784
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9187150538159038,
+        "recompute_amplification": -0.9029260292890641,
+        "recompute_tokens_per_preemption": -0.40331490053872204,
+        "preemption_count": -0.8637724550898204,
+        "resume_count": -0.8637724550898204,
+        "ttft_p99_ms": 0.09423928665184116,
+        "itl_p99_ms": 13.263430643906661,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.4243021250857391,
+        "steps": -0.33783783783783783
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 2,
+      "baseline": {
+        "actual_recompute_tokens": 182089,
+        "recompute_amplification": 51.806082589285715,
+        "recompute_tokens_per_preemption": 287.20662460567826,
+        "preemption_count": 634,
+        "resume_count": 634,
+        "ttft_p99_ms": 530.8434373494487,
+        "itl_p99_ms": 742.7577331500174,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 25.81088700199996,
+        "steps": 1180
+      },
+      "candidate": {
+        "actual_recompute_tokens": 15723,
+        "recompute_amplification": 5.386997767857143,
+        "recompute_tokens_per_preemption": 199.0253164556962,
+        "preemption_count": 79,
+        "resume_count": 79,
+        "ttft_p99_ms": 479.0678163494016,
+        "itl_p99_ms": 4894.201206250017,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 14.153082189999964,
+        "steps": 743
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9136521151744477,
+        "recompute_amplification": -0.896016114351575,
+        "recompute_tokens_per_preemption": -0.3070308989949344,
+        "preemption_count": -0.8753943217665615,
+        "resume_count": -0.8753943217665615,
+        "ttft_p99_ms": -0.09753463518088804,
+        "itl_p99_ms": 5.589229553348209,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.45166230866442864,
+        "steps": -0.37033898305084745
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 3,
+      "baseline": {
+        "actual_recompute_tokens": 174779,
+        "recompute_amplification": 49.76646205357143,
+        "recompute_tokens_per_preemption": 324.86802973977694,
+        "preemption_count": 538,
+        "resume_count": 538,
+        "ttft_p99_ms": 468.88029855663683,
+        "itl_p99_ms": 513.4923557500827,
+        "interactive_slo_goodput_rps": 0.25,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 22.88742667200006,
+        "steps": 1110
+      },
+      "candidate": {
+        "actual_recompute_tokens": 6285,
+        "recompute_amplification": 2.753627232142857,
+        "recompute_tokens_per_preemption": 136.6304347826087,
+        "preemption_count": 46,
+        "resume_count": 46,
+        "ttft_p99_ms": 415.6416133657804,
+        "itl_p99_ms": 2554.5463065499607,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 12.53465921999998,
+        "steps": 642
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.96404030232465,
+        "recompute_amplification": -0.9446690176774332,
+        "recompute_tokens_per_preemption": -0.5794278837100368,
+        "preemption_count": -0.9144981412639405,
+        "resume_count": -0.9144981412639405,
+        "ttft_p99_ms": -0.11354429980261929,
+        "itl_p99_ms": 3.974847780973124,
+        "interactive_slo_goodput_rps": -1.0,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.4523342707052957,
+        "steps": -0.42162162162162165
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 1,
+      "baseline": {
+        "actual_recompute_tokens": 190820,
+        "recompute_amplification": 54.2421875,
+        "recompute_tokens_per_preemption": 293.1182795698925,
+        "preemption_count": 651,
+        "resume_count": 651,
+        "ttft_p99_ms": 388.12892973965165,
+        "itl_p99_ms": 467.3791267000184,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 23.79741947299999,
+        "steps": 1048
+      },
+      "candidate": {
+        "actual_recompute_tokens": 3998,
+        "recompute_amplification": 2.115513392857143,
+        "recompute_tokens_per_preemption": 57.114285714285714,
+        "preemption_count": 70,
+        "resume_count": 70,
+        "ttft_p99_ms": 338.3228938497734,
+        "itl_p99_ms": 5724.649230149987,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 12.969361992000017,
+        "steps": 715
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9790483177863956,
+        "recompute_amplification": -0.9609987448817925,
+        "recompute_tokens_per_preemption": -0.8051493554134788,
+        "preemption_count": -0.8924731182795699,
+        "resume_count": -0.8924731182795699,
+        "ttft_p99_ms": -0.12832343088490483,
+        "itl_p99_ms": 11.248405851090313,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.45500973302106307,
+        "steps": -0.31774809160305345
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 2,
+      "baseline": {
+        "actual_recompute_tokens": 95317,
+        "recompute_amplification": 27.595145089285715,
+        "recompute_tokens_per_preemption": 183.65510597302506,
+        "preemption_count": 519,
+        "resume_count": 519,
+        "ttft_p99_ms": 412.0947931630767,
+        "itl_p99_ms": 688.2873279000478,
+        "interactive_slo_goodput_rps": 0.0,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 19.587136904999966,
+        "steps": 861
+      },
+      "candidate": {
+        "actual_recompute_tokens": 2056,
+        "recompute_amplification": 1.5736607142857142,
+        "recompute_tokens_per_preemption": 36.714285714285715,
+        "preemption_count": 56,
+        "resume_count": 56,
+        "ttft_p99_ms": 306.22284399947773,
+        "itl_p99_ms": 5878.898930049974,
+        "interactive_slo_goodput_rps": 0.25,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 10.611526216000016,
+        "steps": 566
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9784298708519992,
+        "recompute_amplification": -0.9429732763066097,
+        "recompute_tokens_per_preemption": -0.800091124503349,
+        "preemption_count": -0.8921001926782274,
+        "resume_count": -0.8921001926782274,
+        "ttft_p99_ms": -0.2569116400403115,
+        "itl_p99_ms": 7.541344133105557,
+        "interactive_slo_goodput_rps": null,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.4582400548141758,
+        "steps": -0.3426248548199768
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 3,
+      "baseline": {
+        "actual_recompute_tokens": 156301,
+        "recompute_amplification": 44.610770089285715,
+        "recompute_tokens_per_preemption": 445.3019943019943,
+        "preemption_count": 351,
+        "resume_count": 351,
+        "ttft_p99_ms": 276.8362183048799,
+        "itl_p99_ms": 272.22670419999423,
+        "interactive_slo_goodput_rps": 1.25,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 20.833587518999934,
+        "steps": 945
+      },
+      "candidate": {
+        "actual_recompute_tokens": 2499,
+        "recompute_amplification": 1.697265625,
+        "recompute_tokens_per_preemption": 104.125,
+        "preemption_count": 24,
+        "resume_count": 24,
+        "ttft_p99_ms": 278.8888891064616,
+        "itl_p99_ms": 3020.149293600014,
+        "interactive_slo_goodput_rps": 0.5,
+        "output_throughput_tps": 192.0,
+        "elapsed_seconds": 9.905660819999866,
+        "steps": 506
+      },
+      "relative_change_candidate_vs_baseline": {
+        "actual_recompute_tokens": -0.9840116186076865,
+        "recompute_amplification": -0.961953904368765,
+        "recompute_tokens_per_preemption": -0.7661699221374143,
+        "preemption_count": -0.9316239316239316,
+        "resume_count": -0.9316239316239316,
+        "ttft_p99_ms": 0.007414748020149245,
+        "itl_p99_ms": 10.09424331633986,
+        "interactive_slo_goodput_rps": -0.6,
+        "output_throughput_tps": 0.0,
+        "elapsed_seconds": -0.5245340817578323,
+        "steps": -0.46455026455026455
+      }
+    }
+  ],
+  "aggregate_gates": {
+    "actual_recompute_tokens": {
+      "baseline_total": 1621467.0,
+      "candidate_total": 103012.0,
+      "reduction": 0.9364698757359847,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "preemption_count": {
+      "baseline_total": 5459.0,
+      "candidate_total": 613.0,
+      "reduction": 0.8877083714966111,
+      "improved_pairs": 9,
+      "passed": true
+    }
+  },
+  "accepted": true
+}

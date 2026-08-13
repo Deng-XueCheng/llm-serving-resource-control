@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="45" font-size="16">achieved_output_tps</text>
+<circle cx="70.0" cy="246.7" r="4" fill="#0072B2"/>
+<circle cx="170.0" cy="205.0" r="4" fill="#0072B2"/>
+<circle cx="270.0" cy="163.3" r="4" fill="#0072B2"/>
+<circle cx="370.0" cy="121.7" r="4" fill="#0072B2"/>
+<circle cx="470.0" cy="80.0" r="4" fill="#0072B2"/>
+<polyline points="70.0,246.7 170.0,205.0 270.0,163.3 370.0,121.7 470.0,80.0" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="70.0" cy="246.7" r="4" fill="#D55E00"/>
+<circle cx="170.0" cy="205.0" r="4" fill="#D55E00"/>
+<circle cx="270.0" cy="163.3" r="4" fill="#D55E00"/>
+<circle cx="370.0" cy="121.7" r="4" fill="#D55E00"/>
+<circle cx="470.0" cy="80.0" r="4" fill="#D55E00"/>
+<polyline points="70.0,246.7 170.0,205.0 270.0,163.3 370.0,121.7 470.0,80.0" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="70.0" y="355" text-anchor="middle" font-size="11">0.5</text>
+<text x="170.0" y="355" text-anchor="middle" font-size="11">0.75</text>
+<text x="270.0" y="355" text-anchor="middle" font-size="11">1.0</text>
+<text x="370.0" y="355" text-anchor="middle" font-size="11">1.25</text>
+<text x="470.0" y="355" text-anchor="middle" font-size="11">1.5</text>
+<text x="560" y="45" font-size="16">slo_goodput_rps</text>
+<circle cx="560.0" cy="201.8" r="4" fill="#0072B2"/>
+<circle cx="660.0" cy="166.5" r="4" fill="#0072B2"/>
+<circle cx="760.0" cy="160.1" r="4" fill="#0072B2"/>
+<circle cx="860.0" cy="198.6" r="4" fill="#0072B2"/>
+<circle cx="960.0" cy="253.1" r="4" fill="#0072B2"/>
+<polyline points="560.0,201.8 660.0,166.5 760.0,160.1 860.0,198.6 960.0,253.1" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="560.0" cy="201.8" r="4" fill="#D55E00"/>
+<circle cx="660.0" cy="136.1" r="4" fill="#D55E00"/>
+<circle cx="760.0" cy="185.8" r="4" fill="#D55E00"/>
+<circle cx="860.0" cy="174.6" r="4" fill="#D55E00"/>
+<circle cx="960.0" cy="229.0" r="4" fill="#D55E00"/>
+<polyline points="560.0,201.8 660.0,136.1 760.0,185.8 860.0,174.6 960.0,229.0" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="560.0" y="355" text-anchor="middle" font-size="11">0.5</text>
+<text x="660.0" y="355" text-anchor="middle" font-size="11">0.75</text>
+<text x="760.0" y="355" text-anchor="middle" font-size="11">1.0</text>
+<text x="860.0" y="355" text-anchor="middle" font-size="11">1.25</text>
+<text x="960.0" y="355" text-anchor="middle" font-size="11">1.5</text>
+<text x="70" y="405" font-size="16">ttft_p99_ms</text>
+<circle cx="70.0" cy="661.1" r="4" fill="#0072B2"/>
+<circle cx="170.0" cy="628.2" r="4" fill="#0072B2"/>
+<circle cx="270.0" cy="607.6" r="4" fill="#0072B2"/>
+<circle cx="370.0" cy="530.4" r="4" fill="#0072B2"/>
+<circle cx="470.0" cy="474.0" r="4" fill="#0072B2"/>
+<polyline points="70.0,661.1 170.0,628.2 270.0,607.6 370.0,530.4 470.0,474.0" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="70.0" cy="658.1" r="4" fill="#D55E00"/>
+<circle cx="170.0" cy="652.1" r="4" fill="#D55E00"/>
+<circle cx="270.0" cy="612.6" r="4" fill="#D55E00"/>
+<circle cx="370.0" cy="602.4" r="4" fill="#D55E00"/>
+<circle cx="470.0" cy="539.0" r="4" fill="#D55E00"/>
+<polyline points="70.0,658.1 170.0,652.1 270.0,612.6 370.0,602.4 470.0,539.0" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="70.0" y="715" text-anchor="middle" font-size="11">0.5</text>
+<text x="170.0" y="715" text-anchor="middle" font-size="11">0.75</text>
+<text x="270.0" y="715" text-anchor="middle" font-size="11">1.0</text>
+<text x="370.0" y="715" text-anchor="middle" font-size="11">1.25</text>
+<text x="470.0" y="715" text-anchor="middle" font-size="11">1.5</text>
+<text x="560" y="405" font-size="16">itl_p99_ms</text>
+<circle cx="560.0" cy="682.2" r="4" fill="#0072B2"/>
+<circle cx="660.0" cy="642.4" r="4" fill="#0072B2"/>
+<circle cx="760.0" cy="624.7" r="4" fill="#0072B2"/>
+<circle cx="860.0" cy="581.2" r="4" fill="#0072B2"/>
+<circle cx="960.0" cy="492.3" r="4" fill="#0072B2"/>
+<polyline points="560.0,682.2 660.0,642.4 760.0,624.7 860.0,581.2 960.0,492.3" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="560.0" cy="681.0" r="4" fill="#D55E00"/>
+<circle cx="660.0" cy="679.5" r="4" fill="#D55E00"/>
+<circle cx="760.0" cy="616.8" r="4" fill="#D55E00"/>
+<circle cx="860.0" cy="585.0" r="4" fill="#D55E00"/>
+<circle cx="960.0" cy="550.9" r="4" fill="#D55E00"/>
+<polyline points="560.0,681.0 660.0,679.5 760.0,616.8 860.0,585.0 960.0,550.9" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="560.0" y="715" text-anchor="middle" font-size="11">0.5</text>
+<text x="660.0" y="715" text-anchor="middle" font-size="11">0.75</text>
+<text x="760.0" y="715" text-anchor="middle" font-size="11">1.0</text>
+<text x="860.0" y="715" text-anchor="middle" font-size="11">1.25</text>
+<text x="960.0" y="715" text-anchor="middle" font-size="11">1.5</text>
+</svg>

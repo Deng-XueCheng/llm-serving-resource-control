@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "revision": "stage15_diagnostic_r3",
+  "capacity": 8,
+  "seed": 2,
+  "artifacts": {
+    "json": {
+      "path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_timeline.json",
+      "sha256": "246d4476afa343a69a23ab286fc7c3593e4e3701fdd938305d468bffb5af7aeb"
+    },
+    "csv": {
+      "path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_timeline.csv",
+      "sha256": "6c2e5c5409531db786baa140903e35ada312a7aff353b1aaf745f30abe3316da"
+    },
+    "png": {
+      "path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage15_diagnostic_r3_timeline.png",
+      "sha256": "d80a20805e55ee5423342e345377dd8508b0805c13e7f8780167f0ea8975d332"
+    }
+  }
+}

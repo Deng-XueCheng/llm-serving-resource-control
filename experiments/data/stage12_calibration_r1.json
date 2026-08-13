@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "description": "Stage 12 independent ETA calibration: one long shared-prefix owner and one interactive request; never used as a treatment/control result.",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 0.0,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 120001,
+      "prefix_group": "stage12-calibration-prefix",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.05,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 120002,
+      "prefix_group": "stage12-calibration-prefix",
+      "shared_prefix_length": 512
+    }
+  ]
+}

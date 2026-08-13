@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+  "model": {
+    "path": "/opt/models/Qwen3-0.6B",
+    "repo_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "sha256": {
+      "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+      "config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    }
+  },
+  "engine": {
+    "enforce_eager": true,
+    "tensor_parallel_size": 1,
+    "max_model_len": 1024,
+    "max_num_batched_tokens": 768,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.8,
+    "kvcache_block_size": 256,
+    "scheduler_policy": "prefill_first",
+    "decode_token_budget": 0,
+    "decode_step_guard": 0,
+    "num_kvcache_blocks": 6
+  },
+  "sampling": {
+    "temperature": 0.6,
+    "ignore_eos": true,
+    "seed": 20260814
+  },
+  "workload": {
+    "trace_path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse50_seed3.json",
+    "token_id_upper_bound": 10000
+  },
+  "slo": {
+    "ttft_slo_ms": 10000.0,
+    "itl_slo_ms": 10000.0,
+    "require_itl": true
+  },
+  "measurement": {
+    "start_seconds": 0.0,
+    "end_seconds": 30.0,
+    "max_run_seconds": 45.0
+  },
+  "warmup": {
+    "enabled": true,
+    "prompt_length": 32,
+    "max_output_tokens": 2,
+    "seed": 111103,
+    "batch_sizes": [
+      1,
+      2
+    ]
+  },
+  "profiling": {
+    "enabled": false,
+    "output_directory": "experiments/profiling",
+    "record_shapes": true,
+    "profile_memory": true,
+    "with_stack": false,
+    "wait_steps": 0,
+    "warmup_steps": 1,
+    "active_steps": 3,
+    "repeat": 1,
+    "cuda_events": false
+  },
+  "admission": {
+    "policy": "prefix_aware_fifo",
+    "max_queue_wait_seconds": 1.0,
+    "observe_prefix_cache": true
+  },
+  "output": {
+    "directory": "experiments/results",
+    "run_id": "stage11_formal_r1_prefix_reuse50_kv6_seed3"
+  }
+}

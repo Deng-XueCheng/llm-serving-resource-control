@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "review_status": "PASS",
+  "review_source": "independent raw artifact recomputation",
+  "cells": [
+    {
+      "cell_id": "load4.8_seed1_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 1,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed1_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "77cfc603271727ef85cb4cbf04b12bbc605b4d7fa58e73f537fc218bf076aaf1",
+      "trace_hash": "73bb6efdf358d952ed838fc2b1d1eb34de85b3dbbce16ef41faeb29b4066fb9a",
+      "ttft_p99_ms": 7678.495199140161,
+      "itl_p99_ms": 2997.55158917975,
+      "slo_goodput_rps": 0.95,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 1.6940451745379876,
+      "kv_imbalance_mean": 0.2492299794661191,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load4.8_seed1_round_robin",
+      "offered_rps": 4.8,
+      "seed": 1,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed1_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "1264b741b24ab1205759f6f67cd1850b9ff16f50c4353eb01c5b4b851dc805d3",
+      "trace_hash": "73bb6efdf358d952ed838fc2b1d1eb34de85b3dbbce16ef41faeb29b4066fb9a",
+      "ttft_p99_ms": 9257.166553288698,
+      "itl_p99_ms": 4038.388525787741,
+      "slo_goodput_rps": 1.2,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 6.860759493670886,
+      "kv_imbalance_mean": 0.33499095840867993,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load4.8_seed2_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 2,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed2_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "d5fe54508b9a7528a129795120475fd990537861113496a42b82d9c54385491d",
+      "trace_hash": "20475166f14c09ea44847e160d446a441deaf76bc95491c33b46d0650de17b0e",
+      "ttft_p99_ms": 3576.634062516193,
+      "itl_p99_ms": 1739.6474855020622,
+      "slo_goodput_rps": 2.35,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 1.9735099337748345,
+      "kv_imbalance_mean": 0.2041942604856512,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load4.8_seed2_round_robin",
+      "offered_rps": 4.8,
+      "seed": 2,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed2_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "94a2bf75f9313dd776aef0fd64a228f509d94104289558d92a4a04520b5d05bc",
+      "trace_hash": "20475166f14c09ea44847e160d446a441deaf76bc95491c33b46d0650de17b0e",
+      "ttft_p99_ms": 9220.976695418358,
+      "itl_p99_ms": 4048.494592122732,
+      "slo_goodput_rps": 1.2,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 6.869801084990958,
+      "kv_imbalance_mean": 0.33499095840867993,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load4.8_seed3_resource_aware",
+      "offered_rps": 4.8,
+      "seed": 3,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed3_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "908cbb0ab2fb91d06fead68e53606e5dfa9cc6cad108944c0695861a5e932906",
+      "trace_hash": "bf4320c5f52f15e71837a88ecd2102e7f481ffdd7dc82d94c92c649c96a235ed",
+      "ttft_p99_ms": 6687.661817607779,
+      "itl_p99_ms": 207.98379182815552,
+      "slo_goodput_rps": 2.35,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 1.3310810810810811,
+      "kv_imbalance_mean": 0.18130630630630631,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load4.8_seed3_round_robin",
+      "offered_rps": 4.8,
+      "seed": 3,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load4.8_seed3_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "e3b63c22f81e2e544d5531cf6bb34f82b9f9a33b60d174e58693ad689555a203",
+      "trace_hash": "bf4320c5f52f15e71837a88ecd2102e7f481ffdd7dc82d94c92c649c96a235ed",
+      "ttft_p99_ms": 9514.35230858624,
+      "itl_p99_ms": 4095.242302119729,
+      "slo_goodput_rps": 1.2,
+      "throughput_tps": 115.2,
+      "queue_imbalance_mean": 6.807407407407408,
+      "kv_imbalance_mean": 0.337037037037037,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed1_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 1,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed1_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "0d50428bfb19a82920aa7780e5e7ddfd76836ad705fe1d2fd8a466117f298f31",
+      "trace_hash": "87334f55c9db6b9cf7a1e9d21f1d1b3ab032377aafb2b59062adde03ec8c8b83",
+      "ttft_p99_ms": 9587.628561879197,
+      "itl_p99_ms": 4144.122564345572,
+      "slo_goodput_rps": 1.35,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 2.5933098591549295,
+      "kv_imbalance_mean": 0.1952024647887324,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed1_round_robin",
+      "offered_rps": 6.0,
+      "seed": 1,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed1_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "4bc2f02d44c8c20dd64eb4f24ff5a05eba669a2aec2a9943a546bffd09f52de1",
+      "trace_hash": "87334f55c9db6b9cf7a1e9d21f1d1b3ab032377aafb2b59062adde03ec8c8b83",
+      "ttft_p99_ms": 17174.474894826613,
+      "itl_p99_ms": 4881.142861656837,
+      "slo_goodput_rps": 1.1,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 9.831091180866965,
+      "kv_imbalance_mean": 0.31147234678624813,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed2_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 2,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed2_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "67f69d2b45d211cbdc671d4c546f577f9cae2c1e5365ecd3db5f626a51efa1d9",
+      "trace_hash": "e1829e256343ae7809508023332911904aba4484e9147d443daf98209f418c45",
+      "ttft_p99_ms": 6165.270938506972,
+      "itl_p99_ms": 4103.482165001326,
+      "slo_goodput_rps": 2.55,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 2.5098039215686274,
+      "kv_imbalance_mean": 0.1412655971479501,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed2_round_robin",
+      "offered_rps": 6.0,
+      "seed": 2,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed2_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "cb9249b0702051e999cdc7e43e9f44f072163363848ff85619e553a51a57b8f2",
+      "trace_hash": "e1829e256343ae7809508023332911904aba4484e9147d443daf98209f418c45",
+      "ttft_p99_ms": 19748.567962416757,
+      "itl_p99_ms": 6912.47842306266,
+      "slo_goodput_rps": 0.7,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 9.85419734904271,
+      "kv_imbalance_mean": 0.34204712812960236,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed3_resource_aware",
+      "offered_rps": 6.0,
+      "seed": 3,
+      "router": "resource_aware",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed3_resource_aware.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "1bf5fe3210ec2bd55ffe9d0613374bf249fd8afc125d8c3490072ee1f842536f",
+      "trace_hash": "5eb5d1c2f3c07362c1375e650c1e5777711f3dd77bec4744dc32989400cc4644",
+      "ttft_p99_ms": 5398.845082595946,
+      "itl_p99_ms": 1969.1057334281213,
+      "slo_goodput_rps": 2.8,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 1.2495575221238937,
+      "kv_imbalance_mean": 0.18805309734513273,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    },
+    {
+      "cell_id": "load6_seed3_round_robin",
+      "offered_rps": 6.0,
+      "seed": 3,
+      "router": "round_robin",
+      "artifact": "experiments/results/post_gpu_binding_fix/stage18/formal/load6_seed3_round_robin.json",
+      "code_sha": "3a35458eb513f9e9dba20229a377942fc2cccc25",
+      "config_hash": "22b377106a6a7f4701205c2aa7de9a4c495398aa254420923c9ed420e9ee044b",
+      "trace_hash": "5eb5d1c2f3c07362c1375e650c1e5777711f3dd77bec4744dc32989400cc4644",
+      "ttft_p99_ms": 18411.87481612588,
+      "itl_p99_ms": 5026.238535437705,
+      "slo_goodput_rps": 0.9,
+      "throughput_tps": 144.0,
+      "queue_imbalance_mean": 9.218152866242038,
+      "kv_imbalance_mean": 0.31628184713375795,
+      "gpu_uuids": [
+        "GPU-092ba964-24a4-f5da-7958-241738f3de56",
+        "GPU-4660fc57-8025-3b98-9183-06dfc7e45c2a"
+      ],
+      "assertions": {
+        "post_fix": true,
+        "preflight": true,
+        "runtime": true,
+        "distinct_gpu_uuids": true,
+        "overlap": true,
+        "both_cuda": true,
+        "terminal": true,
+        "kv_released": true,
+        "both_routed": true
+      }
+    }
+  ],
+  "matched_pairs": [
+    {
+      "offered_rps": 4.8,
+      "seed": 1,
+      "delta_ttft_p99_ms": -1578.671354148537,
+      "delta_itl_p99_ms": -1040.836936607991,
+      "delta_slo_goodput_rps": -0.25,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -5.166714319132899,
+      "delta_kv_imbalance_mean": -0.08576097894256082
+    },
+    {
+      "offered_rps": 4.8,
+      "seed": 2,
+      "delta_ttft_p99_ms": -5644.342632902165,
+      "delta_itl_p99_ms": -2308.8471066206694,
+      "delta_slo_goodput_rps": 1.1500000000000001,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -4.896291151216124,
+      "delta_kv_imbalance_mean": -0.13079669792302873
+    },
+    {
+      "offered_rps": 4.8,
+      "seed": 3,
+      "delta_ttft_p99_ms": -2826.6904909784607,
+      "delta_itl_p99_ms": -3887.2585102915737,
+      "delta_slo_goodput_rps": 1.1500000000000001,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -5.476326326326326,
+      "delta_kv_imbalance_mean": -0.1557307307307307
+    },
+    {
+      "offered_rps": 6.0,
+      "seed": 1,
+      "delta_ttft_p99_ms": -7586.846332947416,
+      "delta_itl_p99_ms": -737.0202973112655,
+      "delta_slo_goodput_rps": 0.25,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -7.237781321712035,
+      "delta_kv_imbalance_mean": -0.11626988199751573
+    },
+    {
+      "offered_rps": 6.0,
+      "seed": 2,
+      "delta_ttft_p99_ms": -13583.297023909785,
+      "delta_itl_p99_ms": -2808.9962580613337,
+      "delta_slo_goodput_rps": 1.8499999999999999,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -7.344393427474083,
+      "delta_kv_imbalance_mean": -0.20078153098165227
+    },
+    {
+      "offered_rps": 6.0,
+      "seed": 3,
+      "delta_ttft_p99_ms": -13013.029733529935,
+      "delta_itl_p99_ms": -3057.1328020095834,
+      "delta_slo_goodput_rps": 1.9,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -7.968595344118144,
+      "delta_kv_imbalance_mean": -0.12822874978862522
+    }
+  ],
+  "grouped_mean_deltas_candidate_minus_baseline": [
+    {
+      "offered_rps": 4.8,
+      "delta_ttft_p99_ms": -3349.9014926763875,
+      "delta_itl_p99_ms": -2412.314184506745,
+      "delta_slo_goodput_rps": 0.6833333333333335,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -5.1797772655584495,
+      "delta_kv_imbalance_mean": -0.12409613586544009
+    },
+    {
+      "offered_rps": 6.0,
+      "delta_ttft_p99_ms": -11394.391030129045,
+      "delta_itl_p99_ms": -2201.049785794061,
+      "delta_slo_goodput_rps": 1.3333333333333333,
+      "delta_throughput_tps": 0.0,
+      "delta_queue_imbalance_mean": -7.516923364434754,
+      "delta_kv_imbalance_mean": -0.14842672092259773
+    }
+  ]
+}

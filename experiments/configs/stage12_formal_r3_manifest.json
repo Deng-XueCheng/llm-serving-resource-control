@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "stage": "stage12",
+  "revision": "r3",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "policies": [
+    "prefix",
+    "slack"
+  ],
+  "cells": [
+    {
+      "seed": 1,
+      "policy": "prefix",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_prefix_seed1.json",
+      "config_sha256": "e590742179087c386a32a4c7edd272a02d937287070e3e747c6bcd5a150a55ce",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed1.json",
+      "trace_sha256": "b8dbde860bb02a72290436f0f480560800f9963520c93c57e2d8ea5c990ba6f5"
+    },
+    {
+      "seed": 1,
+      "policy": "slack",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed1.json",
+      "config_sha256": "79ac5c4161bb6255ba9c8cbbcc1782d0e33eae644a0613995c97892be593d95b",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed1.json",
+      "trace_sha256": "b8dbde860bb02a72290436f0f480560800f9963520c93c57e2d8ea5c990ba6f5",
+      "manifest_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed1.manifest.json",
+      "manifest_sha256": "3eb177743517f7fba63c118011897742c3ed22e1ff14b44f9860d2117985e096"
+    },
+    {
+      "seed": 2,
+      "policy": "prefix",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_prefix_seed2.json",
+      "config_sha256": "f5ee928131228e39683538fb9e06d05406dab072b3446ab6cbc2098c00539a2e",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed2.json",
+      "trace_sha256": "4bfae37776cc7824def82ddd1fa7576f2b1c6a2a12b1ea0259e8e9d91acaff1c"
+    },
+    {
+      "seed": 2,
+      "policy": "slack",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed2.json",
+      "config_sha256": "8dbcaa7024edba805e10d89a6bffeb2af77c79ae0888b5180e3bd8559777f632",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed2.json",
+      "trace_sha256": "4bfae37776cc7824def82ddd1fa7576f2b1c6a2a12b1ea0259e8e9d91acaff1c",
+      "manifest_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed2.manifest.json",
+      "manifest_sha256": "c1ba5929db948269bb21caa5500348e7a6bb311ac18ab958d6cb8ef167d95abe"
+    },
+    {
+      "seed": 3,
+      "policy": "prefix",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_prefix_seed3.json",
+      "config_sha256": "bb91911714161f4e0010a31cbaeebacdff7651bcceec56381ecc5e82e49b7854",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed3.json",
+      "trace_sha256": "3cc5f6fbc7ac20b284d953277580e9a9304fe887f418ea43fa03f7b46b967369"
+    },
+    {
+      "seed": 3,
+      "policy": "slack",
+      "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed3.json",
+      "config_sha256": "c4460db38438254ac8947fa1366dc8fe17931f0ff837d06d251d9c61a9575906",
+      "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed3.json",
+      "trace_sha256": "3cc5f6fbc7ac20b284d953277580e9a9304fe887f418ea43fa03f7b46b967369",
+      "manifest_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed3.manifest.json",
+      "manifest_sha256": "1b50db4d2b84c9385a93c90d5ce7a7441d3942545cdaf0d301e36e890eead802"
+    }
+  ]
+}

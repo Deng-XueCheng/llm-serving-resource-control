@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Preserve the byte-identical upstream source snapshot.  This file contains
+# one legacy trailing space and is intentionally not reformatted here.
+nanovllm/layers/attention.py whitespace=-trailing-space

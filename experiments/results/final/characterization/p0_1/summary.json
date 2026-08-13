@@ -1,0 +1,2427 @@
+{
+  "schema_version": 1,
+  "phase": "P0-1",
+  "cells": [
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "d90bbdc5e41c9b61bc927b63e07926c4a0f3f6226cbcab3862be1f98106417f6",
+      "trace_sha256": "1277b6d172b816dcb67a60da9cf3bad241bb0a4faec8f4c71b4b3903a215e3c8",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.3,
+        "ttft_p50_ms": 123.45223190883736,
+        "ttft_p99_ms": 2805.4822387670474,
+        "itl_p50_ms": 42.50650200992823,
+        "itl_p99_ms": 250.56419521570206,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.4243243243243243,
+          "p99": 3,
+          "max": 5
+        },
+        "system_queue_length": {
+          "mean": 1.9162162162162162,
+          "p99": 6,
+          "max": 6
+        },
+        "queue_imbalance": {
+          "mean": 1.691891891891892,
+          "p99": 4,
+          "max": 4
+        },
+        "kv_utilization": {
+          "mean": 0.543581081081081,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.4141891891891892,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 13,
+        "requests_by_replica": {
+          "0": 24,
+          "1": 24
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "6295294d5987ae0d5bcd61db00bcb7bc97727aadc20c664fa19a330b045c6c6b",
+      "trace_sha256": "1277b6d172b816dcb67a60da9cf3bad241bb0a4faec8f4c71b4b3903a215e3c8",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.3,
+        "ttft_p50_ms": 151.91427400956402,
+        "ttft_p99_ms": 3040.01707981651,
+        "itl_p50_ms": 44.83924526721239,
+        "itl_p99_ms": 453.89601176604435,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.5730897009966778,
+          "p99": 3,
+          "max": 4
+        },
+        "system_queue_length": {
+          "mean": 2.4069767441860463,
+          "p99": 6,
+          "max": 6
+        },
+        "queue_imbalance": {
+          "mean": 0.7275747508305648,
+          "p99": 2,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.6546926910299004,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.16154485049833886,
+          "p99": 0.625,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 12,
+        "requests_by_replica": {
+          "0": 21,
+          "1": 27
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "e90dbbb5e911750b7c9d27772252b529c2537bc687a13cd25244723fad4eded6",
+      "trace_sha256": "3c6195714b554a73107b2a440598a778aac35ed38a1007e811a2078b10b9a389",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.3,
+        "ttft_p50_ms": 280.8690092836814,
+        "ttft_p99_ms": 3019.927696691205,
+        "itl_p50_ms": 47.29336779564619,
+        "itl_p99_ms": 407.9931063763787,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.8532423208191127,
+          "p99": 5,
+          "max": 5
+        },
+        "system_queue_length": {
+          "mean": 2.737201365187713,
+          "p99": 7,
+          "max": 7
+        },
+        "queue_imbalance": {
+          "mean": 2.2389078498293515,
+          "p99": 5,
+          "max": 6
+        },
+        "kv_utilization": {
+          "mean": 0.6815273037542662,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.32380546075085326,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 15,
+        "requests_by_replica": {
+          "0": 24,
+          "1": 24
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "d0d66cec108c1c84650477d4fa9d63053e22e6bd85a328f9c35424a28ccab073",
+      "trace_sha256": "3c6195714b554a73107b2a440598a778aac35ed38a1007e811a2078b10b9a389",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.35,
+        "ttft_p50_ms": 83.19345582276583,
+        "ttft_p99_ms": 2763.6904913124936,
+        "itl_p50_ms": 31.344309449195862,
+        "itl_p99_ms": 268.4194203466177,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.18404255319148935,
+          "p99": 2,
+          "max": 4
+        },
+        "system_queue_length": {
+          "mean": 1.3585106382978724,
+          "p99": 5,
+          "max": 6
+        },
+        "queue_imbalance": {
+          "mean": 0.6574468085106383,
+          "p99": 2,
+          "max": 2
+        },
+        "kv_utilization": {
+          "mean": 0.4315159574468085,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.29069148936170214,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 13,
+        "requests_by_replica": {
+          "0": 28,
+          "1": 20
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "c8186ba715a091fa558ab61936a0d6f3f3d6ea70d05d1dac621ce193d0e356f8",
+      "trace_sha256": "b139ecf2f24a7d4a9b039d5433a69bb87241b50daf9a726e6af4dd28db0fafc4",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.4,
+        "ttft_p50_ms": 80.90771331141377,
+        "ttft_p99_ms": 1897.6780247067413,
+        "itl_p50_ms": 29.844695702195168,
+        "itl_p99_ms": 230.61363212764263,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.12449799196787148,
+          "p99": 2,
+          "max": 3
+        },
+        "system_queue_length": {
+          "mean": 1.2329317269076305,
+          "p99": 5,
+          "max": 5
+        },
+        "queue_imbalance": {
+          "mean": 1.1927710843373494,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.4036144578313253,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.4427710843373494,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 14,
+        "requests_by_replica": {
+          "0": 24,
+          "1": 24
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.5_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "load_multiplier": 0.5,
+      "offered_rps": 2.4,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "fae004905d463f1ccd2ed6a48dd624560dbc8ede8f61f044ef5412956aaa4ad7",
+      "trace_sha256": "b139ecf2f24a7d4a9b039d5433a69bb87241b50daf9a726e6af4dd28db0fafc4",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 2.4,
+        "offered_output_tps": 57.6,
+        "achieved_output_tps": 57.6,
+        "slo_goodput_rps": 1.35,
+        "ttft_p50_ms": 99.08015094697475,
+        "ttft_p99_ms": 2726.3597578865783,
+        "itl_p50_ms": 41.18704982101917,
+        "itl_p99_ms": 308.3390686661005,
+        "submitted": 48,
+        "finished": 48,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.2262210796915167,
+          "p99": 2,
+          "max": 4
+        },
+        "system_queue_length": {
+          "mean": 1.6452442159383034,
+          "p99": 5,
+          "max": 6
+        },
+        "queue_imbalance": {
+          "mean": 0.6735218508997429,
+          "p99": 2,
+          "max": 2
+        },
+        "kv_utilization": {
+          "mean": 0.518155526992288,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.22268637532133675,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 14,
+        "requests_by_replica": {
+          "0": 26,
+          "1": 22
+        },
+        "raw_token_count_check": 1152
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "923267c426693c07fad301bbe22cf41bdcdbdc6757c493cb28cd6e7752c5ba71",
+      "trace_sha256": "fce75bda18874c1c9ccffd10807c57eab12d006060921a4357ee145f3cfedd30",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 1.95,
+        "ttft_p50_ms": 971.813044407301,
+        "ttft_p99_ms": 3501.1986301052893,
+        "itl_p50_ms": 31.84278216212988,
+        "itl_p99_ms": 1107.8223323262857,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 2.074074074074074,
+          "p99": 8,
+          "max": 9
+        },
+        "system_queue_length": {
+          "mean": 4.118518518518519,
+          "p99": 10,
+          "max": 11
+        },
+        "queue_imbalance": {
+          "mean": 3.802469135802469,
+          "p99": 9,
+          "max": 10
+        },
+        "kv_utilization": {
+          "mean": 0.729320987654321,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.32098765432098764,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 23,
+        "requests_by_replica": {
+          "0": 36,
+          "1": 36
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "a747461a46ab79fcce146cc5f2b3234e8ef40af261fef75d0f1b5efc5213e33c",
+      "trace_sha256": "fce75bda18874c1c9ccffd10807c57eab12d006060921a4357ee145f3cfedd30",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 2.05,
+        "ttft_p50_ms": 1682.6090625383772,
+        "ttft_p99_ms": 3961.0546538109547,
+        "itl_p50_ms": 45.08316982537508,
+        "itl_p99_ms": 319.4831367582083,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 3.2222222222222223,
+          "p99": 8,
+          "max": 8
+        },
+        "system_queue_length": {
+          "mean": 5.412698412698413,
+          "p99": 9,
+          "max": 10
+        },
+        "queue_imbalance": {
+          "mean": 2.1534391534391535,
+          "p99": 7,
+          "max": 8
+        },
+        "kv_utilization": {
+          "mean": 0.7579365079365079,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.19973544973544974,
+          "p99": 0.875,
+          "max": 0.875
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 21,
+        "requests_by_replica": {
+          "0": 27,
+          "1": 45
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "a3e990caab527faa25782a8058c670e9bc63dbf35dd4386f7a8feaafc8c035cc",
+      "trace_sha256": "b68519b5a987be1cc31dae10df2feea3aa3b1a47e9398352992c84bcebefe471",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 1.7,
+        "ttft_p50_ms": 2173.434204008016,
+        "ttft_p99_ms": 5629.854998838982,
+        "itl_p50_ms": 50.05124397575855,
+        "itl_p99_ms": 1674.1550697386251,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 4.254475703324808,
+          "p99": 11,
+          "max": 12
+        },
+        "system_queue_length": {
+          "mean": 6.372122762148337,
+          "p99": 14,
+          "max": 15
+        },
+        "queue_imbalance": {
+          "mean": 5.649616368286445,
+          "p99": 11,
+          "max": 12
+        },
+        "kv_utilization": {
+          "mean": 0.756074168797954,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2883631713554987,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 22,
+        "requests_by_replica": {
+          "0": 36,
+          "1": 36
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "7f0bae4af0fc948a7be251014946b6018f7450b64f90dadefed6dd5ad93700d1",
+      "trace_sha256": "b68519b5a987be1cc31dae10df2feea3aa3b1a47e9398352992c84bcebefe471",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 2.05,
+        "ttft_p50_ms": 80.28207626193584,
+        "ttft_p99_ms": 2883.2067437076726,
+        "itl_p50_ms": 31.793774105608463,
+        "itl_p99_ms": 213.52587303146692,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 0.6913716814159292,
+          "p99": 4,
+          "max": 6
+        },
+        "system_queue_length": {
+          "mean": 2.523230088495575,
+          "p99": 7,
+          "max": 8
+        },
+        "queue_imbalance": {
+          "mean": 0.834070796460177,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.6382743362831859,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.19303097345132744,
+          "p99": 0.625,
+          "max": 0.75
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 20,
+        "requests_by_replica": {
+          "0": 33,
+          "1": 39
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "5446729cf2777dfb913e685ab85ceda22bdd7dfb5a0a381e8f6fa05cb6481f5f",
+      "trace_sha256": "fc8fc6fe409c0d36bd1d1594cbd818fb8c9192c429ff85ea9c64afc6d6c26262",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 1.45,
+        "ttft_p50_ms": 2945.1648643654244,
+        "ttft_p99_ms": 7378.604768665712,
+        "itl_p50_ms": 56.48889485746622,
+        "itl_p99_ms": 2640.681148376273,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 5.520884520884521,
+          "p99": 15,
+          "max": 16
+        },
+        "system_queue_length": {
+          "mean": 7.555282555282555,
+          "p99": 18,
+          "max": 19
+        },
+        "queue_imbalance": {
+          "mean": 5.2137592137592135,
+          "p99": 9,
+          "max": 10
+        },
+        "kv_utilization": {
+          "mean": 0.7289619164619164,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.27303439803439805,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 22,
+        "requests_by_replica": {
+          "0": 36,
+          "1": 36
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load0.75_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "load_multiplier": 0.75,
+      "offered_rps": 3.5999999999999996,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "80594d988be2848e14cb650d0f3ca83b8418ea0ced3511e3647b5894e995abf4",
+      "trace_sha256": "fc8fc6fe409c0d36bd1d1594cbd818fb8c9192c429ff85ea9c64afc6d6c26262",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 3.5999999999999996,
+        "offered_output_tps": 86.4,
+        "achieved_output_tps": 86.4,
+        "slo_goodput_rps": 1.95,
+        "ttft_p50_ms": 819.587349684701,
+        "ttft_p99_ms": 3284.6455705703947,
+        "itl_p50_ms": 45.953746885061264,
+        "itl_p99_ms": 668.6369383334968,
+        "submitted": 72,
+        "finished": 72,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 2.1257225433526012,
+          "p99": 5,
+          "max": 7
+        },
+        "system_queue_length": {
+          "mean": 4.51878612716763,
+          "p99": 8,
+          "max": 9
+        },
+        "queue_imbalance": {
+          "mean": 0.9219653179190751,
+          "p99": 3,
+          "max": 3
+        },
+        "kv_utilization": {
+          "mean": 0.8345375722543352,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.16835260115606937,
+          "p99": 0.625,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 20,
+        "requests_by_replica": {
+          "0": 31,
+          "1": 41
+        },
+        "raw_token_count_check": 1728
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "d9f07aa603f59686439ac77c083a0b4d8fcd3ddb5fede29fab62c54c2126fac2",
+      "trace_sha256": "73bb6efdf358d952ed838fc2b1d1eb34de85b3dbbce16ef41faeb29b4066fb9a",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 2.4,
+        "ttft_p50_ms": 1685.8968238035836,
+        "ttft_p99_ms": 5597.237178931632,
+        "itl_p50_ms": 43.24545990675688,
+        "itl_p99_ms": 559.0518402866937,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 4.917307692307692,
+          "p99": 13,
+          "max": 14
+        },
+        "system_queue_length": {
+          "mean": 7.040384615384616,
+          "p99": 16,
+          "max": 17
+        },
+        "queue_imbalance": {
+          "mean": 6.3076923076923075,
+          "p99": 11,
+          "max": 12
+        },
+        "kv_utilization": {
+          "mean": 0.7570913461538461,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.28918269230769234,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 30,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "7bdbaa67182070b5fa94fead44514e5524def983fd4971eecc0b70eb3bb96e48",
+      "trace_sha256": "73bb6efdf358d952ed838fc2b1d1eb34de85b3dbbce16ef41faeb29b4066fb9a",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 1.05,
+        "ttft_p50_ms": 5836.967821543415,
+        "ttft_p99_ms": 8854.906154951701,
+        "itl_p50_ms": 54.16364409029484,
+        "itl_p99_ms": 4895.380400866256,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 10.211060948081265,
+          "p99": 18,
+          "max": 19
+        },
+        "system_queue_length": {
+          "mean": 12.70316027088036,
+          "p99": 20,
+          "max": 21
+        },
+        "queue_imbalance": {
+          "mean": 1.7313769751693002,
+          "p99": 6,
+          "max": 7
+        },
+        "kv_utilization": {
+          "mean": 0.8448081264108352,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.17042889390519186,
+          "p99": 0.875,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 24,
+        "requests_by_replica": {
+          "0": 46,
+          "1": 50
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "02419f714faf3777733eb3c1e0629e81670d146a18590a7d0cfe2fc4ea9c296a",
+      "trace_sha256": "20475166f14c09ea44847e160d446a441deaf76bc95491c33b46d0650de17b0e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 1.65,
+        "ttft_p50_ms": 2816.7304514596854,
+        "ttft_p99_ms": 7070.173398467401,
+        "itl_p50_ms": 47.417376190423965,
+        "itl_p99_ms": 2669.3905030377186,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 7.780075187969925,
+          "p99": 18,
+          "max": 18
+        },
+        "system_queue_length": {
+          "mean": 9.855263157894736,
+          "p99": 20,
+          "max": 21
+        },
+        "queue_imbalance": {
+          "mean": 8.233082706766917,
+          "p99": 14,
+          "max": 15
+        },
+        "kv_utilization": {
+          "mean": 0.7475328947368421,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.29769736842105265,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 30,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "f170fc619095e9914e18c6eb0077a61ac7575b411b4ea31adf28fbedff51584a",
+      "trace_sha256": "20475166f14c09ea44847e160d446a441deaf76bc95491c33b46d0650de17b0e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 2.6,
+        "ttft_p50_ms": 2201.3145073627425,
+        "ttft_p99_ms": 3553.607430309058,
+        "itl_p50_ms": 38.4256225079298,
+        "itl_p99_ms": 567.3947209492322,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 4.8733480176211454,
+          "p99": 10,
+          "max": 11
+        },
+        "system_queue_length": {
+          "mean": 7.3050660792951545,
+          "p99": 12,
+          "max": 13
+        },
+        "queue_imbalance": {
+          "mean": 1.9537444933920705,
+          "p99": 6,
+          "max": 6
+        },
+        "kv_utilization": {
+          "mean": 0.8335627753303965,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.20401982378854625,
+          "p99": 0.875,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 26,
+        "requests_by_replica": {
+          "0": 46,
+          "1": 50
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "67556fddbfcfd1d9b4f49a543cce9f380d5d837f0d3ff175b083ab01588fef64",
+      "trace_sha256": "bf4320c5f52f15e71837a88ecd2102e7f481ffdd7dc82d94c92c649c96a235ed",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 1.25,
+        "ttft_p50_ms": 4317.781609793504,
+        "ttft_p99_ms": 9339.049099509914,
+        "itl_p50_ms": 51.89976654946804,
+        "itl_p99_ms": 4211.0342317260765,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 8.491862567811935,
+          "p99": 25,
+          "max": 27
+        },
+        "system_queue_length": {
+          "mean": 10.488245931283906,
+          "p99": 28,
+          "max": 29
+        },
+        "queue_imbalance": {
+          "mean": 7.38878842676311,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_utilization": {
+          "mean": 0.7073915009041591,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.33476491862567814,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 27,
+        "requests_by_replica": {
+          "0": 48,
+          "1": 48
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "load_multiplier": 1.0,
+      "offered_rps": 4.8,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "ceb1064df74ca3483d017b3aa004ab873b619d1e38f38d85c47e39424fbba233",
+      "trace_sha256": "bf4320c5f52f15e71837a88ecd2102e7f481ffdd7dc82d94c92c649c96a235ed",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 4.8,
+        "offered_output_tps": 115.2,
+        "achieved_output_tps": 115.2,
+        "slo_goodput_rps": 0.85,
+        "ttft_p50_ms": 5687.947471005221,
+        "ttft_p99_ms": 8274.206576372184,
+        "itl_p50_ms": 57.28849768638611,
+        "itl_p99_ms": 2883.778392430366,
+        "submitted": 96,
+        "finished": 96,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 9.377245508982035,
+          "p99": 21,
+          "max": 22
+        },
+        "system_queue_length": {
+          "mean": 11.580838323353293,
+          "p99": 23,
+          "max": 23
+        },
+        "queue_imbalance": {
+          "mean": 4.826347305389222,
+          "p99": 13,
+          "max": 13
+        },
+        "kv_utilization": {
+          "mean": 0.7596057884231537,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.3171157684630739,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 23,
+        "requests_by_replica": {
+          "0": 44,
+          "1": 52
+        },
+        "raw_token_count_check": 2304
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "0cb3c91500ed27cdc368726207d96216e55dfc63503901d61817d6081437768f",
+      "trace_sha256": "87334f55c9db6b9cf7a1e9d21f1d1b3ab032377aafb2b59062adde03ec8c8b83",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 1.2,
+        "ttft_p50_ms": 6087.944219509761,
+        "ttft_p99_ms": 17142.85656606158,
+        "itl_p50_ms": 52.06906609237194,
+        "itl_p99_ms": 4847.19548976048,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 14.018684603886397,
+          "p99": 34,
+          "max": 34
+        },
+        "system_queue_length": {
+          "mean": 16.081464872944693,
+          "p99": 36,
+          "max": 36
+        },
+        "queue_imbalance": {
+          "mean": 9.884902840059791,
+          "p99": 18,
+          "max": 19
+        },
+        "kv_utilization": {
+          "mean": 0.7365470852017937,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.31203288490284004,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 36,
+        "requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "ad72271cd8a2def82fb56bc779429fc2c82041b976220e3a5f39d52f42626a2e",
+      "trace_sha256": "87334f55c9db6b9cf7a1e9d21f1d1b3ab032377aafb2b59062adde03ec8c8b83",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 1.1,
+        "ttft_p50_ms": 5172.628760958711,
+        "ttft_p99_ms": 7662.0695847397055,
+        "itl_p50_ms": 43.09115279465914,
+        "itl_p99_ms": 5119.762169513835,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 13.295296167247386,
+          "p99": 24,
+          "max": 25
+        },
+        "system_queue_length": {
+          "mean": 15.699477351916377,
+          "p99": 26,
+          "max": 27
+        },
+        "queue_imbalance": {
+          "mean": 2.8344947735191637,
+          "p99": 10,
+          "max": 11
+        },
+        "kv_utilization": {
+          "mean": 0.8315548780487805,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.15265679442508712,
+          "p99": 0.5,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 35,
+        "requests_by_replica": {
+          "0": 56,
+          "1": 64
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "8b2fe3a8cac2ed3c6d52641d433b2d54fe76221616352322c4648a756f708b75",
+      "trace_sha256": "e1829e256343ae7809508023332911904aba4484e9147d443daf98209f418c45",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 2.05,
+        "ttft_p50_ms": 2703.0730585878096,
+        "ttft_p99_ms": 7111.85092135643,
+        "itl_p50_ms": 42.808426544070244,
+        "itl_p99_ms": 2525.9829865209695,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 9.764341085271317,
+          "p99": 23,
+          "max": 24
+        },
+        "system_queue_length": {
+          "mean": 11.903875968992248,
+          "p99": 25,
+          "max": 26
+        },
+        "queue_imbalance": {
+          "mean": 8.874418604651163,
+          "p99": 18,
+          "max": 18
+        },
+        "kv_utilization": {
+          "mean": 0.7656976744186047,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.28488372093023256,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 39,
+        "requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "bccf6c38c3c00b9928076524a962dc0d9c92d416dce0f50e380f55b4d36cbd21",
+      "trace_sha256": "e1829e256343ae7809508023332911904aba4484e9147d443daf98209f418c45",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 1.95,
+        "ttft_p50_ms": 4403.334638724725,
+        "ttft_p99_ms": 6757.321993466467,
+        "itl_p50_ms": 51.17210000753403,
+        "itl_p99_ms": 2159.4343001022885,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 11.297814207650273,
+          "p99": 21,
+          "max": 22
+        },
+        "system_queue_length": {
+          "mean": 13.811475409836065,
+          "p99": 23,
+          "max": 24
+        },
+        "queue_imbalance": {
+          "mean": 2.8105646630236794,
+          "p99": 11,
+          "max": 12
+        },
+        "kv_utilization": {
+          "mean": 0.8656648451730419,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.15437158469945356,
+          "p99": 0.5,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 34,
+        "requests_by_replica": {
+          "0": 55,
+          "1": 65
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "09660636522ba871734bcbc25eb0ab01b6d0c9797ab210f85ed2f00ef71fdc64",
+      "trace_sha256": "5eb5d1c2f3c07362c1375e650c1e5777711f3dd77bec4744dc32989400cc4644",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 0.85,
+        "ttft_p50_ms": 5855.275079297523,
+        "ttft_p99_ms": 18389.05665937811,
+        "itl_p50_ms": 52.53400932997465,
+        "itl_p99_ms": 5036.207953132677,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 14.143879173290937,
+          "p99": 33,
+          "max": 33
+        },
+        "system_queue_length": {
+          "mean": 16.33783783783784,
+          "p99": 35,
+          "max": 35
+        },
+        "queue_imbalance": {
+          "mean": 9.225755166931638,
+          "p99": 17,
+          "max": 17
+        },
+        "kv_utilization": {
+          "mean": 0.7591414944356121,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.31558028616852146,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 35,
+        "requests_by_replica": {
+          "0": 60,
+          "1": 60
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.25_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "load_multiplier": 1.25,
+      "offered_rps": 6.0,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "4a1ac4510771efa47aeff0ef77ff01f3fd8ce47f48abe05ac46542d1bc3486ec",
+      "trace_sha256": "5eb5d1c2f3c07362c1375e650c1e5777711f3dd77bec4744dc32989400cc4644",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 6.0,
+        "offered_output_tps": 144.0,
+        "achieved_output_tps": 144.0,
+        "slo_goodput_rps": 1.8,
+        "ttft_p50_ms": 4265.103409066796,
+        "ttft_p99_ms": 8979.876101346066,
+        "itl_p50_ms": 42.987159453332424,
+        "itl_p99_ms": 4686.484640613193,
+        "submitted": 120,
+        "finished": 120,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 12.692439862542955,
+          "p99": 22,
+          "max": 23
+        },
+        "system_queue_length": {
+          "mean": 15.063573883161512,
+          "p99": 24,
+          "max": 24
+        },
+        "queue_imbalance": {
+          "mean": 3.6323024054982818,
+          "p99": 11,
+          "max": 11
+        },
+        "kv_utilization": {
+          "mean": 0.8359106529209622,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.16194158075601375,
+          "p99": 0.625,
+          "max": 0.625
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 37,
+        "requests_by_replica": {
+          "0": 59,
+          "1": 61
+        },
+        "raw_token_count_check": 2880
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed1_round_robin",
+      "router": "round_robin",
+      "seed": 1,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "439d206d599012c0d1409b62d34f45ef0b617f6c48b0d36233a69ff5dab37afb",
+      "trace_sha256": "28dfe2e30df27dacc639dce27141e1e574ecf5f12658621fbf6df012bd4b282b",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 0.3,
+        "ttft_p50_ms": 9123.895661491486,
+        "ttft_p99_ms": 22260.065265331003,
+        "itl_p50_ms": 55.13344798237085,
+        "itl_p99_ms": 9159.117229543574,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 19.27027027027027,
+          "p99": 47,
+          "max": 47
+        },
+        "system_queue_length": {
+          "mean": 21.401544401544403,
+          "p99": 49,
+          "max": 50
+        },
+        "queue_imbalance": {
+          "mean": 12.332046332046332,
+          "p99": 23,
+          "max": 23
+        },
+        "kv_utilization": {
+          "mean": 0.7474259974259975,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.3211068211068211,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 44,
+        "requests_by_replica": {
+          "0": 72,
+          "1": 72
+        },
+        "raw_token_count_check": 3456
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed1_resource_aware",
+      "router": "resource_aware",
+      "seed": 1,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "1ca21534485688ddd73394ce6c3fe142de557bf68ca8e0c0f06872248d3ab267",
+      "trace_sha256": "28dfe2e30df27dacc639dce27141e1e574ecf5f12658621fbf6df012bd4b282b",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 1.2,
+        "ttft_p50_ms": 6208.65159926729,
+        "ttft_p99_ms": 11703.448019880387,
+        "itl_p50_ms": 42.69491881132126,
+        "itl_p99_ms": 3088.150561694056,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.884615384615383,
+          "p99": 36,
+          "max": 36
+        },
+        "system_queue_length": {
+          "mean": 19.243589743589745,
+          "p99": 38,
+          "max": 38
+        },
+        "queue_imbalance": {
+          "mean": 6.954415954415954,
+          "p99": 16,
+          "max": 16
+        },
+        "kv_utilization": {
+          "mean": 0.8149928774928775,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.1866096866096866,
+          "p99": 0.75,
+          "max": 0.75
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 42,
+        "requests_by_replica": {
+          "0": 64,
+          "1": 80
+        },
+        "raw_token_count_check": 3456
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed2_round_robin",
+      "router": "round_robin",
+      "seed": 2,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "1691a128dbbf25cb066b73e2ffcdbd7659f53f51e272e604507ae8d93cdc7c68",
+      "trace_sha256": "9ebbf9a57505fb22f51cb78bc0381c6bb227b2c997598bd87d48e6bfd9cef00e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 1.8,
+        "ttft_p50_ms": 4965.187532827256,
+        "ttft_p99_ms": 13227.459332924333,
+        "itl_p50_ms": 42.79256612062454,
+        "itl_p99_ms": 3875.551129225636,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 15.544973544973544,
+          "p99": 38,
+          "max": 41
+        },
+        "system_queue_length": {
+          "mean": 17.735449735449734,
+          "p99": 41,
+          "max": 42
+        },
+        "queue_imbalance": {
+          "mean": 10.642857142857142,
+          "p99": 21,
+          "max": 22
+        },
+        "kv_utilization": {
+          "mean": 0.7596726190476191,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.32787698412698413,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 46,
+        "requests_by_replica": {
+          "0": 72,
+          "1": 72
+        },
+        "raw_token_count_check": 3456
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed2_resource_aware",
+      "router": "resource_aware",
+      "seed": 2,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "4c6b161dd343e18e2253bec86a25f1cebc951ae561ec4d949c0ecb65fb65f800",
+      "trace_sha256": "9ebbf9a57505fb22f51cb78bc0381c6bb227b2c997598bd87d48e6bfd9cef00e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 1.25,
+        "ttft_p50_ms": 5490.180024463267,
+        "ttft_p99_ms": 9475.636354854534,
+        "itl_p50_ms": 35.93761660158634,
+        "itl_p99_ms": 5375.666345041241,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 16.00725689404935,
+          "p99": 27,
+          "max": 28
+        },
+        "system_queue_length": {
+          "mean": 18.410740203193033,
+          "p99": 29,
+          "max": 30
+        },
+        "queue_imbalance": {
+          "mean": 3.288824383164006,
+          "p99": 12,
+          "max": 13
+        },
+        "kv_utilization": {
+          "mean": 0.8267416545718432,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.23004354136429608,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 42,
+        "requests_by_replica": {
+          "0": 76,
+          "1": 68
+        },
+        "raw_token_count_check": 3456
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed3_round_robin",
+      "router": "round_robin",
+      "seed": 3,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "cb14590936de6bbc5d20dfbb7a54187fd4b338d34221d3caeeb3ba2eb0dfce3a",
+      "trace_sha256": "33f3100d94eb8b1773111a03a3b1008e94b6b55a5ae0907f696c88e9bf97473e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 0.3,
+        "ttft_p50_ms": 9525.07157747944,
+        "ttft_p99_ms": 22214.789153130518,
+        "itl_p50_ms": 53.44431474804878,
+        "itl_p99_ms": 9500.641940496851,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 18.252570694087403,
+          "p99": 46,
+          "max": 47
+        },
+        "system_queue_length": {
+          "mean": 20.381105398457585,
+          "p99": 49,
+          "max": 51
+        },
+        "queue_imbalance": {
+          "mean": 10.615681233933161,
+          "p99": 19,
+          "max": 19
+        },
+        "kv_utilization": {
+          "mean": 0.743332262210797,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.3134640102827764,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 44,
+        "requests_by_replica": {
+          "0": 72,
+          "1": 72
+        },
+        "raw_token_count_check": 3456
+      }
+    },
+    {
+      "phase": "P0-1",
+      "cell_id": "load1.5_seed3_resource_aware",
+      "router": "resource_aware",
+      "seed": 3,
+      "load_multiplier": 1.5,
+      "offered_rps": 7.199999999999999,
+      "code_commit": "431c277fdc5cf31ea730bf862a64e5ea8ac63399",
+      "config_sha256": "7110e0e428ef7d8d86df60b512592b86b5eb03954c6f144ec40a9f010b38190a",
+      "trace_sha256": "33f3100d94eb8b1773111a03a3b1008e94b6b55a5ae0907f696c88e9bf97473e",
+      "runner_sha256": "a50b90970ad29da86aecb23aab47b8b10fa10bb974b90a5aec56a906781f5158",
+      "characterization_sha256": "09d3f9d1d37a9d4b77de35e09b9cb051e718bfe1926b756f49debfed81f7f8ab",
+      "metrics": {
+        "offered_rps": 7.199999999999999,
+        "offered_output_tps": 172.8,
+        "achieved_output_tps": 172.8,
+        "slo_goodput_rps": 0.7,
+        "ttft_p50_ms": 9415.711908394263,
+        "ttft_p99_ms": 19161.679149210035,
+        "itl_p50_ms": 51.02589726448059,
+        "itl_p99_ms": 7398.548770453707,
+        "submitted": 144,
+        "finished": 144,
+        "rejected": 0,
+        "failed": 0,
+        "unfinished": 0,
+        "completion_rate": 1.0,
+        "waiting_queue_length": {
+          "mean": 21.079432624113476,
+          "p99": 45,
+          "max": 47
+        },
+        "system_queue_length": {
+          "mean": 23.428368794326243,
+          "p99": 47,
+          "max": 49
+        },
+        "queue_imbalance": {
+          "mean": 12.107801418439717,
+          "p99": 28,
+          "max": 28
+        },
+        "kv_utilization": {
+          "mean": 0.812145390070922,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "kv_imbalance": {
+          "mean": 0.2625886524822695,
+          "p99": 1.0,
+          "max": 1.0
+        },
+        "oldest_waiting_age": {
+          "mean": 0,
+          "p99": 0,
+          "max": 0
+        },
+        "prefix_matched_blocks": 43,
+        "requests_by_replica": {
+          "0": 77,
+          "1": 67
+        },
+        "raw_token_count_check": 3456
+      }
+    }
+  ],
+  "matched_pairs": [
+    {
+      "load_multiplier": 0.5,
+      "seed": 1,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.0,
+      "ttft_p99_ms_delta": 234.53484104946256,
+      "itl_p99_ms_delta": 203.3318165503423,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 0.5,
+      "seed": 2,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.050000000000000044,
+      "ttft_p99_ms_delta": -256.2372053787112,
+      "itl_p99_ms_delta": -139.573686029761,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 0.5,
+      "seed": 3,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -0.04999999999999982,
+      "ttft_p99_ms_delta": 828.681733179837,
+      "itl_p99_ms_delta": 77.72543653845787,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 0.75,
+      "seed": 1,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.09999999999999987,
+      "ttft_p99_ms_delta": 459.8560237056654,
+      "itl_p99_ms_delta": -788.3391955680775,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 0.75,
+      "seed": 2,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.34999999999999987,
+      "ttft_p99_ms_delta": -2746.6482551313097,
+      "itl_p99_ms_delta": -1460.6291967071581,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 0.75,
+      "seed": 3,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.5,
+      "ttft_p99_ms_delta": -4093.9591980953173,
+      "itl_p99_ms_delta": -1972.0442100427763,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.0,
+      "seed": 1,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -1.3499999999999999,
+      "ttft_p99_ms_delta": 3257.668976020069,
+      "itl_p99_ms_delta": 4336.328560579563,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.0,
+      "seed": 2,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.9500000000000002,
+      "ttft_p99_ms_delta": -3516.565968158343,
+      "itl_p99_ms_delta": -2101.9957820884865,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.0,
+      "seed": 3,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -0.4,
+      "ttft_p99_ms_delta": -1064.8425231377296,
+      "itl_p99_ms_delta": -1327.2558392957108,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.25,
+      "seed": 1,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -0.09999999999999987,
+      "ttft_p99_ms_delta": -9480.786981321873,
+      "itl_p99_ms_delta": 272.56667975335495,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.25,
+      "seed": 2,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -0.09999999999999987,
+      "ttft_p99_ms_delta": -354.5289278899636,
+      "itl_p99_ms_delta": -366.548686418681,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.25,
+      "seed": 3,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.9500000000000001,
+      "ttft_p99_ms_delta": -9409.180558032045,
+      "itl_p99_ms_delta": -349.72331251948435,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.5,
+      "seed": 1,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.8999999999999999,
+      "ttft_p99_ms_delta": -10556.617245450616,
+      "itl_p99_ms_delta": -6070.966667849518,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.5,
+      "seed": 2,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": -0.55,
+      "ttft_p99_ms_delta": -3751.8229780697984,
+      "itl_p99_ms_delta": 1500.1152158156046,
+      "completion_rate_delta": 0.0
+    },
+    {
+      "load_multiplier": 1.5,
+      "seed": 3,
+      "achieved_output_tps_delta": 0.0,
+      "slo_goodput_rps_delta": 0.39999999999999997,
+      "ttft_p99_ms_delta": -3053.110003920483,
+      "itl_p99_ms_delta": -2102.093170043144,
+      "completion_rate_delta": 0.0
+    }
+  ],
+  "grouped_means": [
+    {
+      "load_multiplier": 0.5,
+      "router": "resource_aware",
+      "seeds": 3,
+      "offered_rps": 2.4,
+      "offered_output_tps": 57.6,
+      "achieved_output_tps": 57.6,
+      "slo_goodput_rps": 1.3333333333333335,
+      "ttft_p50_ms": 111.3959602597682,
+      "ttft_p99_ms": 2843.3557763385274,
+      "itl_p50_ms": 39.12353484580914,
+      "itl_p99_ms": 343.5515002595875,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 13,
+      "waiting_queue_length_mean": 0.32778444462656126,
+      "waiting_queue_length_p99": 2.3333333333333335,
+      "waiting_queue_length_max": 4,
+      "system_queue_length_mean": 1.8035771994740741,
+      "system_queue_length_p99": 5.333333333333333,
+      "system_queue_length_max": 6,
+      "queue_imbalance_mean": 0.686181136746982,
+      "queue_imbalance_p99": 2,
+      "queue_imbalance_max": 2.3333333333333335,
+      "kv_utilization_mean": 0.5347880584896656,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.22497423839379257,
+      "kv_imbalance_p99": 0.7916666666666666,
+      "kv_imbalance_max": 0.875,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 0.5,
+      "router": "round_robin",
+      "seeds": 3,
+      "offered_rps": 2.4,
+      "offered_output_tps": 57.6,
+      "achieved_output_tps": 57.6,
+      "slo_goodput_rps": 1.3333333333333333,
+      "ttft_p50_ms": 161.74298483464418,
+      "ttft_p99_ms": 2574.362653388331,
+      "itl_p50_ms": 39.881521835923195,
+      "itl_p99_ms": 296.3903112399078,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 14,
+      "waiting_queue_length_mean": 0.4673548790371028,
+      "waiting_queue_length_p99": 3.3333333333333335,
+      "waiting_queue_length_max": 4.333333333333333,
+      "system_queue_length_mean": 1.9621164361038532,
+      "system_queue_length_p99": 6,
+      "system_queue_length_max": 6,
+      "queue_imbalance_mean": 1.7078569420195309,
+      "queue_imbalance_p99": 4,
+      "queue_imbalance_max": 4.333333333333333,
+      "kv_utilization_mean": 0.5429076142222242,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.39358857809246395,
+      "kv_imbalance_p99": 1.0,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 0.75,
+      "router": "resource_aware",
+      "seeds": 3,
+      "offered_rps": 3.5999999999999996,
+      "offered_output_tps": 86.4,
+      "achieved_output_tps": 86.4,
+      "slo_goodput_rps": 2.0166666666666666,
+      "ttft_p50_ms": 860.826162828338,
+      "ttft_p99_ms": 3376.3023226963405,
+      "itl_p50_ms": 40.94356360534827,
+      "itl_p99_ms": 400.54864937439066,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 20.333333333333332,
+      "waiting_queue_length_mean": 2.0131054823302508,
+      "waiting_queue_length_p99": 5.666666666666667,
+      "waiting_queue_length_max": 7,
+      "system_queue_length_mean": 4.151571542787206,
+      "system_queue_length_p99": 8,
+      "system_queue_length_max": 9,
+      "queue_imbalance_mean": 1.3031584226061352,
+      "queue_imbalance_p99": 4.333333333333333,
+      "queue_imbalance_max": 4.666666666666667,
+      "kv_utilization_mean": 0.743582805491343,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.18703967478094885,
+      "kv_imbalance_p99": 0.7083333333333334,
+      "kv_imbalance_max": 0.75,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 0.75,
+      "router": "round_robin",
+      "seeds": 3,
+      "offered_rps": 3.5999999999999996,
+      "offered_output_tps": 86.4,
+      "achieved_output_tps": 86.4,
+      "slo_goodput_rps": 1.7,
+      "ttft_p50_ms": 2030.1373709269137,
+      "ttft_p99_ms": 5503.219465869995,
+      "itl_p50_ms": 46.12764033178488,
+      "itl_p99_ms": 1807.5528501470612,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 22.333333333333332,
+      "waiting_queue_length_mean": 3.9498114327611344,
+      "waiting_queue_length_p99": 11.333333333333334,
+      "waiting_queue_length_max": 12.333333333333334,
+      "system_queue_length_mean": 6.01530794531647,
+      "system_queue_length_p99": 14,
+      "system_queue_length_max": 15,
+      "queue_imbalance_mean": 4.8886149059493755,
+      "queue_imbalance_p99": 9.666666666666666,
+      "queue_imbalance_max": 10.666666666666666,
+      "kv_utilization_mean": 0.7381190243047304,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.29412840790362815,
+      "kv_imbalance_p99": 1.0,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.0,
+      "router": "resource_aware",
+      "seeds": 3,
+      "offered_rps": 4.8,
+      "offered_output_tps": 115.2,
+      "achieved_output_tps": 115.2,
+      "slo_goodput_rps": 1.5,
+      "ttft_p50_ms": 4575.409933303793,
+      "ttft_p99_ms": 6894.240053877647,
+      "itl_p50_ms": 49.95925476153692,
+      "itl_p99_ms": 2782.184504748618,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 24.333333333333332,
+      "waiting_queue_length_mean": 8.153884824894815,
+      "waiting_queue_length_p99": 16.333333333333332,
+      "waiting_queue_length_max": 17.333333333333332,
+      "system_queue_length_mean": 10.529688224509602,
+      "system_queue_length_p99": 18.333333333333332,
+      "system_queue_length_max": 19,
+      "queue_imbalance_mean": 2.8371562579835308,
+      "queue_imbalance_p99": 8.333333333333334,
+      "queue_imbalance_max": 8.666666666666666,
+      "kv_utilization_mean": 0.8126588967214619,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.23052149538560399,
+      "kv_imbalance_p99": 0.9166666666666666,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.0,
+      "router": "round_robin",
+      "seeds": 3,
+      "offered_rps": 4.8,
+      "offered_output_tps": 115.2,
+      "achieved_output_tps": 115.2,
+      "slo_goodput_rps": 1.7666666666666666,
+      "ttft_p50_ms": 2940.136295018924,
+      "ttft_p99_ms": 7335.486558969649,
+      "itl_p50_ms": 47.52086754888296,
+      "itl_p99_ms": 2479.8255250168295,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 29,
+      "waiting_queue_length_mean": 7.063081816029851,
+      "waiting_queue_length_p99": 18.666666666666668,
+      "waiting_queue_length_max": 19.666666666666668,
+      "system_queue_length_mean": 9.127964568187753,
+      "system_queue_length_p99": 21.333333333333332,
+      "system_queue_length_max": 22.333333333333332,
+      "queue_imbalance_mean": 7.309854480407445,
+      "queue_imbalance_p99": 14.333333333333334,
+      "queue_imbalance_max": 15,
+      "kv_utilization_mean": 0.7373385805982825,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.30721499311814104,
+      "kv_imbalance_p99": 1.0,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.25,
+      "router": "resource_aware",
+      "seeds": 3,
+      "offered_rps": 6.0,
+      "offered_output_tps": 144.0,
+      "achieved_output_tps": 144.0,
+      "slo_goodput_rps": 1.6166666666666667,
+      "ttft_p50_ms": 4613.688936250077,
+      "ttft_p99_ms": 7799.7558931840795,
+      "itl_p50_ms": 45.75013741850853,
+      "itl_p99_ms": 3988.5603700764386,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 35.333333333333336,
+      "waiting_queue_length_mean": 12.428516745813537,
+      "waiting_queue_length_p99": 22.333333333333332,
+      "waiting_queue_length_max": 23.333333333333332,
+      "system_queue_length_mean": 14.85817554830465,
+      "system_queue_length_p99": 24.333333333333332,
+      "system_queue_length_max": 25,
+      "queue_imbalance_mean": 3.0924539473470416,
+      "queue_imbalance_p99": 10.666666666666666,
+      "queue_imbalance_max": 11.333333333333334,
+      "kv_utilization_mean": 0.8443767920475949,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.1563233199601848,
+      "kv_imbalance_p99": 0.5416666666666666,
+      "kv_imbalance_max": 0.625,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.25,
+      "router": "round_robin",
+      "seeds": 3,
+      "offered_rps": 6.0,
+      "offered_output_tps": 144.0,
+      "achieved_output_tps": 144.0,
+      "slo_goodput_rps": 1.3666666666666667,
+      "ttft_p50_ms": 4882.097452465031,
+      "ttft_p99_ms": 14214.58804893204,
+      "itl_p50_ms": 49.13716732213894,
+      "itl_p99_ms": 4136.462143138042,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 36.666666666666664,
+      "waiting_queue_length_mean": 12.642301620816218,
+      "waiting_queue_length_p99": 30,
+      "waiting_queue_length_max": 30.333333333333332,
+      "system_queue_length_mean": 14.774392893258259,
+      "system_queue_length_p99": 32,
+      "system_queue_length_max": 32.333333333333336,
+      "queue_imbalance_mean": 9.32835887054753,
+      "queue_imbalance_p99": 17.666666666666668,
+      "queue_imbalance_max": 18,
+      "kv_utilization_mean": 0.7537954180186701,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.30416563066719804,
+      "kv_imbalance_p99": 1.0,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.5,
+      "router": "resource_aware",
+      "seeds": 3,
+      "offered_rps": 7.199999999999999,
+      "offered_output_tps": 172.8,
+      "achieved_output_tps": 172.8,
+      "slo_goodput_rps": 1.05,
+      "ttft_p50_ms": 7038.1811773749405,
+      "ttft_p99_ms": 13446.921174648318,
+      "itl_p50_ms": 43.219477559129395,
+      "itl_p99_ms": 5287.455225729668,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 42.333333333333336,
+      "waiting_queue_length_mean": 17.990434967592737,
+      "waiting_queue_length_p99": 36,
+      "waiting_queue_length_max": 37,
+      "system_queue_length_mean": 20.360899580369672,
+      "system_queue_length_p99": 38,
+      "system_queue_length_max": 39,
+      "queue_imbalance_mean": 7.450347252006559,
+      "queue_imbalance_p99": 18.666666666666668,
+      "queue_imbalance_max": 19,
+      "kv_utilization_mean": 0.8179599740452143,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.22641396015208407,
+      "kv_imbalance_p99": 0.9166666666666666,
+      "kv_imbalance_max": 0.9166666666666666,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    },
+    {
+      "load_multiplier": 1.5,
+      "router": "round_robin",
+      "seeds": 3,
+      "offered_rps": 7.199999999999999,
+      "offered_output_tps": 172.8,
+      "achieved_output_tps": 172.8,
+      "slo_goodput_rps": 0.8,
+      "ttft_p50_ms": 7871.384923932727,
+      "ttft_p99_ms": 19234.104583795284,
+      "itl_p50_ms": 50.45677628368139,
+      "itl_p99_ms": 7511.770099755354,
+      "completion_rate": 1.0,
+      "prefix_matched_blocks": 44.666666666666664,
+      "waiting_queue_length_mean": 17.689271503110405,
+      "waiting_queue_length_p99": 43.666666666666664,
+      "waiting_queue_length_max": 45,
+      "system_queue_length_mean": 19.83936651181724,
+      "system_queue_length_p99": 46.333333333333336,
+      "system_queue_length_max": 47.666666666666664,
+      "queue_imbalance_mean": 11.196861569612212,
+      "queue_imbalance_p99": 21,
+      "queue_imbalance_max": 21.333333333333332,
+      "kv_utilization_mean": 0.7501436262281378,
+      "kv_utilization_p99": 1.0,
+      "kv_utilization_max": 1.0,
+      "kv_imbalance_mean": 0.3208159385055272,
+      "kv_imbalance_p99": 1.0,
+      "kv_imbalance_max": 1.0,
+      "oldest_waiting_age_mean": 0,
+      "oldest_waiting_age_p99": 0,
+      "oldest_waiting_age_max": 0
+    }
+  ],
+  "reference_rps": 4.8,
+  "saturation_knee": null
+}

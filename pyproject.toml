@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-serving-resource-control"
+version = "1.0.0"
+description = "LLM serving scheduling, KV cache resource control, and auditable performance evaluation based on Nano-vLLM"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Xingkai Yu" }]
+maintainers = [{ name = "Deng-XueCheng" }]
+dependencies = [
+    "torch>=2.4.0",
+    "triton>=3.0.0",
+    "transformers>=4.51.0",
+    "flash-attn",
+    "xxhash",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nanovllm*", "experiments*"]

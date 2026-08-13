@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "feature_freeze_checkpoint": "5d60c63de203f0744455bc33584a617cf114b340",
+  "reference_offered_rps": 2.4,
+  "measurement_seconds": 20.0,
+  "p0_1": {
+    "load_multipliers": [0.5, 0.75, 1.0, 1.25, 1.5],
+    "routers": ["round_robin", "resource_aware"],
+    "seeds": [1, 2, 3],
+    "required_cells": 30
+  },
+  "p0_2": {
+    "workloads": ["prefill_heavy", "balanced", "decode_heavy", "prefix_heavy"],
+    "routers": ["round_robin", "resource_aware"],
+    "seeds": [1, 2, 3],
+    "required_cells": 24,
+    "offered_load_source": "P0-1 saturation knee with valid completion"
+  }
+}

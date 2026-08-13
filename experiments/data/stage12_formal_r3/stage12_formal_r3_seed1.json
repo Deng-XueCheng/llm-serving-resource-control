@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "description": "Stage 12 r3 matched workload: a 3-block head is infeasible while a following 2-block shared-prefix request remains admissible.",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 0.0,
+      "prompt_length": 768,
+      "max_output_tokens": 64,
+      "seed": 121001,
+      "prefix_group": "stage12-formal-system-1",
+      "shared_prefix_length": 512
+    },
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.05,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 122001,
+      "prefix_group": "stage12-formal-system-1",
+      "shared_prefix_length": 256
+    },
+    {
+      "request_id": "interactive-001",
+      "request_class": "interactive",
+      "arrival_time": 0.05,
+      "prompt_length": 768,
+      "max_output_tokens": 16,
+      "seed": 123001,
+      "prefix_group": "stage12-formal-system-1",
+      "shared_prefix_length": 512
+    }
+  ]
+}

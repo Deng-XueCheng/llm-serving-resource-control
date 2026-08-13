@@ -1,0 +1,17 @@
+{
+  "model_path":"/absolute/path/to/Qwen3-0.6B",
+  "model_repo_id":"Qwen/Qwen3-0.6B",
+  "model_revision":"c1899de289a04d12100db370d81485cdf75e47ca",
+  "model_hashes":{
+    "model.safetensors":"f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+    "config.json":"660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "tokenizer.json":"aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "trace_path":"experiments/data/stage18_imbalance_seed1.json",
+  "token_id_upper_bound":10000,
+  "distributed_init_port_base":24510,
+  "engine":{"enforce_eager":true,"tensor_parallel_size":1,"max_model_len":1024,"max_num_batched_tokens":256,"max_num_seqs":8,"gpu_memory_utilization":0.35,"kvcache_block_size":256,"num_kvcache_blocks":8,"scheduler_policy":"prefill_first","decode_token_budget":0},
+  "sampling":{"temperature":0.6,"ignore_eos":true,"seed":1900},
+  "measurement_start":0.0,"measurement_end":5.0,"max_run_seconds":45.0,
+  "ttft_slo_ms":5000.0,"itl_slo_ms":1000.0,"require_itl":true
+}

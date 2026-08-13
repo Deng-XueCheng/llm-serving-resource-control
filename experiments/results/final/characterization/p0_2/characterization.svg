@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="45" font-size="16">achieved_output_tps</text>
+<circle cx="70.0" cy="237.9" r="4" fill="#0072B2"/>
+<circle cx="203.3" cy="80.0" r="4" fill="#0072B2"/>
+<circle cx="336.7" cy="300.4" r="4" fill="#0072B2"/>
+<circle cx="470.0" cy="264.2" r="4" fill="#0072B2"/>
+<polyline points="70.0,237.9 203.3,80.0 336.7,300.4 470.0,264.2" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="70.0" cy="237.9" r="4" fill="#D55E00"/>
+<circle cx="203.3" cy="80.0" r="4" fill="#D55E00"/>
+<circle cx="336.7" cy="300.4" r="4" fill="#D55E00"/>
+<circle cx="470.0" cy="264.2" r="4" fill="#D55E00"/>
+<polyline points="70.0,237.9 203.3,80.0 336.7,300.4 470.0,264.2" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="70.0" y="355" text-anchor="middle" font-size="11">balanced</text>
+<text x="203.3" y="355" text-anchor="middle" font-size="11">decode_heavy</text>
+<text x="336.7" y="355" text-anchor="middle" font-size="11">prefill_heavy</text>
+<text x="470.0" y="355" text-anchor="middle" font-size="11">prefix_heavy</text>
+<text x="560" y="45" font-size="16">slo_goodput_rps</text>
+<circle cx="560.0" cy="287.7" r="4" fill="#0072B2"/>
+<circle cx="693.3" cy="131.0" r="4" fill="#0072B2"/>
+<circle cx="826.7" cy="330.0" r="4" fill="#0072B2"/>
+<circle cx="960.0" cy="326.3" r="4" fill="#0072B2"/>
+<polyline points="560.0,287.7 693.3,131.0 826.7,330.0 960.0,326.3" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="560.0" cy="305.1" r="4" fill="#D55E00"/>
+<circle cx="693.3" cy="144.7" r="4" fill="#D55E00"/>
+<circle cx="826.7" cy="328.8" r="4" fill="#D55E00"/>
+<circle cx="960.0" cy="320.0" r="4" fill="#D55E00"/>
+<polyline points="560.0,305.1 693.3,144.7 826.7,328.8 960.0,320.0" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="560.0" y="355" text-anchor="middle" font-size="11">balanced</text>
+<text x="693.3" y="355" text-anchor="middle" font-size="11">decode_heavy</text>
+<text x="826.7" y="355" text-anchor="middle" font-size="11">prefill_heavy</text>
+<text x="960.0" y="355" text-anchor="middle" font-size="11">prefix_heavy</text>
+<text x="70" y="405" font-size="16">ttft_p99_ms</text>
+<circle cx="70.0" cy="527.1" r="4" fill="#0072B2"/>
+<circle cx="203.3" cy="571.7" r="4" fill="#0072B2"/>
+<circle cx="336.7" cy="522.0" r="4" fill="#0072B2"/>
+<circle cx="470.0" cy="452.4" r="4" fill="#0072B2"/>
+<polyline points="70.0,527.1 203.3,571.7 336.7,522.0 470.0,452.4" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="70.0" cy="510.7" r="4" fill="#D55E00"/>
+<circle cx="203.3" cy="595.2" r="4" fill="#D55E00"/>
+<circle cx="336.7" cy="539.6" r="4" fill="#D55E00"/>
+<circle cx="470.0" cy="513.2" r="4" fill="#D55E00"/>
+<polyline points="70.0,510.7 203.3,595.2 336.7,539.6 470.0,513.2" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="70.0" y="715" text-anchor="middle" font-size="11">balanced</text>
+<text x="203.3" y="715" text-anchor="middle" font-size="11">decode_heavy</text>
+<text x="336.7" y="715" text-anchor="middle" font-size="11">prefill_heavy</text>
+<text x="470.0" y="715" text-anchor="middle" font-size="11">prefix_heavy</text>
+<text x="560" y="405" font-size="16">itl_p99_ms</text>
+<circle cx="560.0" cy="499.2" r="4" fill="#0072B2"/>
+<circle cx="693.3" cy="555.1" r="4" fill="#0072B2"/>
+<circle cx="826.7" cy="458.4" r="4" fill="#0072B2"/>
+<circle cx="960.0" cy="456.6" r="4" fill="#0072B2"/>
+<polyline points="560.0,499.2 693.3,555.1 826.7,458.4 960.0,456.6" fill="none" stroke="#0072B2" stroke-width="2"/>
+<circle cx="560.0" cy="471.8" r="4" fill="#D55E00"/>
+<circle cx="693.3" cy="534.7" r="4" fill="#D55E00"/>
+<circle cx="826.7" cy="448.3" r="4" fill="#D55E00"/>
+<circle cx="960.0" cy="472.5" r="4" fill="#D55E00"/>
+<polyline points="560.0,471.8 693.3,534.7 826.7,448.3 960.0,472.5" fill="none" stroke="#D55E00" stroke-width="2"/>
+<text x="560.0" y="715" text-anchor="middle" font-size="11">balanced</text>
+<text x="693.3" y="715" text-anchor="middle" font-size="11">decode_heavy</text>
+<text x="826.7" y="715" text-anchor="middle" font-size="11">prefill_heavy</text>
+<text x="960.0" y="715" text-anchor="middle" font-size="11">prefix_heavy</text>
+</svg>

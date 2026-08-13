@@ -1,0 +1,408 @@
+{
+  "schema_version": 2,
+  "revision": "stage16_diagnostic_r2",
+  "description": "Frozen 27-cell matched diagnostic comparing pressure-aware, unbounded recompute-aware and SLO-aware bounded drain.",
+  "capacities": [
+    4,
+    6,
+    8
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "policies": [
+    "pressure",
+    "recompute",
+    "bounded"
+  ],
+  "required_cells": 27,
+  "controlled_difference": [
+    "engine.scheduler_policy",
+    "engine.max_drain_steps",
+    "engine.waiting_age_limit",
+    "engine.ttft_slo_ms",
+    "engine.itl_slo_ms",
+    "output.run_id"
+  ],
+  "bounded_contract": {
+    "max_drain_steps": 16,
+    "waiting_age_limit": 32,
+    "ttft_slo_source": "slo.ttft_slo_ms",
+    "itl_slo_source": "slo.itl_slo_ms",
+    "episode_entry_positive_slack_only": true
+  },
+  "completion_gates": {
+    "status": "passed",
+    "all_requests_finished": true,
+    "terminal_reconciled": true,
+    "timed_out": false,
+    "oom_detected": false,
+    "final_kv_used_blocks": 0,
+    "raw_summary_counters_match": true
+  },
+  "acceptance": {
+    "fairness_reduction_min": 0.5,
+    "itl_p99_reduction_min": 0.3,
+    "resource_reduction_min": 0.5,
+    "ttft_p99_regression_max": 0.1,
+    "improved_matched_pairs_min": 6,
+    "matched_pairs": 9
+  },
+  "execution_fingerprint": {
+    "runner_sha256": "96392769314aa6657428fb3c5ead5f87bf34101adcbc9e0f7c4451791fa629a1",
+    "open_loop_sha256": "41310e00b5156be6fd76626d6fb51cbb521edf1ac591989421dd7c2f0cd296c5",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "f587fee71ce803b847e7daecd308b802f0349685abe9d28b1f5ef981f6327b75",
+    "scheduler_sha256": "25b7921aa9a4f077d207366d3d6a620b9261082a7cd7895319f444318764ef85",
+    "sequence_sha256": "461b827f86e4bd5f77ebe3aa4b0968402a35696bbc45c83daed661f1ee0642c5",
+    "nanovllm_package_sha256": "c02f6b34a7c679e69766be5566bab2275995e08cd1b5d4fa5885d7bda6e873f6",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "ccbad98124cf23f60131e1548d148d447dbfdbaee6024b00f431039f3c17fc22"
+  },
+  "traces": [
+    {
+      "seed": 1,
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "seed": 2,
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "seed": 3,
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    }
+  ],
+  "cells": [
+    {
+      "capacity": 4,
+      "seed": 1,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv4_pressure_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_pressure_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed1.json",
+      "config_sha256": "c395a8087427c7f9227faf7acdd2df20db7a19f9c1c2e9e4466f1f57c06f6d8b",
+      "source_config_sha256": "b04304cead010f6c53d87bc73b5e91146620f93cd9b89a25323563ffa964e1cd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 4,
+      "seed": 1,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv4_recompute_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_recompute_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed1.json",
+      "config_sha256": "720ca86d15271f3bd6fa8e07913d0fcb42c3f95b0500a7240cc4a8662e776f40",
+      "source_config_sha256": "b04304cead010f6c53d87bc73b5e91146620f93cd9b89a25323563ffa964e1cd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 4,
+      "seed": 1,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv4_bounded_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_bounded_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed1.json",
+      "config_sha256": "e6f6e17960f378da624d7121da0b87ae0973d20d5a485b1fcd2357481d6b9ec8",
+      "source_config_sha256": "b04304cead010f6c53d87bc73b5e91146620f93cd9b89a25323563ffa964e1cd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 4,
+      "seed": 2,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv4_pressure_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_pressure_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed2.json",
+      "config_sha256": "3de841e199a152be9d1b27d5044b918a08aba52a94d21f267ebaf632162b3e16",
+      "source_config_sha256": "9d80396cfe5d0ee4a2d1d846723e45a17e23e23756d82882e89b0d2fec483493",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 4,
+      "seed": 2,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv4_recompute_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_recompute_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed2.json",
+      "config_sha256": "ba43077da638d0b06e565923da1462d938706bb6ef802cc4f2436b514e171cf9",
+      "source_config_sha256": "9d80396cfe5d0ee4a2d1d846723e45a17e23e23756d82882e89b0d2fec483493",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 4,
+      "seed": 2,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv4_bounded_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_bounded_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed2.json",
+      "config_sha256": "4ed4bd58d7938aca2679071f4402af360603d4d777cbad790cbf3ef4d5d57e9e",
+      "source_config_sha256": "9d80396cfe5d0ee4a2d1d846723e45a17e23e23756d82882e89b0d2fec483493",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 4,
+      "seed": 3,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv4_pressure_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_pressure_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed3.json",
+      "config_sha256": "b73dfc1777a6d97a750f0bd15d8b29e8726b7bc174f3da6328617bffdea2f4a8",
+      "source_config_sha256": "a021fbade3410346b7e6986060ad8c30ecadd2542c09870ed2d7c7a4ab45b7de",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 4,
+      "seed": 3,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv4_recompute_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_recompute_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed3.json",
+      "config_sha256": "2f6d3d1f89e868eecc95897579b6fd7ad5b231811e24892cf3807495c27f7cff",
+      "source_config_sha256": "a021fbade3410346b7e6986060ad8c30ecadd2542c09870ed2d7c7a4ab45b7de",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 4,
+      "seed": 3,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv4_bounded_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv4_bounded_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv4/stage10_formal_r2_kv4_adaptive_overload_seed3.json",
+      "config_sha256": "dad0eec7466b575893053f9ced7b252900aeecbe3ed713b4e672d1d4e18c82f4",
+      "source_config_sha256": "a021fbade3410346b7e6986060ad8c30ecadd2542c09870ed2d7c7a4ab45b7de",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 6,
+      "seed": 1,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv6_pressure_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_pressure_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed1.json",
+      "config_sha256": "339814c931de354a49aefab01e29d1dee5731e46643e85235e3f6c380dbb8a49",
+      "source_config_sha256": "4d34aef78606e0e81d844e951e0d55c1bf373e1390fc2eaa9aca47c635dbbefd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 6,
+      "seed": 1,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv6_recompute_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_recompute_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed1.json",
+      "config_sha256": "c8d47593f58cc00d0182dff8022385e339c75cc450ba677180391673ab9d241b",
+      "source_config_sha256": "4d34aef78606e0e81d844e951e0d55c1bf373e1390fc2eaa9aca47c635dbbefd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 6,
+      "seed": 1,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv6_bounded_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_bounded_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed1.json",
+      "config_sha256": "6462e9f910bd6aaa210c350a19240bc7d1fa5e726c07e0e4c7814be1a4604adb",
+      "source_config_sha256": "4d34aef78606e0e81d844e951e0d55c1bf373e1390fc2eaa9aca47c635dbbefd",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 6,
+      "seed": 2,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv6_pressure_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_pressure_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed2.json",
+      "config_sha256": "afc9d7ff08884e9fbbcdbf858132854bf6dd3f6c863a7af315f7613d5c2e8d64",
+      "source_config_sha256": "785d090c326e836d7c13f9c70a14dab81ad9fd69a5fc7aa0e5827377accb45b5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 6,
+      "seed": 2,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv6_recompute_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_recompute_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed2.json",
+      "config_sha256": "e0ce9a4658ed2ccc8b158af823d78f56b5ea7462495cbed3e50837ba71347bb1",
+      "source_config_sha256": "785d090c326e836d7c13f9c70a14dab81ad9fd69a5fc7aa0e5827377accb45b5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 6,
+      "seed": 2,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv6_bounded_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_bounded_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed2.json",
+      "config_sha256": "1a5b80e6aa4e08bf4dd60cc7ab8ea8c62051258b915f730ba0861ff483d53afc",
+      "source_config_sha256": "785d090c326e836d7c13f9c70a14dab81ad9fd69a5fc7aa0e5827377accb45b5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 6,
+      "seed": 3,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv6_pressure_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_pressure_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed3.json",
+      "config_sha256": "eef0aa39bb4089dc1cada33b3f8dbfd7e8b0fe5ead4bc3aa2ca764d44f3f24f7",
+      "source_config_sha256": "17d3f398111f11f7428fc5583d778c790607bbb0abbfa1ffe79aaf10434ba1c5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 6,
+      "seed": 3,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv6_recompute_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_recompute_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed3.json",
+      "config_sha256": "1e3f2ad8198e1436f1f13d105726092591ed6853cfc19608c290b169d7cf7fbb",
+      "source_config_sha256": "17d3f398111f11f7428fc5583d778c790607bbb0abbfa1ffe79aaf10434ba1c5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 6,
+      "seed": 3,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv6_bounded_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv6_bounded_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv6/stage10_formal_r2_kv6_adaptive_overload_seed3.json",
+      "config_sha256": "3611ffd8248c8f6a7758254370ef7c1bb79f39404be2d4ba1258ad20477bca6f",
+      "source_config_sha256": "17d3f398111f11f7428fc5583d778c790607bbb0abbfa1ffe79aaf10434ba1c5",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 8,
+      "seed": 1,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv8_pressure_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_pressure_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed1.json",
+      "config_sha256": "66f7acb178adc38932fc6691af10602f6002706b94675af22eb35f4d7e1578e7",
+      "source_config_sha256": "776ee69b4f057a05da8b76720600cc0d32716380206aa81175043a06b5bb98ea",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 8,
+      "seed": 1,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv8_recompute_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_recompute_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed1.json",
+      "config_sha256": "7c97905e5c98d097dfdd0d414804f973ffa4a186f1b1b737ba5e1e2093993738",
+      "source_config_sha256": "776ee69b4f057a05da8b76720600cc0d32716380206aa81175043a06b5bb98ea",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 8,
+      "seed": 1,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv8_bounded_seed1",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_bounded_seed1.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed1.json",
+      "config_sha256": "8f28447238b5c572b835a985b043ca73342b54a30607bf8ec3b7afe617292272",
+      "source_config_sha256": "776ee69b4f057a05da8b76720600cc0d32716380206aa81175043a06b5bb98ea",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed1.json",
+      "trace_sha256": "1bac5cf4959dd755ad20d119afee6a2a57a36257f2534b395bbcc4d96cfc0683"
+    },
+    {
+      "capacity": 8,
+      "seed": 2,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv8_pressure_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_pressure_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed2.json",
+      "config_sha256": "989ab1c60a581df7f250bd3f06440f30a96a4c703d4b8fe210167863838f83d0",
+      "source_config_sha256": "2314318a06f103cf5c284342786a82a5661870606e7c859539d9dd7fbb49c4b8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 8,
+      "seed": 2,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv8_recompute_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_recompute_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed2.json",
+      "config_sha256": "e930ea75434125adeb806048e512f61be9772f87114ad197b8d55814da004b52",
+      "source_config_sha256": "2314318a06f103cf5c284342786a82a5661870606e7c859539d9dd7fbb49c4b8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 8,
+      "seed": 2,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv8_bounded_seed2",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_bounded_seed2.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed2.json",
+      "config_sha256": "cb8e411439eebeb8fbd65ed5969f06235b7e4d9e19b38bf0a58073462fbf5d40",
+      "source_config_sha256": "2314318a06f103cf5c284342786a82a5661870606e7c859539d9dd7fbb49c4b8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed2.json",
+      "trace_sha256": "50e7bd96ef6a92435862f52ce8403efb14c50a0e59c916fba04735c60ad99cfa"
+    },
+    {
+      "capacity": 8,
+      "seed": 3,
+      "policy": "pressure",
+      "run_id": "stage16_diagnostic_r2_kv8_pressure_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_pressure_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed3.json",
+      "config_sha256": "007a8c39b47184f56539d514cc5921747750a70e47613bca8cf041eecc26e2b1",
+      "source_config_sha256": "af6744a0ca1b3ce912d1562ef1fdb3910c4887e333b50825643e26a7d09c1fd8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 8,
+      "seed": 3,
+      "policy": "recompute",
+      "run_id": "stage16_diagnostic_r2_kv8_recompute_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_recompute_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed3.json",
+      "config_sha256": "78ea66a24a3c21b17bbb422d8439432a22f2e424463730aef8da02a7924bb74a",
+      "source_config_sha256": "af6744a0ca1b3ce912d1562ef1fdb3910c4887e333b50825643e26a7d09c1fd8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    },
+    {
+      "capacity": 8,
+      "seed": 3,
+      "policy": "bounded",
+      "run_id": "stage16_diagnostic_r2_kv8_bounded_seed3",
+      "config_path": "experiments/configs/stage16_diagnostic_r2/stage16_diagnostic_r2_kv8_bounded_seed3.json",
+      "source_config_path": "experiments/configs/stage10_formal_r2_kv8/stage10_formal_r2_kv8_adaptive_overload_seed3.json",
+      "config_sha256": "f514cd5733d652d09ea7b1760fffaf6a0a61fb279077f2d19299fa6fd7063563",
+      "source_config_sha256": "af6744a0ca1b3ce912d1562ef1fdb3910c4887e333b50825643e26a7d09c1fd8",
+      "trace_path": "experiments/data/baseline_matrix/calibration_prefill_first_overload_seed3.json",
+      "trace_sha256": "e1074fd0ff7012c9222d3102d7dc951b9e73bab14caee83a17b5f911582fb93e"
+    }
+  ]
+}

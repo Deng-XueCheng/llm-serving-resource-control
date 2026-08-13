@@ -1,0 +1,2524 @@
+{
+  "schema_version": 1,
+  "revision": "stage16_diagnostic_r2",
+  "matrix": {
+    "runs": 27,
+    "matched_triples": 9
+  },
+  "completion_gates_validated": true,
+  "raw_metrics_recomputed": true,
+  "execution_code_fingerprint": {
+    "runner_sha256": "96392769314aa6657428fb3c5ead5f87bf34101adcbc9e0f7c4451791fa629a1",
+    "open_loop_sha256": "41310e00b5156be6fd76626d6fb51cbb521edf1ac591989421dd7c2f0cd296c5",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "f587fee71ce803b847e7daecd308b802f0349685abe9d28b1f5ef981f6327b75",
+    "scheduler_sha256": "25b7921aa9a4f077d207366d3d6a620b9261082a7cd7895319f444318764ef85",
+    "sequence_sha256": "461b827f86e4bd5f77ebe3aa4b0968402a35696bbc45c83daed661f1ee0642c5",
+    "nanovllm_package_sha256": "c02f6b34a7c679e69766be5566bab2275995e08cd1b5d4fa5885d7bda6e873f6",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "ccbad98124cf23f60131e1548d148d447dbfdbaee6024b00f431039f3c17fc22"
+  },
+  "triples": [
+    {
+      "capacity": 4,
+      "seed": 1,
+      "pressure": {
+        "actual_recompute_tokens": 212403,
+        "recompute_amplification": 60.264229910714285,
+        "preemption_count": 729,
+        "resume_count": 729,
+        "ttft_p50_ms": 305.14931721473374,
+        "ttft_p99_ms": 472.7302062497823,
+        "itl_p50_ms": 505.8877940000457,
+        "itl_p99_ms": 555.8956642999988,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 27.765436061000003,
+        "steps": 1171,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1171,
+            "p50": 15.0,
+            "p95": 20.0,
+            "p99": 20.0,
+            "max": 20.0
+          },
+          "request_waiting_age": {
+            "count": 13658,
+            "p50": 8.0,
+            "p95": 18.0,
+            "p99": 20.0,
+            "max": 20.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1464,
+            "p50": 1.0,
+            "p95": 22.0,
+            "p99": 23.0,
+            "max": 27.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1456,
+            "p50": 5.5,
+            "p95": 22.0,
+            "p99": 23.0,
+            "max": 27.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 21.0,
+            "p95": 22.0,
+            "p99": 23.0,
+            "max": 27.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 23.200000000000003,
+            "p99": 26.239999999999995,
+            "max": 27.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 23.200000000000003,
+            "p99": 26.239999999999995,
+            "max": 27.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 23.200000000000003,
+            "p99": 26.239999999999995,
+            "max": 27.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 19783,
+        "recompute_amplification": 6.519810267857143,
+        "preemption_count": 75,
+        "resume_count": 75,
+        "ttft_p50_ms": 313.7126070058458,
+        "ttft_p99_ms": 450.1121271998056,
+        "itl_p50_ms": 18.798259000050166,
+        "itl_p99_ms": 6547.084821999988,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 16.291979534000006,
+        "steps": 808,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 808,
+            "p50": 170.5,
+            "p95": 517.65,
+            "p99": 549.93,
+            "max": 558.0
+          },
+          "request_waiting_age": {
+            "count": 6037,
+            "p50": 111.0,
+            "p95": 414.1999999999998,
+            "p99": 499.0,
+            "max": 558.0
+          },
+          "request_progress_gap_steps": {
+            "count": 825,
+            "p50": 1.0,
+            "p95": 22.0,
+            "p99": 312.7999999999995,
+            "max": 560.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 817,
+            "p50": 1.0,
+            "p95": 22.0,
+            "p99": 317.20000000000175,
+            "max": 560.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 327.5899999999999,
+            "max": 563.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 240.0,
+            "p95": 504.90000000000003,
+            "p99": 548.9799999999999,
+            "max": 560.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 240.0,
+            "p95": 504.90000000000003,
+            "p99": 548.9799999999999,
+            "max": 560.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 243.0,
+            "p95": 507.90000000000003,
+            "p99": 551.9799999999999,
+            "max": 563.0
+          },
+          "drain_episode_length_steps": {
+            "count": 15,
+            "p50": 28.0,
+            "p95": 114.8,
+            "p99": 118.16,
+            "max": 119.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 15,
+            "p50": 574.814124999989,
+            "p95": 2216.356904500014,
+            "p99": 2283.3941937000213,
+            "max": 2300.153516000023
+          },
+          "drain_episode_count": 15,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 88786,
+        "recompute_amplification": 25.772879464285715,
+        "preemption_count": 383,
+        "resume_count": 383,
+        "ttft_p50_ms": 376.6429463628889,
+        "ttft_p99_ms": 590.4982626386038,
+        "itl_p50_ms": 609.7947555000047,
+        "itl_p99_ms": 1004.7052524000052,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 21.694647214999975,
+        "steps": 933,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 933,
+            "p50": 29.0,
+            "p95": 33.0,
+            "p99": 35.0,
+            "max": 36.0
+          },
+          "request_waiting_age": {
+            "count": 11902,
+            "p50": 14.0,
+            "p95": 31.0,
+            "p99": 33.0,
+            "max": 36.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1041,
+            "p50": 1.0,
+            "p95": 38.0,
+            "p99": 41.0,
+            "max": 43.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1033,
+            "p50": 1.0,
+            "p95": 38.0,
+            "p99": 41.0,
+            "max": 43.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 13.0,
+            "p95": 38.0,
+            "p99": 42.0,
+            "max": 43.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 38.5,
+            "p95": 43.0,
+            "p99": 43.0,
+            "max": 43.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 38.5,
+            "p95": 43.0,
+            "p99": 43.0,
+            "max": 43.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 38.5,
+            "p95": 43.0,
+            "p99": 43.0,
+            "max": 43.0
+          },
+          "drain_episode_length_steps": {
+            "count": 103,
+            "p50": 1.0,
+            "p95": 10.599999999999966,
+            "p99": 16.0,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 103,
+            "p50": 22.846162999996977,
+            "p95": 203.76569750000567,
+            "p99": 343.14852014000576,
+            "max": 349.1297289999977
+          },
+          "drain_episode_count": 103,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 31,
+            "max_drain_steps": 3,
+            "resident_empty": 4,
+            "resource_released": 3,
+            "ttft_slo_deadline": 1,
+            "waiting_age_limit": 61
+          }
+        }
+      }
+    },
+    {
+      "capacity": 4,
+      "seed": 2,
+      "pressure": {
+        "actual_recompute_tokens": 202806,
+        "recompute_amplification": 57.586495535714285,
+        "preemption_count": 700,
+        "resume_count": 700,
+        "ttft_p50_ms": 329.17870189554856,
+        "ttft_p99_ms": 475.23102296311924,
+        "itl_p50_ms": 507.76693500000647,
+        "itl_p99_ms": 576.5122962999897,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 27.41000524599997,
+        "steps": 1170,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1170,
+            "p50": 16.0,
+            "p95": 21.0,
+            "p99": 21.0,
+            "max": 21.0
+          },
+          "request_waiting_age": {
+            "count": 13324,
+            "p50": 8.0,
+            "p95": 19.0,
+            "p99": 20.0,
+            "max": 21.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1430,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 24.0,
+            "max": 27.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1422,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 24.0,
+            "max": 27.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 22.0,
+            "p95": 23.0,
+            "p99": 25.0,
+            "max": 27.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 25.1,
+            "p99": 26.619999999999997,
+            "max": 27.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 25.1,
+            "p99": 26.619999999999997,
+            "max": 27.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 25.1,
+            "p99": 26.619999999999997,
+            "max": 27.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 20259,
+        "recompute_amplification": 6.652622767857143,
+        "preemption_count": 81,
+        "resume_count": 81,
+        "ttft_p50_ms": 325.2187804522655,
+        "ttft_p99_ms": 520.3998165989074,
+        "itl_p50_ms": 19.549612499986324,
+        "itl_p99_ms": 4558.726588250047,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 16.877901370000018,
+        "steps": 802,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 802,
+            "p50": 169.5,
+            "p95": 516.9499999999999,
+            "p99": 548.99,
+            "max": 557.0
+          },
+          "request_waiting_age": {
+            "count": 6142,
+            "p50": 109.0,
+            "p95": 415.0,
+            "p99": 495.59000000000015,
+            "max": 557.0
+          },
+          "request_progress_gap_steps": {
+            "count": 826,
+            "p50": 1.0,
+            "p95": 20.0,
+            "p99": 218.0,
+            "max": 559.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 818,
+            "p50": 1.0,
+            "p95": 20.149999999999977,
+            "p99": 218.0,
+            "max": 559.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 22.649999999999977,
+            "p99": 264.1099999999976,
+            "max": 562.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 218.0,
+            "p95": 463.05000000000007,
+            "p99": 539.8099999999998,
+            "max": 559.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 218.0,
+            "p95": 463.05000000000007,
+            "p99": 539.8099999999998,
+            "max": 559.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 218.0,
+            "p95": 463.2000000000001,
+            "p99": 542.2399999999999,
+            "max": 562.0
+          },
+          "drain_episode_length_steps": {
+            "count": 18,
+            "p50": 14.5,
+            "p95": 105.35,
+            "p99": 111.46999999999998,
+            "max": 113.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 18,
+            "p50": 291.2724839999896,
+            "p95": 2135.917489650023,
+            "p99": 2236.211009929925,
+            "max": 2261.2843899999007
+          },
+          "drain_episode_count": 18,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 84333,
+        "recompute_amplification": 24.530412946428573,
+        "preemption_count": 333,
+        "resume_count": 333,
+        "ttft_p50_ms": 348.3577668824889,
+        "ttft_p99_ms": 594.3189866873644,
+        "itl_p50_ms": 42.264893500032485,
+        "itl_p99_ms": 905.2167429499833,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 19.71409743600003,
+        "steps": 898,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 898,
+            "p50": 27.0,
+            "p95": 33.0,
+            "p99": 35.0,
+            "max": 35.0
+          },
+          "request_waiting_age": {
+            "count": 9431,
+            "p50": 13.0,
+            "p95": 30.0,
+            "p99": 33.0,
+            "max": 35.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1035,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 40.0,
+            "max": 46.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1027,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 40.0,
+            "max": 46.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 41.0,
+            "max": 49.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 38.0,
+            "p95": 43.15,
+            "p99": 45.42999999999999,
+            "max": 46.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 38.0,
+            "p95": 43.15,
+            "p99": 45.42999999999999,
+            "max": 46.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 38.0,
+            "p95": 43.3,
+            "p99": 47.86,
+            "max": 49.0
+          },
+          "drain_episode_length_steps": {
+            "count": 91,
+            "p50": 2.0,
+            "p95": 6.5,
+            "p99": 16.0,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 91,
+            "p50": 36.654903999988164,
+            "p95": 132.02710050001087,
+            "p99": 304.76338610000636,
+            "max": 328.00020799999174
+          },
+          "drain_episode_count": 91,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 52,
+            "max_drain_steps": 2,
+            "resident_empty": 3,
+            "resource_released": 2,
+            "ttft_slo_deadline": 3,
+            "waiting_age_limit": 29
+          }
+        }
+      }
+    },
+    {
+      "capacity": 4,
+      "seed": 3,
+      "pressure": {
+        "actual_recompute_tokens": 203809,
+        "recompute_amplification": 57.86635044642857,
+        "preemption_count": 682,
+        "resume_count": 682,
+        "ttft_p50_ms": 168.95247957737314,
+        "ttft_p99_ms": 521.2367331784061,
+        "itl_p50_ms": 492.09543449998705,
+        "itl_p99_ms": 572.5904944000349,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 27.41027713999995,
+        "steps": 1181,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1181,
+            "p50": 15.0,
+            "p95": 20.0,
+            "p99": 21.0,
+            "max": 21.0
+          },
+          "request_waiting_age": {
+            "count": 11990,
+            "p50": 7.0,
+            "p95": 18.0,
+            "p99": 20.0,
+            "max": 21.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1436,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 24.0,
+            "max": 28.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1428,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 24.0,
+            "max": 28.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 21.0,
+            "p95": 23.0,
+            "p99": 24.529999999999973,
+            "max": 28.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 26.1,
+            "p99": 27.619999999999997,
+            "max": 28.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 26.1,
+            "p99": 27.619999999999997,
+            "max": 28.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 26.1,
+            "p99": 27.619999999999997,
+            "max": 28.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 15396,
+        "recompute_amplification": 5.295758928571429,
+        "preemption_count": 85,
+        "resume_count": 85,
+        "ttft_p50_ms": 240.43039581192807,
+        "ttft_p99_ms": 585.4943537565149,
+        "itl_p50_ms": 21.88859549994504,
+        "itl_p99_ms": 6674.119930800038,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 17.705255302999944,
+        "steps": 790,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 790,
+            "p50": 191.5,
+            "p95": 527.55,
+            "p99": 559.11,
+            "max": 567.0
+          },
+          "request_waiting_age": {
+            "count": 6233,
+            "p50": 115.0,
+            "p95": 413.0,
+            "p99": 513.6800000000003,
+            "max": 567.0
+          },
+          "request_progress_gap_steps": {
+            "count": 805,
+            "p50": 1.0,
+            "p95": 24.0,
+            "p99": 304.96000000000004,
+            "max": 569.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 797,
+            "p50": 1.0,
+            "p95": 24.199999999999932,
+            "p99": 305.03999999999996,
+            "max": 569.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 25.0,
+            "p99": 305.53,
+            "max": 569.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 251.0,
+            "p95": 526.25,
+            "p99": 560.4499999999999,
+            "max": 569.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 251.0,
+            "p95": 526.25,
+            "p99": 560.4499999999999,
+            "max": 569.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 251.0,
+            "p95": 529.1,
+            "p99": 561.02,
+            "max": 569.0
+          },
+          "drain_episode_length_steps": {
+            "count": 19,
+            "p50": 12.0,
+            "p95": 110.19999999999999,
+            "p99": 111.64,
+            "max": 112.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 19,
+            "p50": 265.4537429999664,
+            "p95": 2380.094838099944,
+            "p99": 2486.8968596199966,
+            "max": 2513.5973650000096
+          },
+          "drain_episode_count": 19,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 76868,
+        "recompute_amplification": 22.447544642857142,
+        "preemption_count": 372,
+        "resume_count": 372,
+        "ttft_p50_ms": 187.0910845564424,
+        "ttft_p99_ms": 631.3243603284287,
+        "itl_p50_ms": 403.1574594999938,
+        "itl_p99_ms": 988.489611600005,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 20.469099649999976,
+        "steps": 926,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 926,
+            "p50": 28.0,
+            "p95": 33.0,
+            "p99": 35.0,
+            "max": 35.0
+          },
+          "request_waiting_age": {
+            "count": 10612,
+            "p50": 13.0,
+            "p95": 30.0,
+            "p99": 32.0,
+            "max": 35.0
+          },
+          "request_progress_gap_steps": {
+            "count": 997,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 42.039999999999964,
+            "max": 45.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 989,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 42.120000000000005,
+            "max": 45.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 3.0,
+            "p95": 37.0,
+            "p99": 43.0,
+            "max": 45.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 39.0,
+            "p95": 44.05,
+            "p99": 44.81,
+            "max": 45.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 39.0,
+            "p95": 44.05,
+            "p99": 44.81,
+            "max": 45.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 39.0,
+            "p95": 44.05,
+            "p99": 44.81,
+            "max": 45.0
+          },
+          "drain_episode_length_steps": {
+            "count": 88,
+            "p50": 2.0,
+            "p95": 9.599999999999966,
+            "p99": 16.0,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 88,
+            "p50": 47.217960500006484,
+            "p95": 186.87404785000226,
+            "p99": 311.65179132000503,
+            "max": 313.68608099995754
+          },
+          "drain_episode_count": 88,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 36,
+            "max_drain_steps": 3,
+            "resident_empty": 3,
+            "resource_released": 5,
+            "ttft_slo_deadline": 4,
+            "waiting_age_limit": 37
+          }
+        }
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 1,
+      "pressure": {
+        "actual_recompute_tokens": 199383,
+        "recompute_amplification": 56.631417410714285,
+        "preemption_count": 663,
+        "resume_count": 663,
+        "ttft_p50_ms": 336.1273639769646,
+        "ttft_p99_ms": 615.7855412385383,
+        "itl_p50_ms": 527.2638225000037,
+        "itl_p99_ms": 707.4044123499052,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 28.375262017999944,
+        "steps": 1185,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1185,
+            "p50": 16.0,
+            "p95": 21.0,
+            "p99": 21.0,
+            "max": 21.0
+          },
+          "request_waiting_age": {
+            "count": 12892,
+            "p50": 8.0,
+            "p95": 19.0,
+            "p99": 21.0,
+            "max": 21.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1425,
+            "p50": 2.0,
+            "p95": 23.0,
+            "p99": 26.0,
+            "max": 1066.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1417,
+            "p50": 2.0,
+            "p95": 23.0,
+            "p99": 26.0,
+            "max": 1066.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 21.5,
+            "p95": 25.0,
+            "p99": 26.0,
+            "max": 1066.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 1066.0,
+            "p99": 1066.0,
+            "max": 1066.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 1066.0,
+            "p99": 1066.0,
+            "max": 1066.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 24.0,
+            "p95": 1066.0,
+            "p99": 1066.0,
+            "max": 1066.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 15640,
+        "recompute_amplification": 5.363839285714286,
+        "preemption_count": 85,
+        "resume_count": 85,
+        "ttft_p50_ms": 324.90963563095397,
+        "ttft_p99_ms": 437.35955915700885,
+        "itl_p50_ms": 18.799305500010632,
+        "itl_p99_ms": 6210.15172500006,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 15.07758388700006,
+        "steps": 754,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 754,
+            "p50": 145.5,
+            "p95": 470.35,
+            "p99": 500.47,
+            "max": 505.0
+          },
+          "request_waiting_age": {
+            "count": 6169,
+            "p50": 97.0,
+            "p95": 397.0,
+            "p99": 474.0,
+            "max": 505.0
+          },
+          "request_progress_gap_steps": {
+            "count": 806,
+            "p50": 1.0,
+            "p95": 28.5,
+            "p99": 220.95000000000005,
+            "max": 510.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 798,
+            "p50": 1.0,
+            "p95": 29.0,
+            "p99": 223.66999999999757,
+            "max": 510.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 30.0,
+            "p99": 268.1699999999976,
+            "max": 513.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 219.5,
+            "p95": 506.2,
+            "p99": 509.24,
+            "max": 510.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 219.5,
+            "p95": 506.2,
+            "p99": 509.24,
+            "max": 510.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 219.5,
+            "p95": 506.35,
+            "p99": 511.66999999999996,
+            "max": 513.0
+          },
+          "drain_episode_length_steps": {
+            "count": 12,
+            "p50": 45.0,
+            "p95": 105.04999999999998,
+            "p99": 117.81000000000002,
+            "max": 121.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 12,
+            "p50": 896.513834000018,
+            "p95": 1985.4612219500323,
+            "p99": 2202.2943795900405,
+            "max": 2256.5026690000423
+          },
+          "drain_episode_count": 12,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 42662,
+        "recompute_amplification": 12.903459821428571,
+        "preemption_count": 324,
+        "resume_count": 324,
+        "ttft_p50_ms": 355.26028713862723,
+        "ttft_p99_ms": 479.48330347243507,
+        "itl_p50_ms": 449.99766099994076,
+        "itl_p99_ms": 1133.0718992999666,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 17.006621835000033,
+        "steps": 740,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 740,
+            "p50": 24.0,
+            "p95": 33.0,
+            "p99": 34.0,
+            "max": 37.0
+          },
+          "request_waiting_age": {
+            "count": 8733,
+            "p50": 12.0,
+            "p95": 30.0,
+            "p99": 33.0,
+            "max": 37.0
+          },
+          "request_progress_gap_steps": {
+            "count": 872,
+            "p50": 2.0,
+            "p95": 38.0,
+            "p99": 47.0,
+            "max": 84.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 864,
+            "p50": 2.0,
+            "p95": 38.0,
+            "p99": 47.0,
+            "max": 84.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 2.0,
+            "p95": 40.0,
+            "p99": 48.52999999999997,
+            "max": 84.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 45.0,
+            "p95": 64.05000000000001,
+            "p99": 80.00999999999998,
+            "max": 84.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 45.0,
+            "p95": 64.05000000000001,
+            "p99": 80.00999999999998,
+            "max": 84.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 46.5,
+            "p95": 64.05000000000001,
+            "p99": 80.00999999999998,
+            "max": 84.0
+          },
+          "drain_episode_length_steps": {
+            "count": 125,
+            "p50": 2.0,
+            "p95": 6.0,
+            "p99": 6.0,
+            "max": 15.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 125,
+            "p50": 45.795647999966604,
+            "p95": 115.18814139999449,
+            "p99": 121.38067867997054,
+            "max": 299.804709
+          },
+          "drain_episode_count": 125,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 92,
+            "resource_released": 5,
+            "ttft_slo_deadline": 1,
+            "waiting_age_limit": 27
+          }
+        }
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 2,
+      "pressure": {
+        "actual_recompute_tokens": 184866,
+        "recompute_amplification": 52.58091517857143,
+        "preemption_count": 626,
+        "resume_count": 626,
+        "ttft_p50_ms": 310.6618077844081,
+        "ttft_p99_ms": 492.73872952973517,
+        "itl_p50_ms": 459.3565844999148,
+        "itl_p99_ms": 707.7197632000775,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 27.001793801999952,
+        "steps": 1165,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1165,
+            "p50": 12.0,
+            "p95": 19.0,
+            "p99": 20.0,
+            "max": 20.0
+          },
+          "request_waiting_age": {
+            "count": 10955,
+            "p50": 7.0,
+            "p95": 18.0,
+            "p99": 19.0,
+            "max": 20.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1373,
+            "p50": 1.0,
+            "p95": 25.0,
+            "p99": 27.0,
+            "max": 478.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1365,
+            "p50": 1.0,
+            "p95": 25.0,
+            "p99": 27.0,
+            "max": 478.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 19.0,
+            "p95": 29.0,
+            "p99": 30.0,
+            "max": 478.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 26.0,
+            "p95": 477.04999999999995,
+            "p99": 477.81,
+            "max": 478.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 26.0,
+            "p95": 477.04999999999995,
+            "p99": 477.81,
+            "max": 478.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 26.0,
+            "p95": 477.04999999999995,
+            "p99": 477.81,
+            "max": 478.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 16543,
+        "recompute_amplification": 5.615792410714286,
+        "preemption_count": 80,
+        "resume_count": 80,
+        "ttft_p50_ms": 280.7974109172278,
+        "ttft_p99_ms": 506.25024134926605,
+        "itl_p50_ms": 18.972254999880533,
+        "itl_p99_ms": 5978.707188000044,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 14.853521101999831,
+        "steps": 747,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 747,
+            "p50": 119.0,
+            "p95": 438.69999999999993,
+            "p99": 468.53999999999996,
+            "max": 476.0
+          },
+          "request_waiting_age": {
+            "count": 5524,
+            "p50": 88.0,
+            "p95": 332.0,
+            "p99": 420.7699999999995,
+            "max": 476.0
+          },
+          "request_progress_gap_steps": {
+            "count": 809,
+            "p50": 1.0,
+            "p95": 24.0,
+            "p99": 277.1999999999996,
+            "max": 482.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 801,
+            "p50": 1.0,
+            "p95": 24.0,
+            "p99": 278.0,
+            "max": 482.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 24.0,
+            "p99": 294.2499999999993,
+            "max": 485.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 202.0,
+            "p95": 374.6500000000001,
+            "p99": 460.52999999999986,
+            "max": 482.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 202.0,
+            "p95": 374.6500000000001,
+            "p99": 460.52999999999986,
+            "max": 482.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 202.0,
+            "p95": 374.80000000000007,
+            "p99": 462.95999999999987,
+            "max": 485.0
+          },
+          "drain_episode_length_steps": {
+            "count": 15,
+            "p50": 9.0,
+            "p95": 120.89999999999998,
+            "p99": 133.77999999999997,
+            "max": 137.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 15,
+            "p50": 183.00826599988795,
+            "p95": 2285.1295474999456,
+            "p99": 2549.4747670999823,
+            "max": 2615.5610719999913
+          },
+          "drain_episode_count": 15,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 42342,
+        "recompute_amplification": 12.814174107142858,
+        "preemption_count": 288,
+        "resume_count": 288,
+        "ttft_p50_ms": 330.2116185812389,
+        "ttft_p99_ms": 491.37383766491945,
+        "itl_p50_ms": 215.76503400001457,
+        "itl_p99_ms": 979.0688412999884,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 15.66594661299996,
+        "steps": 708,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 708,
+            "p50": 24.0,
+            "p95": 33.0,
+            "p99": 34.0,
+            "max": 36.0
+          },
+          "request_waiting_age": {
+            "count": 7548,
+            "p50": 12.0,
+            "p95": 30.0,
+            "p99": 33.0,
+            "max": 36.0
+          },
+          "request_progress_gap_steps": {
+            "count": 876,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 44.0,
+            "max": 60.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 868,
+            "p50": 1.0,
+            "p95": 37.0,
+            "p99": 44.0,
+            "max": 60.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 2.0,
+            "p95": 39.0,
+            "p99": 46.52999999999997,
+            "max": 60.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 42.0,
+            "p95": 53.35000000000001,
+            "p99": 58.66999999999999,
+            "max": 60.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 42.0,
+            "p95": 53.35000000000001,
+            "p99": 58.66999999999999,
+            "max": 60.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 42.0,
+            "p95": 53.35000000000001,
+            "p99": 58.66999999999999,
+            "max": 60.0
+          },
+          "drain_episode_length_steps": {
+            "count": 124,
+            "p50": 2.0,
+            "p95": 5.0,
+            "p99": 6.0,
+            "max": 6.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 124,
+            "p50": 42.265023500021925,
+            "p95": 105.06592250002882,
+            "p99": 117.27274247002696,
+            "max": 119.16085699999712
+          },
+          "drain_episode_count": 124,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 88,
+            "resource_released": 6,
+            "ttft_slo_deadline": 3,
+            "waiting_age_limit": 27
+          }
+        }
+      }
+    },
+    {
+      "capacity": 6,
+      "seed": 3,
+      "pressure": {
+        "actual_recompute_tokens": 174985,
+        "recompute_amplification": 49.823939732142854,
+        "preemption_count": 510,
+        "resume_count": 510,
+        "ttft_p50_ms": 110.16828222001939,
+        "ttft_p99_ms": 451.830636436022,
+        "itl_p50_ms": 331.26153600005637,
+        "itl_p99_ms": 520.4698521499838,
+        "interactive_slo_goodput_rps": 0.25,
+        "elapsed_seconds": 24.123436538999954,
+        "steps": 1078,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1078,
+            "p50": 10.0,
+            "p95": 17.0,
+            "p99": 19.0,
+            "max": 20.0
+          },
+          "request_waiting_age": {
+            "count": 7285,
+            "p50": 5.0,
+            "p95": 14.0,
+            "p99": 17.0,
+            "max": 20.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1354,
+            "p50": 1.0,
+            "p95": 17.0,
+            "p99": 22.0,
+            "max": 928.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1346,
+            "p50": 1.0,
+            "p95": 17.0,
+            "p99": 22.0,
+            "max": 928.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 14.5,
+            "p95": 21.0,
+            "p99": 22.529999999999973,
+            "max": 928.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 928.0,
+            "p99": 928.0,
+            "max": 928.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 928.0,
+            "p99": 928.0,
+            "max": 928.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 22.0,
+            "p95": 928.0,
+            "p99": 928.0,
+            "max": 928.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 6481,
+        "recompute_amplification": 2.808314732142857,
+        "preemption_count": 53,
+        "resume_count": 53,
+        "ttft_p50_ms": 135.8647452201074,
+        "ttft_p99_ms": 467.41553806566765,
+        "itl_p50_ms": 20.663003999970897,
+        "itl_p99_ms": 3205.926644600103,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 13.589588907999996,
+        "steps": 651,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 651,
+            "p50": 86.0,
+            "p95": 367.5,
+            "p99": 393.5,
+            "max": 397.0
+          },
+          "request_waiting_age": {
+            "count": 4030,
+            "p50": 81.0,
+            "p95": 309.0,
+            "p99": 376.71000000000004,
+            "max": 397.0
+          },
+          "request_progress_gap_steps": {
+            "count": 774,
+            "p50": 1.0,
+            "p95": 27.0,
+            "p99": 148.53999999999996,
+            "max": 399.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 766,
+            "p50": 1.0,
+            "p95": 27.0,
+            "p99": 148.70000000000005,
+            "max": 399.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 27.0,
+            "p99": 149.05999999999995,
+            "max": 402.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 137.5,
+            "p95": 398.05,
+            "p99": 398.81,
+            "max": 399.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 137.5,
+            "p95": 398.05,
+            "p99": 398.81,
+            "max": 399.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 137.5,
+            "p95": 398.20000000000005,
+            "p99": 401.24,
+            "max": 402.0
+          },
+          "drain_episode_length_steps": {
+            "count": 17,
+            "p50": 8.0,
+            "p95": 127.39999999999998,
+            "p99": 147.88,
+            "max": 153.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 17,
+            "p50": 167.85903300001337,
+            "p95": 2560.8536582000393,
+            "p99": 3016.364881239979,
+            "max": 3130.2426869999636
+          },
+          "drain_episode_count": 17,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 26535,
+        "recompute_amplification": 8.403738839285714,
+        "preemption_count": 238,
+        "resume_count": 238,
+        "ttft_p50_ms": 147.26718704964537,
+        "ttft_p99_ms": 468.9731880657707,
+        "itl_p50_ms": 43.87082750002946,
+        "itl_p99_ms": 1026.0910595000785,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 14.515418725000018,
+        "steps": 657,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 657,
+            "p50": 24.0,
+            "p95": 33.0,
+            "p99": 34.0,
+            "max": 37.0
+          },
+          "request_waiting_age": {
+            "count": 6333,
+            "p50": 12.0,
+            "p95": 30.0,
+            "p99": 32.68000000000029,
+            "max": 37.0
+          },
+          "request_progress_gap_steps": {
+            "count": 822,
+            "p50": 1.0,
+            "p95": 38.0,
+            "p99": 43.789999999999964,
+            "max": 62.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 814,
+            "p50": 1.0,
+            "p95": 38.0,
+            "p99": 43.870000000000005,
+            "max": 62.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 39.0,
+            "p99": 45.0,
+            "max": 62.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 42.5,
+            "p95": 55.35,
+            "p99": 60.66999999999999,
+            "max": 62.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 42.5,
+            "p95": 55.35,
+            "p99": 60.66999999999999,
+            "max": 62.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 44.0,
+            "p95": 55.35,
+            "p99": 60.66999999999999,
+            "max": 62.0
+          },
+          "drain_episode_length_steps": {
+            "count": 131,
+            "p50": 2.0,
+            "p95": 6.0,
+            "p99": 6.0,
+            "max": 6.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 131,
+            "p50": 43.79096999991816,
+            "p95": 111.93484649999164,
+            "p99": 121.74806650001521,
+            "max": 124.21834700001
+          },
+          "drain_episode_count": 131,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 97,
+            "resource_released": 4,
+            "ttft_slo_deadline": 4,
+            "waiting_age_limit": 26
+          }
+        }
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 1,
+      "pressure": {
+        "actual_recompute_tokens": 190820,
+        "recompute_amplification": 54.2421875,
+        "preemption_count": 651,
+        "resume_count": 651,
+        "ttft_p50_ms": 213.5323731345291,
+        "ttft_p99_ms": 400.26096814967326,
+        "itl_p50_ms": 365.2140455000108,
+        "itl_p99_ms": 559.0915957998845,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 24.939216476999945,
+        "steps": 1109,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1109,
+            "p50": 11.0,
+            "p95": 17.0,
+            "p99": 17.0,
+            "max": 17.0
+          },
+          "request_waiting_age": {
+            "count": 9976,
+            "p50": 6.0,
+            "p95": 15.0,
+            "p99": 16.0,
+            "max": 17.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1393,
+            "p50": 2.0,
+            "p95": 22.0,
+            "p99": 25.0,
+            "max": 1010.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1385,
+            "p50": 2.0,
+            "p95": 22.0,
+            "p99": 25.0,
+            "max": 1010.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 16.0,
+            "p95": 24.0,
+            "p99": 28.0,
+            "max": 1010.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 23.5,
+            "p95": 77.1000000000007,
+            "p99": 823.4199999999987,
+            "max": 1010.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 23.5,
+            "p95": 77.1000000000007,
+            "p99": 823.4199999999987,
+            "max": 1010.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 23.5,
+            "p95": 79.9500000000007,
+            "p99": 823.9899999999986,
+            "max": 1010.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 4092,
+        "recompute_amplification": 2.1417410714285716,
+        "preemption_count": 72,
+        "resume_count": 72,
+        "ttft_p50_ms": 220.75366404724497,
+        "ttft_p99_ms": 379.6691593996524,
+        "itl_p50_ms": 20.473439000056715,
+        "itl_p99_ms": 6534.475554499909,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 15.34405274300002,
+        "steps": 766,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 766,
+            "p50": 134.5,
+            "p95": 466.75,
+            "p99": 497.35,
+            "max": 505.0
+          },
+          "request_waiting_age": {
+            "count": 5505,
+            "p50": 109.0,
+            "p95": 393.8000000000002,
+            "p99": 467.0,
+            "max": 505.0
+          },
+          "request_progress_gap_steps": {
+            "count": 762,
+            "p50": 1.0,
+            "p95": 24.949999999999932,
+            "p99": 319.39,
+            "max": 606.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 754,
+            "p50": 1.0,
+            "p95": 25.350000000000023,
+            "p99": 319.47,
+            "max": 606.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 25.649999999999977,
+            "p99": 319.53,
+            "max": 609.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 173.5,
+            "p95": 486.30000000000007,
+            "p99": 582.0599999999998,
+            "max": 606.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 173.5,
+            "p95": 486.30000000000007,
+            "p99": 582.0599999999998,
+            "max": 606.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 175.0,
+            "p95": 486.4500000000001,
+            "p99": 584.4899999999998,
+            "max": 609.0
+          },
+          "drain_episode_length_steps": {
+            "count": 16,
+            "p50": 5.5,
+            "p95": 156.5,
+            "p99": 157.70000000000002,
+            "max": 158.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 16,
+            "p50": 117.5818789998857,
+            "p95": 3164.8531977500056,
+            "p99": 3165.2222595499898,
+            "max": 3165.314524999985
+          },
+          "drain_episode_count": 16,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 18186,
+        "recompute_amplification": 6.07421875,
+        "preemption_count": 265,
+        "resume_count": 265,
+        "ttft_p50_ms": 206.23151586296373,
+        "ttft_p99_ms": 408.1470253998713,
+        "itl_p50_ms": 228.78879050006162,
+        "itl_p99_ms": 1434.712953949839,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 13.918975107000051,
+        "steps": 674,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 674,
+            "p50": 18.0,
+            "p95": 32.0,
+            "p99": 35.0,
+            "max": 35.0
+          },
+          "request_waiting_age": {
+            "count": 6152,
+            "p50": 11.0,
+            "p95": 30.0,
+            "p99": 32.0,
+            "max": 35.0
+          },
+          "request_progress_gap_steps": {
+            "count": 786,
+            "p50": 2.0,
+            "p95": 39.0,
+            "p99": 62.59999999999991,
+            "max": 163.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 778,
+            "p50": 2.0,
+            "p95": 39.0,
+            "p99": 62.92000000000007,
+            "max": 163.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 2.0,
+            "p95": 39.0,
+            "p99": 64.11999999999989,
+            "max": 166.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 54.5,
+            "p95": 106.95000000000005,
+            "p99": 151.78999999999994,
+            "max": 163.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 54.5,
+            "p95": 106.95000000000005,
+            "p99": 151.78999999999994,
+            "max": 163.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 54.5,
+            "p95": 107.10000000000005,
+            "p99": 154.2199999999999,
+            "max": 166.0
+          },
+          "drain_episode_length_steps": {
+            "count": 151,
+            "p50": 2.0,
+            "p95": 6.0,
+            "p99": 9.5,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 151,
+            "p50": 34.6283730000323,
+            "p95": 106.74362500014922,
+            "p99": 181.4129580000099,
+            "max": 270.9897570000521
+          },
+          "drain_episode_count": 151,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 122,
+            "max_drain_steps": 1,
+            "resident_empty": 2,
+            "resource_released": 2,
+            "ttft_slo_deadline": 3,
+            "waiting_age_limit": 21
+          }
+        }
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 2,
+      "pressure": {
+        "actual_recompute_tokens": 155089,
+        "recompute_amplification": 44.27260044642857,
+        "preemption_count": 538,
+        "resume_count": 538,
+        "ttft_p50_ms": 182.13624357339575,
+        "ttft_p99_ms": 368.0703373494674,
+        "itl_p50_ms": 302.80519249993176,
+        "itl_p99_ms": 602.0524072500281,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 23.222803108000107,
+        "steps": 1095,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1095,
+            "p50": 7.0,
+            "p95": 16.0,
+            "p99": 17.0,
+            "max": 17.0
+          },
+          "request_waiting_age": {
+            "count": 7464,
+            "p50": 5.0,
+            "p95": 14.0,
+            "p99": 15.36999999999989,
+            "max": 17.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1272,
+            "p50": 1.0,
+            "p95": 19.0,
+            "p99": 28.0,
+            "max": 931.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1264,
+            "p50": 1.0,
+            "p95": 19.0,
+            "p99": 28.0,
+            "max": 931.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 12.0,
+            "p95": 26.0,
+            "p99": 32.0,
+            "max": 931.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 28.0,
+            "p95": 931.0,
+            "p99": 931.0,
+            "max": 931.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 28.0,
+            "p95": 931.0,
+            "p99": 931.0,
+            "max": 931.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 28.0,
+            "p95": 931.0,
+            "p99": 931.0,
+            "max": 931.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 2693,
+        "recompute_amplification": 1.7513950892857142,
+        "preemption_count": 53,
+        "resume_count": 53,
+        "ttft_p50_ms": 171.462618766697,
+        "ttft_p99_ms": 309.5164783493823,
+        "itl_p50_ms": 18.84201799987295,
+        "itl_p99_ms": 5124.184414950128,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 13.204667536999978,
+        "steps": 673,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 673,
+            "p50": 119.0,
+            "p95": 411.4,
+            "p99": 438.28,
+            "max": 445.0
+          },
+          "request_waiting_age": {
+            "count": 4298,
+            "p50": 107.0,
+            "p95": 373.0,
+            "p99": 430.0,
+            "max": 445.0
+          },
+          "request_progress_gap_steps": {
+            "count": 759,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 227.659999999997,
+            "max": 448.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 751,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 233.5,
+            "max": 448.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 23.0,
+            "p99": 235.689999999998,
+            "max": 448.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 190.5,
+            "p95": 447.05,
+            "p99": 447.81,
+            "max": 448.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 190.5,
+            "p95": 447.05,
+            "p99": 447.81,
+            "max": 448.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 190.5,
+            "p95": 447.05,
+            "p99": 447.81,
+            "max": 448.0
+          },
+          "drain_episode_length_steps": {
+            "count": 16,
+            "p50": 7.5,
+            "p95": 177.25,
+            "p99": 177.85,
+            "max": 178.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 16,
+            "p50": 139.40098400007628,
+            "p95": 3303.373030250043,
+            "p99": 3384.2833428500962,
+            "max": 3404.51092100011
+          },
+          "drain_episode_count": 16,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 20313,
+        "recompute_amplification": 6.667689732142857,
+        "preemption_count": 209,
+        "resume_count": 209,
+        "ttft_p50_ms": 258.20774480106644,
+        "ttft_p99_ms": 413.4975219649379,
+        "itl_p50_ms": 31.71135600000241,
+        "itl_p99_ms": 1067.5083781999967,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 14.269467233,
+        "steps": 630,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 630,
+            "p50": 16.5,
+            "p95": 33.0,
+            "p99": 35.0,
+            "max": 36.0
+          },
+          "request_waiting_age": {
+            "count": 5360,
+            "p50": 11.0,
+            "p95": 30.0,
+            "p99": 32.409999999999854,
+            "max": 36.0
+          },
+          "request_progress_gap_steps": {
+            "count": 804,
+            "p50": 1.0,
+            "p95": 38.84999999999991,
+            "p99": 47.0,
+            "max": 153.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 796,
+            "p50": 1.0,
+            "p95": 39.0,
+            "p99": 47.0,
+            "max": 153.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 39.0,
+            "p99": 47.0,
+            "max": 168.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 44.0,
+            "p95": 103.60000000000004,
+            "p99": 143.11999999999995,
+            "max": 153.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 44.0,
+            "p95": 103.60000000000004,
+            "p99": 143.11999999999995,
+            "max": 153.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 44.0,
+            "p95": 104.35000000000005,
+            "p99": 155.26999999999992,
+            "max": 168.0
+          },
+          "drain_episode_length_steps": {
+            "count": 118,
+            "p50": 2.0,
+            "p95": 9.0,
+            "p99": 15.659999999999997,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 118,
+            "p50": 38.05697350000514,
+            "p95": 177.36291684999793,
+            "p99": 329.4762732800054,
+            "max": 339.0172739999997
+          },
+          "drain_episode_count": 118,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 79,
+            "max_drain_steps": 2,
+            "resident_empty": 1,
+            "resource_released": 2,
+            "ttft_slo_deadline": 3,
+            "waiting_age_limit": 31
+          }
+        }
+      }
+    },
+    {
+      "capacity": 8,
+      "seed": 3,
+      "pressure": {
+        "actual_recompute_tokens": 156702,
+        "recompute_amplification": 44.72265625,
+        "preemption_count": 349,
+        "resume_count": 349,
+        "ttft_p50_ms": 90.4250234271533,
+        "ttft_p99_ms": 319.4147577066914,
+        "itl_p50_ms": 21.96795200006818,
+        "itl_p99_ms": 357.6384899500454,
+        "interactive_slo_goodput_rps": 1.5,
+        "elapsed_seconds": 22.14750798099999,
+        "steps": 1020,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 1020,
+            "p50": 7.0,
+            "p95": 13.0,
+            "p99": 13.0,
+            "max": 13.0
+          },
+          "request_waiting_age": {
+            "count": 4686,
+            "p50": 4.0,
+            "p95": 12.0,
+            "p99": 13.0,
+            "max": 13.0
+          },
+          "request_progress_gap_steps": {
+            "count": 1314,
+            "p50": 1.0,
+            "p95": 15.0,
+            "p99": 15.0,
+            "max": 833.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 1306,
+            "p50": 1.0,
+            "p95": 15.0,
+            "p99": 15.0,
+            "max": 833.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 2.0,
+            "p95": 15.0,
+            "p99": 15.0,
+            "max": 833.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 14.0,
+            "p95": 833.0,
+            "p99": 833.0,
+            "max": 833.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 14.0,
+            "p95": 833.0,
+            "p99": 833.0,
+            "max": 833.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 15.0,
+            "p95": 833.0,
+            "p99": 833.0,
+            "max": 833.0
+          },
+          "drain_episode_length_steps": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_duration_ms": {
+            "count": 0,
+            "p50": null,
+            "p95": null,
+            "p99": null,
+            "max": null
+          },
+          "drain_episode_count": 0,
+          "drain_exit_reasons": {}
+        }
+      },
+      "recompute": {
+        "actual_recompute_tokens": 2779,
+        "recompute_amplification": 1.775390625,
+        "preemption_count": 31,
+        "resume_count": 31,
+        "ttft_p50_ms": 121.17788021147803,
+        "ttft_p99_ms": 347.2573021565139,
+        "itl_p50_ms": 20.240389999912622,
+        "itl_p99_ms": 3450.046579899929,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 11.012264362999986,
+        "steps": 531,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 531,
+            "p50": 28.0,
+            "p95": 249.5,
+            "p99": 270.0,
+            "max": 273.0
+          },
+          "request_waiting_age": {
+            "count": 2771,
+            "p50": 78.0,
+            "p95": 241.5,
+            "p99": 264.0,
+            "max": 273.0
+          },
+          "request_progress_gap_steps": {
+            "count": 762,
+            "p50": 1.0,
+            "p95": 12.949999999999932,
+            "p99": 165.39,
+            "max": 342.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 754,
+            "p50": 1.0,
+            "p95": 13.700000000000045,
+            "p99": 165.47000000000003,
+            "max": 342.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 14.299999999999955,
+            "p99": 165.52999999999997,
+            "max": 345.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 147.0,
+            "p95": 277.40000000000003,
+            "p99": 329.0799999999999,
+            "max": 342.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 147.0,
+            "p95": 277.40000000000003,
+            "p99": 329.0799999999999,
+            "max": 342.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 147.0,
+            "p95": 277.55,
+            "p99": 331.5099999999999,
+            "max": 345.0
+          },
+          "drain_episode_length_steps": {
+            "count": 14,
+            "p50": 6.0,
+            "p95": 120.89999999999998,
+            "p99": 148.97999999999996,
+            "max": 156.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 14,
+            "p50": 119.4171979998373,
+            "p95": 2388.5545884500057,
+            "p99": 2999.1345152900058,
+            "max": 3151.779497000007
+          },
+          "drain_episode_count": 14,
+          "drain_exit_reasons": {}
+        }
+      },
+      "bounded": {
+        "actual_recompute_tokens": 9611,
+        "recompute_amplification": 3.681640625,
+        "preemption_count": 74,
+        "resume_count": 74,
+        "ttft_p50_ms": 127.22642176923848,
+        "ttft_p99_ms": 310.5528323066536,
+        "itl_p50_ms": 21.42502200013041,
+        "itl_p99_ms": 780.085298350082,
+        "interactive_slo_goodput_rps": 0.0,
+        "elapsed_seconds": 9.305041476000042,
+        "steps": 447,
+        "fairness": {
+          "oldest_waiting_age": {
+            "count": 447,
+            "p50": 10.0,
+            "p95": 31.0,
+            "p99": 33.54000000000002,
+            "max": 35.0
+          },
+          "request_waiting_age": {
+            "count": 1710,
+            "p50": 9.0,
+            "p95": 28.0,
+            "p99": 32.0,
+            "max": 35.0
+          },
+          "request_progress_gap_steps": {
+            "count": 783,
+            "p50": 1.0,
+            "p95": 24.799999999999955,
+            "p99": 39.0,
+            "max": 72.0
+          },
+          "post_token_progress_gap_steps": {
+            "count": 775,
+            "p50": 1.0,
+            "p95": 25.299999999999955,
+            "p99": 39.0,
+            "max": 72.0
+          },
+          "token_gap_steps": {
+            "count": 748,
+            "p50": 1.0,
+            "p95": 31.649999999999977,
+            "p99": 39.0,
+            "max": 75.0
+          },
+          "per_request_max_progress_gap_steps": {
+            "count": 20,
+            "p50": 19.5,
+            "p95": 64.4,
+            "p99": 70.47999999999999,
+            "max": 72.0
+          },
+          "per_request_max_post_token_progress_gap_steps": {
+            "count": 20,
+            "p50": 19.5,
+            "p95": 64.4,
+            "p99": 70.47999999999999,
+            "max": 72.0
+          },
+          "per_request_max_token_gap_steps": {
+            "count": 20,
+            "p50": 19.5,
+            "p95": 70.25,
+            "p99": 74.04999999999998,
+            "max": 75.0
+          },
+          "drain_episode_length_steps": {
+            "count": 52,
+            "p50": 3.5,
+            "p95": 13.449999999999996,
+            "p99": 16.0,
+            "max": 16.0
+          },
+          "drain_episode_duration_ms": {
+            "count": 52,
+            "p50": 69.35135650007851,
+            "p95": 258.791133399984,
+            "p99": 315.6052252201085,
+            "max": 328.7782590000461
+          },
+          "drain_episode_count": 52,
+          "drain_exit_reasons": {
+            "itl_slo_deadline": 36,
+            "max_drain_steps": 1,
+            "resident_empty": 2,
+            "resource_released": 2,
+            "ttft_slo_deadline": 5,
+            "waiting_age_limit": 6
+          }
+        }
+      }
+    }
+  ],
+  "aggregate_gates": {
+    "post_token_progress_gap_p99": {
+      "baseline_policy": "recompute",
+      "candidate_policy": "bounded",
+      "baseline_total": 2209.0499999999993,
+      "candidate_total": 406.9100000000001,
+      "reduction": 0.8157986464769923,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "max_waiting_age": {
+      "baseline_policy": "recompute",
+      "candidate_policy": "bounded",
+      "baseline_total": 4283.0,
+      "candidate_total": 322.0,
+      "reduction": 0.9248190520663087,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "itl_p99_ms": {
+      "baseline_policy": "recompute",
+      "candidate_policy": "bounded",
+      "baseline_total": 48283.42344800024,
+      "candidate_total": 9318.950037549945,
+      "reduction": 0.8069948364869743,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "actual_recompute_tokens": {
+      "baseline_policy": "pressure",
+      "candidate_policy": "bounded",
+      "baseline_total": 1680863.0,
+      "candidate_total": 409636.0,
+      "reduction": 0.7562942369485199,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "preemption_count": {
+      "baseline_policy": "pressure",
+      "candidate_policy": "bounded",
+      "baseline_total": 5448.0,
+      "candidate_total": 2486.0,
+      "reduction": 0.5436857562408223,
+      "improved_pairs": 9,
+      "passed": true
+    },
+    "ttft_p99_ms": {
+      "baseline_policy": "pressure",
+      "candidate_policy": "bounded",
+      "baseline_total": 4117.2989328014355,
+      "candidate_total": 4388.169318528985,
+      "reduction": -0.06578837003298366,
+      "improved_pairs": 3,
+      "passed": true
+    }
+  },
+  "accepted": true,
+  "decision": "pareto_success_enter_stage16b"
+}

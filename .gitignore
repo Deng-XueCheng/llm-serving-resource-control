@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+*.pem
+*.key
+.pypirc
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Models and accelerator caches
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+.huggingface/
+hf_cache/
+.nv/
+triton_cache/
+torchinductor_*/
+
+# Local benchmark and visualization outputs
+experiments/results/*
+!experiments/results/final/
+!experiments/results/final/**
+reproduction/results/*.json
+figures/local/
+plots/local/
+*.nsys-rep
+*.ncu-rep
+
+# Formal final evidence is intentionally tracked under:
+# experiments/results/final/

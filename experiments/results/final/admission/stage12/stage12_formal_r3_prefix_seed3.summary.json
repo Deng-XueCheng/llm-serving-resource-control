@@ -1,0 +1,249 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-08-11T14:33:56.334556+00:00",
+  "command": "/opt/miniconda3/envs/nanovllm/bin/python -m experiments.run_open_loop --config /mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_prefix_seed3.json",
+  "working_directory": "/mnt/e/forajob/project-02-nano-vllm",
+  "upstream_commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+  "repository_head": "681c1a5449590b2fb5b4e5527f2ac97a304260ba",
+  "repository_status": [
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed1.summary.json",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed2.summary.json",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_prefix_seed3.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.slack.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed1.summary.json",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.slack.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed2.summary.json",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.admission.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.cache.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.cache_states.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.phase_timings.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.requests.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.slack.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.steps.jsonl",
+    "?? experiments/results/stage12_formal_r3_slack_seed3.summary.json"
+  ],
+  "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_prefix_seed3.json",
+  "provenance": {
+    "config_sha256": "bb91911714161f4e0010a31cbaeebacdff7651bcceec56381ecc5e82e49b7854",
+    "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed3.json",
+    "trace_sha256": "3cc5f6fbc7ac20b284d953277580e9a9304fe887f418ea43fa03f7b46b967369",
+    "runner_sha256": "454c3641e685ee152176296ec74aac9ef6a8faac43fa2a504506054db5faaa8a",
+    "open_loop_sha256": "fb3f2e2e8d4e3d8875216eac79cb5d9fc487b68ee2b3e14211dbfbf525b6f503",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "1882a34e2df3431e79fa97921af43637be08850fdcb0c766b158f2c255d92525",
+    "scheduler_sha256": "2650d9655d42cacb8cc5f54b568cf74bcb3a6b6d957e3d0432c42a0d83ce842f",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "e7579e39077bdcadc03dacf82a449abe557a93b47f47f0d312d62101223f1daa"
+  },
+  "model": {
+    "path": "/opt/models/Qwen3-0.6B",
+    "repo_id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "sha256": {
+      "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+      "config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "verified_sha256": {
+      "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+      "config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    }
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_capability": [
+      8,
+      9
+    ],
+    "nvidia_driver": "591.86",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "transformers": "5.5.4",
+    "triton": "3.4.0",
+    "flash_attn": "2.8.3",
+    "requirements_lock_sha256": "394350b0c8dd729736ec19e36fa4cac938b0f2ac02858baeb0033dd6005163bd",
+    "pylock_sha256": "a7b1d7d8ddda47da5c24e880ad82c9fb473034f2d6eefc5aca65d41667325b01",
+    "metadata_errors": []
+  },
+  "engine": {
+    "enforce_eager": true,
+    "tensor_parallel_size": 1,
+    "max_model_len": 1024,
+    "max_num_batched_tokens": 768,
+    "max_num_seqs": 8,
+    "gpu_memory_utilization": 0.8,
+    "kvcache_block_size": 256,
+    "scheduler_policy": "prefill_first",
+    "decode_token_budget": 0,
+    "decode_step_guard": 0,
+    "num_kvcache_blocks": 6,
+    "cuda_event_timing": true
+  },
+  "sampling": {
+    "temperature": 0.6,
+    "ignore_eos": true,
+    "seed": 20261203
+  },
+  "slo": {
+    "ttft_slo_ms": 10000.0,
+    "itl_slo_ms": 10000.0,
+    "require_itl": true
+  },
+  "measurement": {
+    "start_seconds": 0.0,
+    "end_seconds": 4.0,
+    "max_run_seconds": 30.0
+  },
+  "profiling": {
+    "enabled": false,
+    "output_directory": "experiments/profiling",
+    "record_shapes": true,
+    "profile_memory": true,
+    "with_stack": false,
+    "wait_steps": 0,
+    "warmup_steps": 1,
+    "active_steps": 3,
+    "repeat": 1,
+    "cuda_events": true,
+    "trace_directory": null
+  },
+  "admission": {
+    "schema_version": 2,
+    "policy": "prefix_aware_fifo",
+    "total_kv_blocks": 6,
+    "max_queue_wait_seconds": 0.2,
+    "admitted_requests": 1,
+    "rejected_requests": 2,
+    "max_observed_queue_wait_ms": 213.50123600002462,
+    "peak_reserved_blocks": 4,
+    "final_reserved_blocks": 0,
+    "observe_prefix_cache": true
+  },
+  "summary": {
+    "measurement": {
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "eligible_requests": 3
+    },
+    "terminal_counts": {
+      "Finished": 1,
+      "Rejected": 2,
+      "Failed": 0,
+      "Cancelled": 0,
+      "Unfinished": 0,
+      "submitted": 3,
+      "reconciled": true
+    },
+    "interactive": {
+      "submitted": 2,
+      "ttft_ms": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "itl_ms": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "slo_successes": 0,
+      "slo_goodput_rps": 0.0
+    },
+    "long": {
+      "submitted": 1,
+      "finished": 1,
+      "request_goodput_rps": 0.25,
+      "token_goodput_tps": 16.0
+    },
+    "output_throughput_tps": 16.0,
+    "runtime": {
+      "elapsed_seconds": 1.1713949450000314,
+      "steps": 64,
+      "timed_out": false
+    }
+  },
+  "pressure": {
+    "schema_version": 1,
+    "observation_active": true,
+    "observation_complete": true,
+    "kv_cache": {
+      "total_blocks": 6,
+      "final_used_blocks": 0,
+      "final_free_blocks": 6,
+      "peak_used_blocks": 4,
+      "peak_utilization": 0.6666666666666666
+    },
+    "preemption_count": 0,
+    "gpu_memory": {
+      "allocated_bytes_current": 1397766144,
+      "allocated_bytes_peak": 1422948864,
+      "reserved_bytes_current": 1493172224,
+      "reserved_bytes_peak": 1493172224,
+      "device_free_bytes": 14431551488,
+      "device_total_bytes": 17175150592
+    },
+    "rejected_requests": 2,
+    "admission_rejection_supported": true,
+    "oom_detected": false,
+    "collection_error": null
+  },
+  "error": null,
+  "artifacts": {
+    "requests_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.requests.jsonl",
+    "requests_sha256": "7d2e6d91fa5a462ef1cfe3dd0feb2bf4ad834e50c360cef123e24dbd5400dfa0",
+    "steps_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.steps.jsonl",
+    "steps_sha256": "1e9682745f58e9db21ac680495f756b58c701d4c1b5b48d9c810bde28c1e6305",
+    "phase_timings_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.phase_timings.jsonl",
+    "phase_timings_sha256": "956e8bc24b1a37f39fd68ec7e52999404e8978bcffed293308e320082e9666f0",
+    "admission_events_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.admission.jsonl",
+    "admission_events_sha256": "d5a76280c8dd4f5515e1d17454bf70223fbf818a55477e3055a7e606922af82d",
+    "cache_events_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.cache.jsonl",
+    "cache_events_sha256": "7f940fe727df93f623eab497ee784351615c67a3cd3b6f2ec75b8e282e722b9c",
+    "cache_states_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_formal_r3_prefix_seed3.cache_states.jsonl",
+    "cache_states_sha256": "16dc95f3f9b526696fccb1e9f515d6371f59bb0a8b4a3c7a64f583c24c39406a"
+  },
+  "limitations": [
+    "Single run; aggregate matched repeated seeds before drawing conclusions.",
+    "This artifact contains one policy cell; compare policies only through hash-verified matched aggregation.",
+    "Global Torch RNG seed is fixed and ignore_eos enforces fixed output lengths; output token identities are not paired across different scheduling orders."
+  ]
+}

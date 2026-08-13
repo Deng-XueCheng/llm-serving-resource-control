@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "revision": "stage11_formal_r1",
+  "description": "Matched Prefix-Aware KV admission ablation with real GPU Prefix Cache preview on a frozen single-GPU Nano-vLLM setup.",
+  "config_directory": "experiments/configs/stage11_formal_r1",
+  "trace_directory": "experiments/data/stage11_formal_r1",
+  "output_directory": "experiments/results",
+  "capacities": [
+    4,
+    6,
+    8
+  ],
+  "reuse_ratios": [
+    0,
+    50,
+    90
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "policies": {
+    "fifo": {
+      "policy": "kv_aware_fifo",
+      "max_queue_wait_seconds": 1.0,
+      "observe_prefix_cache": true
+    },
+    "prefix": {
+      "policy": "prefix_aware_fifo",
+      "max_queue_wait_seconds": 1.0,
+      "observe_prefix_cache": true
+    }
+  },
+  "traces": {
+    "reuse0_seed1": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse0_seed1.json",
+      "sha256": "6e0780cc0b5cd70857bf01ff575c2121a153b82c6a2c777eae1af1ed40201a00"
+    },
+    "reuse0_seed2": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse0_seed2.json",
+      "sha256": "1f2902548fbe545023b5e977872081580f650ad4b204703c27d577d814be209e"
+    },
+    "reuse0_seed3": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse0_seed3.json",
+      "sha256": "d1b50c0dec04103dc754166462d33ab8fccd6ccd1a3648ec63505cf9cf0f4730"
+    },
+    "reuse50_seed1": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse50_seed1.json",
+      "sha256": "9423e19ab70bcefc04b1aaadb242172750661dfad7d640d1e291f575ed85e1f2"
+    },
+    "reuse50_seed2": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse50_seed2.json",
+      "sha256": "366a4ebdad29beaf3045882a1785d654300868eb859927ed829b5c12702cd147"
+    },
+    "reuse50_seed3": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse50_seed3.json",
+      "sha256": "f139a27b1daebd881333541dd44082eaa5b55f3b755f4003249821fa523b5a35"
+    },
+    "reuse90_seed1": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse90_seed1.json",
+      "sha256": "9c5b8dc8c8db36cc8cd585db4323a692b6892cce03e6bf08d4ef41e242d7654c"
+    },
+    "reuse90_seed2": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse90_seed2.json",
+      "sha256": "80001aae405e1c6d2930e61e349dfde0833f579ecd842f089955c946f1403b1c"
+    },
+    "reuse90_seed3": {
+      "path": "experiments/data/stage11_formal_r1/stage11_formal_r1_reuse90_seed3.json",
+      "sha256": "f196ce2ddfe7eabbc4d8d5fb4c6f99d28b5ed03df9b7da3a65ae5ade2ee8a1ef"
+    }
+  },
+  "required_cells": 54,
+  "execution_code": {
+    "runner_sha256": "5763f6e32f96670c9317312f809f6cde7a435e1b9c26837cd8774957cc59647a",
+    "open_loop_sha256": "d810801c16058a19dd1a376d33d1e64576c4dfc209255a66d0d3eba695f0544b",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "1882a34e2df3431e79fa97921af43637be08850fdcb0c766b158f2c255d92525",
+    "scheduler_sha256": "2650d9655d42cacb8cc5f54b568cf74bcb3a6b6d957e3d0432c42a0d83ce842f",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "e7579e39077bdcadc03dacf82a449abe557a93b47f47f0d312d62101223f1daa"
+  },
+  "generation_code": {
+    "generator_sha256": "80a5ae58920bdd49cdf5a18b5d6b0a3975c3f6bdd55dec6462e7d8b5140065df",
+    "aggregator_sha256": "a3a2486bebb949c59a1deba69fd4e75e26956ec16b860968e13b42968b2b204f"
+  },
+  "completion_gates": {
+    "status": "passed",
+    "terminal_states": [
+      "Finished",
+      "Rejected"
+    ],
+    "timed_out": false,
+    "oom_detected": false,
+    "final_kv_used_blocks": 0,
+    "final_reserved_blocks": 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "description": "Stage 19 single-request P/D correctness smoke.",
+  "time_unit": "seconds",
+  "requests": [
+    {"request_id":"pd-smoke","request_class":"interactive","arrival_time":0.0,"prompt_length":300,"max_output_tokens":8,"seed":1901}
+  ]
+}

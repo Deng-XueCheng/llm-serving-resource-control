@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic functional input only; it contains no performance results.",
+  "time_unit": "seconds",
+  "requests": [
+    {
+      "request_id": "interactive-000",
+      "request_class": "interactive",
+      "arrival_time": 0.0,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 1000
+    },
+    {
+      "request_id": "long-000",
+      "request_class": "long",
+      "arrival_time": 0.01,
+      "prompt_length": 512,
+      "max_output_tokens": 16,
+      "seed": 2000
+    },
+    {
+      "request_id": "interactive-001",
+      "request_class": "interactive",
+      "arrival_time": 0.02,
+      "prompt_length": 32,
+      "max_output_tokens": 8,
+      "seed": 1001
+    }
+  ]
+}

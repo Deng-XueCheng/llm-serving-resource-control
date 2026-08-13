@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "stage": "stage12",
+  "kind": "formal",
+  "run_id": "stage12_formal_r3_slack_seed2",
+  "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_formal_r3/stage12_formal_r3_slack_seed2.json",
+  "config_sha256": "8dbcaa7024edba805e10d89a6bffeb2af77c79ae0888b5180e3bd8559777f632",
+  "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_formal_r3/stage12_formal_r3_seed2.json",
+  "trace_sha256": "4bfae37776cc7824def82ddd1fa7576f2b1c6a2a12b1ea0259e8e9d91acaff1c",
+  "execution_code": {
+    "runner_sha256": "454c3641e685ee152176296ec74aac9ef6a8faac43fa2a504506054db5faaa8a",
+    "open_loop_sha256": "fb3f2e2e8d4e3d8875216eac79cb5d9fc487b68ee2b3e14211dbfbf525b6f503",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "1882a34e2df3431e79fa97921af43637be08850fdcb0c766b158f2c255d92525",
+    "scheduler_sha256": "2650d9655d42cacb8cc5f54b568cf74bcb3a6b6d957e3d0432c42a0d83ce842f",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "e7579e39077bdcadc03dacf82a449abe557a93b47f47f0d312d62101223f1daa"
+  },
+  "aggregate_sha256": "0fcb855e20e180d5b27a60b82261d6824fb07fa5a7b117a25d13edeee42e68df",
+  "upstream_commit": "bb823b3e06983d71485a8e1f23715ebd87d98ef8",
+  "calibration": {
+    "config_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/configs/stage12_calibration_r1.json",
+    "trace_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/data/stage12_calibration_r1.json",
+    "requests_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_calibration_r1.requests.jsonl",
+    "steps_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_calibration_r1.steps.jsonl",
+    "summary_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_calibration_r1.summary.json",
+    "phase_timings_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_calibration_r1.phase_timings.jsonl",
+    "derivation_script_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/derive_stage12_eta.py",
+    "derivation_output_path": "/mnt/e/forajob/project-02-nano-vllm/experiments/results/stage12_calibration_r1.eta.json",
+    "config_sha256": "d4a81b106d7476633c5dac3b003ecbcaf7316027c5528b49ce5870321b9d4b2a",
+    "trace_sha256": "e38a1a5e803b16213447984cd145e62fc0112e4540c8579cdbbcf1e18e7f56bf",
+    "requests_sha256": "fd39b7a2f25d322736d5475a8f380aab204cd9ab47f7892b04994924d3ee13c4",
+    "steps_sha256": "98936de9dcd266be35b68b76f9ba2f72b384cbe79e0b0064ff5a05c216a3724d",
+    "summary_sha256": "30c10cf356a62e57eb00ece3254ee8525f6736ef0d4da6e5f92a13f682e786ae",
+    "phase_timings_sha256": "77ad925cf933ce8b314b0475bde94ecbd035ce63e52ed69f2fec1d055026e68e",
+    "derivation_script_sha256": "86c6f62ef1cfedfb34fee2181116cd91f1f67450eb516ab1f08486f0666914b4",
+    "derivation_output_sha256": "3431c6fa5faad01033021c521d0475a88c3e9aca13d63d602b0b5b98437a95e8",
+    "eta_prefill_seconds": 0.03455158233642578,
+    "eta_decode_seconds_per_token": 0.020791135787963867,
+    "eta_safety_margin_seconds": 8.553770812125094e-05
+  }
+}

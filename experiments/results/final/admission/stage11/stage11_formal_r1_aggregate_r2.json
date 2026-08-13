@@ -1,0 +1,3091 @@
+{
+  "schema_version": 1,
+  "revision": "stage11_formal_r1",
+  "required_cells": 54,
+  "validated_cells": 54,
+  "execution_code": {
+    "runner_sha256": "5763f6e32f96670c9317312f809f6cde7a435e1b9c26837cd8774957cc59647a",
+    "open_loop_sha256": "d810801c16058a19dd1a376d33d1e64576c4dfc209255a66d0d3eba695f0544b",
+    "lifecycle_sha256": "13b0f989d6086bd0889515b84296d6c2e0d31c9939358134d252b571a9a948e0",
+    "llm_engine_sha256": "1882a34e2df3431e79fa97921af43637be08850fdcb0c766b158f2c255d92525",
+    "scheduler_sha256": "2650d9655d42cacb8cc5f54b568cf74bcb3a6b6d957e3d0432c42a0d83ce842f",
+    "block_manager_sha256": "0a3de72e9c15db7002dc3e23aecbce4b335eaed991e614161635e552b3e368bc",
+    "model_runner_sha256": "f938548aed347aa05b10841828d4c6ec1b997a65241c7947bd490c0b061cb4ff",
+    "config_module_sha256": "e7579e39077bdcadc03dacf82a449abe557a93b47f47f0d312d62101223f1daa"
+  },
+  "runs": [
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv4_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1014.1820090000089,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2129998620000038
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv4_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1018.8260530000093,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2082566380000088
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv4_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1016.2791389999882,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2816048519999867
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv4_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1020.8448859999952,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2634149719999925
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv4_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1019.5594130000005,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1565396760000226
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv4_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1017.5911410000083,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1957386089999886
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv6_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1023.2191959999703,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2147857809999891
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv6_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1014.1798680000351,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1012.7639590000534,
+        "interactive_itl_p99_ms": 20.617163080012233,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3772969210000383
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv6_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1013.727980000001,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1016.349045999982,
+        "interactive_itl_p99_ms": 19.383208580017026,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3623082789999899
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv6_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1024.5665759999974,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2120494289999897
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv6_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1021.2192780000009,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1753237530000433
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv6_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1015.8492559999717,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1018.8118919999964,
+        "interactive_itl_p99_ms": 18.246114920019636,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.367206297999985
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv8_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1025.2998360000197,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 996.9207784000095,
+        "interactive_itl_p99_ms": 28.48046524999063,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4337895790000061
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv8_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1016.4423989999749,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 989.5996050399938,
+        "interactive_itl_p99_ms": 29.044343620008135,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.386946862000002
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv8_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1017.0030520000499,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 993.2099723700027,
+        "interactive_itl_p99_ms": 28.747172669992548,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.393594705000055
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv8_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1019.5955729999424,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 969.3199673499387,
+        "interactive_itl_p99_ms": 28.0394199199577,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3883351460000313
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse0_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse0_kv8_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1012.948975999975,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 957.8438148599641,
+        "interactive_itl_p99_ms": 27.4574692700412,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.380802403999951
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse0_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse0_kv8_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 0,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1014.8573230000237,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 983.427558530025,
+        "interactive_itl_p99_ms": 27.998881300015903,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3871201880000399
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv4_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1018.7031380000188,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1848074240000415
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv4_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1020.0656969999726,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1526794440000003
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv4_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1015.4944899999554,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1025.4901729999074,
+        "interactive_itl_p99_ms": 18.874807040076576,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3617362589999402
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv4_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1025.1717300000064,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1552673920000416
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv4_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1017.1170420000179,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.179656575000081
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv4_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1015.0049419999458,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1024.2533509999657,
+        "interactive_itl_p99_ms": 17.204138260028685,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3959102279999342
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv6_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1016.1866259999623,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1016.6037819999518,
+        "interactive_itl_p99_ms": 20.56387737998648,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.388338898000029
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv6_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1016.9344279999995,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 941.2749402900251,
+        "interactive_itl_p99_ms": 26.405732780012833,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3355492619999723
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv6_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1016.9211150000909,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.189706079000075
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv6_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1025.5066340000803,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1018.5780297900774,
+        "interactive_itl_p99_ms": 28.217488769993217,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4367081230000167
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv6_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1024.546582999974,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2678026080000109
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv6_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1019.0761290000545,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 983.3047526700843,
+        "interactive_itl_p99_ms": 28.123195410008748,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.417949191000048
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv8_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1026.0922059999257,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1010.702815660001,
+        "interactive_itl_p99_ms": 28.842379899984955,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4545828450000045
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv8_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 7,
+        "Rejected": 4,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 7,
+        "rejected_requests": 4,
+        "max_observed_queue_wait_ms": 1017.6800870000169,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.2,
+        "interactive_ttft_p99_ms": 985.8670851999823,
+        "interactive_itl_p99_ms": 30.89545502008035,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4322808570000234
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv8_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1015.8819839999886,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1007.8500433599814,
+        "interactive_itl_p99_ms": 27.12830222002026,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4409140069999467
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv8_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 7,
+        "Rejected": 4,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 7,
+        "rejected_requests": 4,
+        "max_observed_queue_wait_ms": 1016.2438220000785,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.2,
+        "interactive_ttft_p99_ms": 843.9726547999389,
+        "interactive_itl_p99_ms": 20.977536000145847,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2436483369999678
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse50_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse50_kv8_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 4,
+        "Rejected": 7,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 4,
+        "rejected_requests": 7,
+        "max_observed_queue_wait_ms": 1035.4950059999192,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.1,
+        "interactive_ttft_p99_ms": 878.9233957400711,
+        "interactive_itl_p99_ms": 36.6722854800628,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.6702526490000764
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse50_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse50_kv8_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 50,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 7,
+        "Rejected": 4,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 7,
+        "rejected_requests": 4,
+        "max_observed_queue_wait_ms": 1015.6808400000772,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.2,
+        "interactive_ttft_p99_ms": 900.0002246000013,
+        "interactive_itl_p99_ms": 29.399848979844588,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3540637940000124
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv4_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1015.5457259999183,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1020.5816010001034,
+        "interactive_itl_p99_ms": 22.570924099886724,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4241302289999567
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv4_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv4_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1018.2181540000328,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1672597070000847
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv4_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1019.625913000209,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2522577120000733
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv4_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv4_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1017.6897489999645,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.276231116999952
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv4_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1014.294586999922,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1602105519998531
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv4_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv4_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 4,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 4,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1015.0804609999069,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1616365059999225
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv6_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1016.103212000089,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1760991209998792
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv6_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv6_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1021.3093649999063,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1007.6724346700092,
+        "interactive_itl_p99_ms": 30.145116500104898,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4793111799999679
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv6_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 1,
+        "Rejected": 10,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 1,
+        "rejected_requests": 10,
+        "max_observed_queue_wait_ms": 1015.6883099999594,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.0,
+        "interactive_ttft_p99_ms": null,
+        "interactive_itl_p99_ms": null,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.1878423910000038
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv6_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv6_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1016.5815029998975,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 956.9859846199918,
+        "interactive_itl_p99_ms": 26.223489789997522,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3597090749999552
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv6_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 2,
+        "Rejected": 9,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 2,
+        "rejected_requests": 9,
+        "max_observed_queue_wait_ms": 1016.1981000000104,
+        "peak_reserved_blocks": 4,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.03333333333333333,
+        "interactive_ttft_p99_ms": 1013.7797490000775,
+        "interactive_itl_p99_ms": 20.831512859999748,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.350303052000072
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv6_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv6_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 6,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 6,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1014.5143070000087,
+        "peak_reserved_blocks": 6,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 928.9894725101638,
+        "interactive_itl_p99_ms": 27.0886720199519,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3511901670001407
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv8_seed1",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1014.8159249998843,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1005.6783794099017,
+        "interactive_itl_p99_ms": 28.187451799999508,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.421787790000053
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv8_seed1.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv8_seed1",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 1,
+      "terminal_counts": {
+        "Finished": 9,
+        "Rejected": 2,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 9,
+        "rejected_requests": 2,
+        "max_observed_queue_wait_ms": 1016.0707400001412,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.26666666666666666,
+        "interactive_ttft_p99_ms": 895.7557880000393,
+        "interactive_itl_p99_ms": 25.28725199999826,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.2844582840000385
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv8_seed2",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1017.90328699999,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 949.4378700899576,
+        "interactive_itl_p99_ms": 26.22137969001869,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.3509606499999336
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv8_seed2.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv8_seed2",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 2,
+      "terminal_counts": {
+        "Finished": 7,
+        "Rejected": 4,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 7,
+        "rejected_requests": 4,
+        "max_observed_queue_wait_ms": 1013.6751569999705,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.2,
+        "interactive_ttft_p99_ms": 739.7296429999387,
+        "interactive_itl_p99_ms": 31.842834220119574,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4864362949999759
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_fifo_reuse90_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_fifo_reuse90_kv8_seed3",
+      "policy": "kv_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 5,
+        "Rejected": 6,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 1,
+        "policy": "kv_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 5,
+        "rejected_requests": 6,
+        "max_observed_queue_wait_ms": 1023.6096410000029,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.13333333333333333,
+        "interactive_ttft_p99_ms": 1008.4410320999158,
+        "interactive_itl_p99_ms": 27.861247869925585,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.4668942749999587
+      }
+    },
+    {
+      "config": "experiments/configs/stage11_formal_r1/stage11_formal_r1_prefix_reuse90_kv8_seed3.json",
+      "run_id": "stage11_formal_r1_prefix_reuse90_kv8_seed3",
+      "policy": "prefix_aware_fifo",
+      "reuse_ratio": 90,
+      "capacity": 8,
+      "seed": 3,
+      "terminal_counts": {
+        "Finished": 9,
+        "Rejected": 2,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Unfinished": 0,
+        "submitted": 11,
+        "reconciled": true
+      },
+      "admission": {
+        "schema_version": 2,
+        "policy": "prefix_aware_fifo",
+        "total_kv_blocks": 8,
+        "max_queue_wait_seconds": 1.0,
+        "admitted_requests": 9,
+        "rejected_requests": 2,
+        "max_observed_queue_wait_ms": 1006.7166830000496,
+        "peak_reserved_blocks": 8,
+        "final_reserved_blocks": 0,
+        "observe_prefix_cache": true
+      },
+      "metrics": {
+        "interactive_slo_goodput_rps": 0.26666666666666666,
+        "interactive_ttft_p99_ms": 1022.7739750000062,
+        "interactive_itl_p99_ms": 28.828503000113415,
+        "long_window_token_goodput_tps": 2.1333333333333333,
+        "elapsed_seconds": 1.502878980000105
+      }
+    }
+  ],
+  "by_cell": {
+    "reuse0_kv4_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2170481300000044,
+        "sample_std": 0.06263079048938608,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 10
+    },
+    "reuse0_kv4_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2224700729999967,
+        "sample_std": 0.03600748294592714,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 10
+    },
+    "reuse0_kv6_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1016.349045999982,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          3
+        ],
+        "valid_seeds": [
+          2
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 19.383208580017026,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          3
+        ],
+        "valid_seeds": [
+          2
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.250805937666674,
+        "sample_std": 0.09855907875774594,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse0_kv6_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.022222222222222223,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1015.7879255000249,
+        "sample_std": 4.276534436421585,
+        "valid_runs": 2,
+        "missing_runs": 1,
+        "valid_seeds": [
+          1,
+          3
+        ],
+        "missing_seeds": [
+          2
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 19.431639000015934,
+        "sample_std": 1.6765842324506515,
+        "valid_runs": 2,
+        "missing_runs": 1,
+        "valid_seeds": [
+          1,
+          3
+        ],
+        "missing_seeds": [
+          2
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.318850882666671,
+        "sample_std": 0.09263027608249642,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.333333333333334
+    },
+    "reuse0_kv8_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.13333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 982.6581885433254,
+        "sample_std": 21.569825597839298,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 28.22836906334146,
+        "sample_std": 0.68080693331796,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.402728896000004,
+        "sample_std": 0.02764932661999713,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6
+    },
+    "reuse0_kv8_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.13333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 980.7823769733192,
+        "sample_std": 10.39536749282719,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 28.360881613327248,
+        "sample_std": 0.592242417308062,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.387467398666691,
+        "sample_std": 0.0007564717783642361,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6
+    },
+    "reuse50_kv4_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1025.4901729999074,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          3
+        ],
+        "valid_seeds": [
+          2
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 18.874807040076576,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          3
+        ],
+        "valid_seeds": [
+          2
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2420667526666875,
+        "sample_std": 0.10366882786492959,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse50_kv4_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1024.2533509999657,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          2
+        ],
+        "valid_seeds": [
+          3
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 17.204138260028685,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          2
+        ],
+        "valid_seeds": [
+          3
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2346190213333255,
+        "sample_std": 0.13968827574170561,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse50_kv6_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1016.6037819999518,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "valid_seeds": [
+          1
+        ],
+        "missing_seeds": [
+          2,
+          3
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 20.56387737998648,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "valid_seeds": [
+          1
+        ],
+        "missing_seeds": [
+          2,
+          3
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2819491950000383,
+        "sample_std": 0.10006919425467126,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse50_kv6_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.13333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 981.0525742500623,
+        "sample_std": 38.70072534578624,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 27.5821389866716,
+        "sample_std": 1.0198879750900296,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.3967355253333456,
+        "sample_std": 0.05381257750721987,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6
+    },
+    "reuse50_kv8_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.12222222222222222,
+        "sample_std": 0.01924500897298752,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 965.8254182533511,
+        "sample_std": 75.2728750289433,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 30.880989200022672,
+        "sample_std": 5.088108688466004,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.5219165003333426,
+        "sample_std": 0.12864454529449545,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6.333333333333333
+    },
+    "reuse50_kv8_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.2,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 909.9466548666409,
+        "sample_std": 71.46821636871196,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 27.09094666669026,
+        "sample_std": 5.346919846066678,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.3433309960000013,
+        "sample_std": 0.09477315872690235,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 4
+    },
+    "reuse90_kv4_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1020.5816010001034,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "valid_seeds": [
+          1
+        ],
+        "missing_seeds": [
+          2,
+          3
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 22.570924099886724,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "valid_seeds": [
+          1
+        ],
+        "missing_seeds": [
+          2,
+          3
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2788661643332944,
+        "sample_std": 0.13395673286041548,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse90_kv4_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": null,
+        "sample_std": null,
+        "valid_runs": 0,
+        "missing_runs": 3,
+        "missing_seeds": [
+          1,
+          2,
+          3
+        ],
+        "valid_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2017091099999864,
+        "sample_std": 0.0645991659609414,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 10
+    },
+    "reuse90_kv6_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.011111111111111112,
+        "sample_std": 0.019245008972987525,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 1013.7797490000775,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          2
+        ],
+        "valid_seeds": [
+          3
+        ]
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 20.831512859999748,
+        "sample_std": 0.0,
+        "valid_runs": 1,
+        "missing_runs": 2,
+        "missing_seeds": [
+          1,
+          2
+        ],
+        "valid_seeds": [
+          3
+        ]
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.2380815213333183,
+        "sample_std": 0.09736390530615446,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 9.666666666666666
+    },
+    "reuse90_kv6_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.13333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 964.5492972667216,
+        "sample_std": 39.88301527224411,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 27.819092770018106,
+        "sample_std": 2.060321544675092,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.3967368073333546,
+        "sample_std": 0.07163824547223971,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6
+    },
+    "reuse90_kv8_kv_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.13333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 987.852427199925,
+        "sample_std": 33.2966471425821,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 27.42335978664793,
+        "sample_std": 1.0536457495375482,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.413214238333315,
+        "sample_std": 0.058440402912268506,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 6
+    },
+    "reuse90_kv8_prefix_aware_fifo": {
+      "interactive_slo_goodput_rps": {
+        "mean": 0.24444444444444444,
+        "sample_std": 0.03849001794597504,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_ttft_p99_ms": {
+        "mean": 886.0864686666614,
+        "sample_std": 141.76969094845072,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "interactive_itl_p99_ms": {
+        "mean": 28.652863073410415,
+        "sample_std": 3.281318576286345,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "long_window_token_goodput_tps": {
+        "mean": 2.1333333333333333,
+        "sample_std": 0.0,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "elapsed_seconds": {
+        "mean": 1.4245911863333731,
+        "sample_std": 0.12163680861390723,
+        "valid_runs": 3,
+        "missing_runs": 0,
+        "valid_seeds": [
+          1,
+          2,
+          3
+        ],
+        "missing_seeds": []
+      },
+      "mean_rejected_requests": 2.6666666666666665
+    }
+  },
+  "decision": "Prefix-aware FIFO is evaluated only as a matched KV reservation trade-off; all latency, rejection, fairness, and cache evidence must be interpreted together.",
+  "aggregation_revision": "stage11_aggregate_r2",
+  "aggregation_delta": "Retains r1 validation unchanged; nullable per-run latency metrics now report valid_runs and missing_runs instead of rejecting a formal cell solely because no eligible request completed in one repeat.",
+  "metric_semantics": "Latency P99 with missing_runs > 0 is a conditional descriptive statistic over valid_seeds only. It must not be used for matched cross-policy latency deltas, rankings, or significance claims.",
+  "base_aggregator_sha256": "a3a2486bebb949c59a1deba69fd4e75e26956ec16b860968e13b42968b2b204f",
+  "aggregate_sha256": "480659b8ed36bc64b9714afe551d8d78d10216fc1ad0015ecf29dbc5fcd9fbb1"
+}
