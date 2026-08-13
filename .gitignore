@@ -53,3 +53,15 @@ plots/local/
 
 # Formal final evidence is intentionally tracked under:
 # experiments/results/final/
+
+# Personal working material (kept local, never published)
+/resume/
+/interview/
+/personal_notes/
+/study_notes/
+*.local.md
+/docs/PROJECT_TUTORIAL.md
+/MIGRATION_AUDIT.md
+/CONVERSATION_HANDOFF.md
+/task_plan.md
+/progress.md
