@@ -4,8 +4,6 @@
 
 这是一个基于 [Nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) 扩展的 LLM Serving Systems Research / Engineering 项目。项目研究请求到达后，如何在有限 KV Cache 下完成 Global Routing、Admission Control、Prefill/Decode Scheduling、Preemption/Recompute 控制与可审计性能评估。
 
-本仓库是最终系统的 clean snapshot。完整研发历史、失败实验与 invalid artifacts 保存在 legacy repository；本仓库只保留最终代码、必要 benchmark、合法 evidence、关键测试和复现资料。两者关系见 [Provenance](docs/PROVENANCE.md)。
-
 ## 1. 问题背景
 
 LLM Serving 的瓶颈不仅是计算吞吐。每个活跃请求都持续占用 KV Cache；Prefill 一次需要处理多 token，Decode 每步只推进少量 token，两种 phase 会竞争计算与 KV allocation。Prefix reuse 又使“完整请求大小”不等于“当前增量 KV 需求”。
