@@ -2,7 +2,7 @@
 
 **LLM Serving Scheduling & KV Cache Resource Management**
 
-这是一个基于 [Nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) 扩展的 LLM Serving Systems Research / Engineering 项目。项目研究请求到达后，如何在有限 KV Cache 下完成 Global Routing、Admission Control、Prefill/Decode Scheduling、Preemption/Recompute 控制与可审计性能评估；重点是 serving runtime 的资源控制和 SLO，而不是大模型应用开发。
+这是一个基于 [Nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) 扩展的 LLM Serving Systems Research / Engineering 项目。项目研究请求到达后，如何在有限 KV Cache 下完成 Global Routing、Admission Control、Prefill/Decode Scheduling、Preemption/Recompute 控制与可审计性能评估。
 
 本仓库是最终系统的 clean snapshot。完整研发历史、失败实验与 invalid artifacts 保存在 legacy repository；本仓库只保留最终代码、必要 benchmark、合法 evidence、关键测试和复现资料。两者关系见 [Provenance](docs/PROVENANCE.md)。
 
@@ -52,7 +52,7 @@ flowchart LR
 
 ## 4. 核心正式结果
 
-下表只引用 [FINAL_RESULTS](docs/FINAL_RESULTS.md) 中的合法 evidence。所有 Multi-GPU 指标均来自 corrected post-GPU-binding-fix artifacts。
+下表引用 [FINAL_RESULTS](docs/FINAL_RESULTS.md) 中的合法 evidence。所有 Multi-GPU 指标均来自 corrected post-GPU-binding-fix artifacts。
 
 | 问题 | Baseline → Candidate | 冻结条件 | 结果 | Evidence |
 |---|---|---|---|---|
@@ -68,30 +68,13 @@ Stage 18 corrected formal matrix 为 12 cells / 6 matched pairs，review `PASS`�
 
 - **Saturation-dependent**：P0-1 的 queue/latency knee 为 `3.6 req/s`。低负载下两种 Router 没有稳定优劣；接近 saturation 后 Resource-aware 才明显缓解 queue skew 和 SLO collapse。
 - **Workload-dependent**：Prefix-heavy 收益最大；Prefill-heavy 有轻微 ITL trade-off；Decode-heavy 的 ITL/Goodput 退化；Balanced 的 TTFT、ITL、Goodput 均退化，是明确 no-benefit boundary。
-- **Prefix locality 与 load balance 冲突**：Prefix-heavy 的 corrected 收益主要来自 balance，candidate 并未增加 matched prefix blocks，不能解释成普遍的 prefix-affinity 收益。
+- **Prefix locality 与 load balance 冲突**：Prefix-heavy 的 corrected 收益主要来自 balance，candidate 并未增加 matched prefix blocks。
 - **P/D 不是天然优化**：1P1D、KV remapping 和 pinned-host staging 已完成，但 corrected diagnostic 中 Prefill queue + KV transfer overhead 超过 isolation benefit，故停止扩展 formal matrix。
 
 机制分析见 [PERFORMANCE_ANALYSIS](docs/PERFORMANCE_ANALYSIS.md)。
 
-## 6. 工程方法
 
-Formal experiment 同时要求：
-
-- Functional Correctness：request lifecycle、output/state、block mapping、terminal 与 final KV release；
-- Experimental Correctness：physical GPU topology、process isolation、model residency、CUDA work/overlap、trace/config identity；
-- Evidence Correctness：matched trace/seed、明确 baseline、raw-to-summary reaggregation、artifact immutability 与 fail-closed review。
-
-配置意图不能替代 runtime truth。Multi-GPU provenance 链为：
-
-```text
-Worker PID → Torch/NVML Physical GPU UUID → Model Residency
-→ CUDA Execution → Execution Overlap → Request Distribution
-→ Terminal Reconciliation → Final KV State
-```
-
-详见 [ENGINEERING_PRACTICES](docs/ENGINEERING_PRACTICES.md)。
-
-## 7. 项目结构
+## 6. 项目结构
 
 ```text
 nanovllm/                         最终 Nano-vLLM runtime 与 serving 扩展
@@ -105,7 +88,7 @@ docs/                             问题、设计、演进、结果、分析与 
 scripts/                          repository/evidence validation utilities
 ```
 
-## 8. 快速开始
+## 7. 快速开始
 
 要求 Python `3.10–3.12`、兼容的 PyTorch/CUDA、Triton、FlashAttention 与本地模型权重。模型不进入 Git。
 
@@ -128,7 +111,7 @@ python -m pytest -q \
 
 完整复现、formal replay 和 GPU provenance gate 见 [REPRODUCIBILITY](docs/REPRODUCIBILITY.md)。请始终把本地输出写入 `experiments/results/local/`，不要覆盖 `experiments/results/final/`。
 
-## 9. 文档导航
+## 8. 文档导航
 
 - [项目总览](docs/PROJECT_OVERVIEW.md)
 - [问题定义](docs/PROBLEM_DEFINITION.md)
@@ -142,10 +125,6 @@ python -m pytest -q \
 - [已知边界](docs/KNOWN_LIMITATIONS.md)
 - [技术专题](docs/TECHNICAL_NOTES/README.md)
 
-## 10. 项目边界
+## 9. 项目边界
 
-- 这是研究型 LLM Serving resource-control system，不是生产级 vLLM 替代品。
 - FlashAttention、Paged KV Cache、Prefix Cache、CUDA Graph、Triton kernel 等来自 Nano-vLLM upstream；归属说明见 [NOTICE](NOTICE.md)。
-- 结果绑定冻结模型、硬件、runtime、config 和 trace，不声称跨模型、跨硬件或生产集群普遍成立。
-- Stage 16 的 latency 与 resource 指标使用不同 baseline，不能合并成一个比较。
-- Balanced routing regression 与 P/D negative result 是最终边界，不会被隐藏或包装成正收益。
